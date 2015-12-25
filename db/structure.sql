@@ -117,6 +117,41 @@ ALTER SEQUENCE rails_admin_histories_id_seq OWNED BY rails_admin_histories.id;
 
 
 --
+-- Name: resources; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE resources (
+    id integer NOT NULL,
+    name character varying(255),
+    logo character varying(255),
+    website character varying(255),
+    affilatelink character varying(255),
+    affiliate boolean,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: resources_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE resources_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: resources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE resources_id_seq OWNED BY resources.id;
+
+
+--
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -194,6 +229,13 @@ ALTER TABLE ONLY rails_admin_histories ALTER COLUMN id SET DEFAULT nextval('rail
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY resources ALTER COLUMN id SET DEFAULT nextval('resources_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regclass);
 
 
@@ -211,6 +253,14 @@ ALTER TABLE ONLY authentications
 
 ALTER TABLE ONLY rails_admin_histories
     ADD CONSTRAINT rails_admin_histories_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: resources_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY resources
+    ADD CONSTRAINT resources_pkey PRIMARY KEY (id);
 
 
 --
@@ -287,4 +337,6 @@ INSERT INTO schema_migrations (version) VALUES ('20131021224642');
 INSERT INTO schema_migrations (version) VALUES ('20140204233100');
 
 INSERT INTO schema_migrations (version) VALUES ('20140204233952');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225161149');
 
