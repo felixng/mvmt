@@ -128,7 +128,10 @@ CREATE TABLE resources (
     affilatelink character varying(255),
     affiliate boolean,
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    facebook character varying(255),
+    instagram character varying(255),
+    "desc" character varying(255)
 );
 
 
@@ -339,4 +342,8 @@ INSERT INTO schema_migrations (version) VALUES ('20140204233100');
 INSERT INTO schema_migrations (version) VALUES ('20140204233952');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225161149');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225172457');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225172823');
 

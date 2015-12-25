@@ -5,9 +5,6 @@ class CreateResources < ActiveRecord::Migration
       t.string :logo
       t.string :website
       t.string :affilatelink
-      t.string :facebook
-      t.string :instagram
-      t.string :desc
       t.boolean :affiliate
 
       t.timestamps
