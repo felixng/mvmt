@@ -68,6 +68,7 @@ gem 'omniauth-twitter'
 
 # Admin
 gem 'rails_admin'
+gem 'rails_admin_flatly_theme', github: 'nfelix/rails_admin_flatly_theme'
 
 # Workers
 gem 'sidekiq'

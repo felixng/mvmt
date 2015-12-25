@@ -2,8 +2,179 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43afd9e4-65b7-4f23-9360-094d37707097" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb" afterPath="$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/FontAwesome-18932b6e9c449af539dbff5d7dd52f21.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/FontAwesome-77744c37baf12f9e09c95ec852f95df6.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-633fa9ee74246bea42fef116f2a691c8.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-ac17c74a699fc91c7e9dff551d194dd0.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-be365b4bc5be8bf8814d49e8563e2f15.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-d60aef5a68cadd6181a8c23ac8cd1834.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/bg_fallback-0c0d74c08ec0acd7632f51b4c3c4b33b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/bg_fallback-15528502b33c63cb332bcded94099985.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bullet_black-c445f8e6368deada29ab627febc51981.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bullet_black-e36e5fea02ce2bb364f0d6e5b7c0aabb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bullet_white-d7a8e3b74e1adfc8e7e3bcc044c7ab9f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bullet_white-f415377f29c6625c41260f8d4ed42916.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/calendar-3f3180895a2ab00a2991ef34002f49a4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/calendar-f515f4351329d7e46ac3e46a416c2850.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/clock-0871709e37064d1bbec1e937565f5c5e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/clock-e8a5a42a1d824d1b75a9dd3dade54f1c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_background-b2e0b384678a04c20b10ca64a4c830d2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_background-d5bd2110ae51caebf1852cea83d1de5f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hex-c57bc05268831499bef2727512d2af50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hex-db0bb98d34a5e8a3ecd4b85767ee3f44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_b-07f497797ca861dd484759d4c7c8984c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_b-953452f6e1ea68938e691f073dcb7ca1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_h-660fc80705ac3990f5e4e57dc6a862c3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_h-8331043a2a3a3528331819cf65c55df1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_s-0eaaa2f145c0769deff991ad4c8e7c57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_hsb_s-e7ca943f249d5867dd5ab2157136e7c7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_indic-5b5c6fd1087c5543dcbf359f4bb315ff.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_indic-d7a81ceaf984aea475993a8e25681a66.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_overlay-5a8726989f566d0650e5c95e7a454c14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_overlay-cf9d68544049140a98018c0709305c45.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_b-07f497797ca861dd484759d4c7c8984c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_b-953452f6e1ea68938e691f073dcb7ca1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_g-9bc806a83994a4e2f5973071d9fcf6ad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_g-e4e458d547ee0f1e9aae185ccafccf79.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_r-50828947b8ee9bc7a3ccd5c9305037d9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_rgb_r-e83cf148e4d7253f0037eed5b3a147ee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_select-8458b8d53d54a8a0d78ba0df698cef5b.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_select-e238bc50c6c9fe89ef310676941c8cc8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_submit-5dbf7c19b502c939436db08c21f9765f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/colorpicker_submit-a15d315bf8aa22ae41d270b11cf1b778.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_background-9bd7bbb95cd683644aeb4a404c595cd1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_background-fcd82e4a175f117249e36b7409ba4c24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hex-6efe28ee645353ce91d29c06857639eb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hex-9c90b6405e81cdab5a1f8f9328201b67.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_b-2b9fcb81b569beb048e42bd49e2c2692.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_b-bfdc73b41edce62822dfc99a3d9562fd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_h-740aab1ce3c04de901dc07ea2b1bfea4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_h-a632d9ea1f1505bd47354cda0007a03d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_s-3423ca0c736aea3d7ca6a828fbea39d1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_hsb_s-7789bc4cc494f70de3b2ac718093edf7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_indic-4210a97d1aefd42cfaa25dd41fe304a2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_indic-e8d1ef7cc39d6c2e3543e45a006888e0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_b-33ad3a279d05b2a845779bf46044d18d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_b-4a5c4eb4673f73ec2a19314dee88ebb4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_g-8f833c0739b2e5d78ed642bbb45d5193.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_g-bbe6c5c6031d787207652ae33555b0ed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_r-cdc596029a7f7e20d54d034d4c26861b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_rgb_r-db08c93d8cc86e4be36c3495756fb8e8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_submit-01585d0bb60bdfd56a33d579f8b05d05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/custom_submit-a607434510764ba2214814e46dcaff53.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-338f67be6ccf5a1c1de0899927b89ee4.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-37423ef0dfb1774b2e9425cc72d08426.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-5d75c29cd7af7789de946cf2dbc83e86.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-9cd7f09d62f9e51a9d768a83e066936e.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-c2641b86543e0123703fb82fb6f93a79.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-d4c09a566b0ea2ba5a5c6b455563189c.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-e53a302e39af48827ee281ea226e51db.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/glyphicons-halflings-3c97d6902196896b1ac049521888d2e8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/glyphicons-halflings-a5c79207cdf43e31baf288c5c9030d8d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-143ad625646f0a3ce93601c1c074b8ac.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-4a09de6c15b69e3be781f5da975d99d0.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-4a6be428bbbf4f628906cdb18b65df47.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-a67b585946096bf927e18c19e06e7e3d.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-dae564e0b5b702b8efdc086aa9f371d6.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-db9a03cfe6175b2ca2d4d9c7a4d42903.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/glyphicons-halflings-white-3818e51d2f32d07f95fd93500e678085.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/glyphicons-halflings-white-e4a4661e4161beac98ed5f7d259b3c67.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/icon_sprite-c08cb25cd6b5e56e600048b70e7474c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/icon_sprite-c08cb25cd6b5e56e600048b70e7474c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/icon_sprite-c45dacf03989e3ce70240a896d587612.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/icon_sprite-c45dacf03989e3ce70240a896d587612.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-2f45c4c6b2765e8b13b04db0cff693f8.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-86fe736bbb111d936d85d889f45221e8.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-99fe9f205d02a4e1f9b3de1e100334ea.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-b3f49486766b78829a83a7c912e4dbde.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/logo-1b7d5cd70c8e368b4aa1dad1b9847563.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/logo-d90bc5ea2433a21fa57ae96c680cc8d0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/magnifier-031388edadaa2b42e86e51e73121930f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/magnifier-c71070c28c4286db9d125099b73c317d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/progress_bar-804f69dd654838a3eeea923858facf0d.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/progress_bar-b20a3fbd33d119f52a99247f17a3d6a9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-511eb49883088544491ad631a8cd5b95.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-5e1de35b48314289891a71a475e4f16f.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-8b26af132f437e20545e3538fd493a07.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-941512cab4e28534f308a9ce1c179aae.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-944d432de9bca285a28013ec9a9bc320.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-9ef56cb51cc0a4ef726ac8d020d4707c.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/select-08e8ba7f114c64b1520f3d5c858a329f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/select-30ee169c2651721041a6554c7d67b7ab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/select2-6f433c3487326dcdfe120b2c61d585b4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/select2-7634c5eb567281f320af617f69ffdfd2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/slider-74d865ab330c259b98788c195b7054c7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/colorpicker/slider-7d91af88ef8ef16f5717ed8fe0f38e81.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/slider_handles-122706b52326a721a66a89e788e46f56.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/slider_handles-fcd0e6e06cc996d4e79a774b610454d7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-6326c46256cfe76417b3d71528fe7206.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-a7028daee59e6c61409f8e38ca740ae6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-261a53af8aac4fa5f3ce0cf420775137.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-6b4b0ba207c2ce4b8dc370cc869022ff.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-8dcec2020039e1fd5d52abe374df8b99.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-c89ccdf0deba5fde31409b8a1dbdca27.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-5f6c36a8418d6090740d4637a6cd7d25.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-a2eba4de40a49dbd62264aa3fe35336b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-07062db5a2a4488dbe376ef84d89268f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-61cab3af336c7e8a98db63a0e14de368.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-70897c98db0acaff4170b7724f4c432a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-c653e4d764a474c7afb6a8b0a74d3a5c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-21d74d1ff0e02196ae18ff6c8f891aed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-594db5d241a67e73c36b8e538eae5daa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-b7457d100e23eb4c1a443684e3057ede.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-be7c6e3a33c0419881d800b70d3d62c6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-dark-79b98ad7a7d8f38a0629cfbe3514a887.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-dark-f372f7107eb4d84bbccf43b687db5f0c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-light-5566ca2053d595e96a47e04a11c7b215.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-n-light-58c47e0006f5f0d15892303d4c869995.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-dark-3286b547e2be57cf135252c147c2135a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-dark-d105ce136eebcb0a4496a25ecc49fcc6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-light-d0b5d0957ed13e789d1451cf37350725.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/multiselect/ui-icon-circle-triangle-s-light-f221444ea0ac0734ec39ff24f08fbbd0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_222222_256x240-05926c2b1c52895edcdb82bea42f58bb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/ui-icons_222222_256x240-0cf74e8dc10cb434997d7c641688092c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/ui-icons_222222_256x240-88288f67d0bb1effd99024cfbac9f014.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_222222_256x240-e919b66137a7fbe374c304309ff8f3c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_2e83ff_256x240-1368f036cb5a2229f9997a3d134d0d4f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_2e83ff_256x240-b536547522b3df76818f93ec4cafac64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_454545_256x240-0c00cf818476f5a610154b32ad124a15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/ui-icons_454545_256x240-192b5e196c9b45c5083972c8c47b0503.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/aristo/images/ui-icons_454545_256x240-416af341593ff3403f46cb758e213bbf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_454545_256x240-fb7b58dc01e5360ebee1e1ab4350856a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_888888_256x240-4a00af131e718ec2dbfc39837f3906f9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_888888_256x240-7e06d75ad3bea10edb12070eef3ec230.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_cd0a0a_256x240-4acfae896cdfd3a313a332bc24c87fc3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_cd0a0a_256x240-a38b7bb320e6e202de49af3318983714.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20151225220629_change_desc_to_text.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/base/README-5f6e3992d260e864963bb3a60dd02252.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/base/README-fd1ccde641d2e2daaef7ffbd660a6a58.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-633fa9ee74246bea42fef116f2a691c8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-ac17c74a699fc91c7e9dff551d194dd0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-be365b4bc5be8bf8814d49e8563e2f15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-d60aef5a68cadd6181a8c23ac8cd1834.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-4636fb0bcb7caffbf4ad6a99e163e327.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-7d321d0957e2efb873e6679f2fa8d1d6.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-5f509ce861f7d4b4eb7116ce36396a1d.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-95227ec4f89cc8cd7279e27a3902f0e7.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-2f45c4c6b2765e8b13b04db0cff693f8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-86fe736bbb111d936d85d889f45221e8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-99fe9f205d02a4e1f9b3de1e100334ea.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.colorpicker-b3f49486766b78829a83a7c912e4dbde.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/manifest-2f18fc801b0441824662ae02b73ded02.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-5e1de35b48314289891a71a475e4f16f.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-8b26af132f437e20545e3538fd493a07.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-944d432de9bca285a28013ec9a9bc320.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/rails_admin-9ef56cb51cc0a4ef726ac8d020d4707c.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20151225172457_add_facebook_to_rosource.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/db/migrate/20151225172823_add_instagram_and_desc_to_rosource.rb" afterPath="$PROJECT_DIR$/db/migrate/20151225213309_add_attributes_to_resource.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.yml" afterPath="$PROJECT_DIR$/config/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mvmt.iml" afterPath="$PROJECT_DIR$/.idea/mvmt.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/structure.sql" afterPath="$PROJECT_DIR$/db/structure.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mvmt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,19 +190,64 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mvmt@db_migrate.coverage" NAME="db:migrate Coverage Results" MODIFIED="1451078903874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mvmt" />
+    <SUITE FILE_PATH="coverage/mvmt@IRB_console__mvmt.coverage" NAME="IRB console: mvmt Coverage Results" MODIFIED="1451081332754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mvmt" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="mvmt" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <file leaf-file-name="category.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4079498">
+              <caret line="70" column="29" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20151225175736_create_categories.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20151225161149_create_resources.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130909194719_create_authentications.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130909194719_create_authentications.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,81 +263,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140204233100_create_oauth_caches.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140204233100_create_oauth_caches.rb">
+      <file leaf-file-name="20131021224642_add_admin_to_user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131021224642_add_admin_to_user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20151225161149_create_resources.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20151225175736_create_categories.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18828452">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20151225172457_add_facebook_to_rosource.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20151225172457_add_facebook_to_rosource.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20151225172823_add_instagram_and_desc_to_rosource.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20151225172823_add_instagram_and_desc_to_rosource.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140204233952_move_oauth_data.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140204233952_move_oauth_data.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,12 +281,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/application.yml" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20151225172457_add_facebook_to_rosource.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20151225172823_add_instagram_and_desc_to_rosource.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20151225172457_add_facebook_to_rosource.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20151225213309_add_attributes_to_resource.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20151225220629_change_desc_to_text.rb" />
       </list>
     </option>
   </component>
@@ -273,8 +423,54 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
   </component>
-  <component name="RunManager" selected="Rails.Development: mvmt">
+  <component name="RunManager" selected="IRB console.IRB console: mvmt">
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="mvmt" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IRB console: mvmt" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="mvmt" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rvm/rubies/ruby-2.1.2/bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -308,6 +504,27 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="IrbRunConfigurationType" factoryName="IRB console">
+      <module name="" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -488,12 +705,20 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Rake.test: mvmt" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: mvmt" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: mvmt" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: mvmt" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.IRB console: mvmt" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="IRB console.IRB console: mvmt" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -510,9 +735,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -524,7 +749,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -541,22 +766,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -597,23 +806,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131021224642_add_admin_to_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140204233952_move_oauth_data.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130909170542_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -637,26 +830,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49790794">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225172457_add_facebook_to_rosource.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225172823_add_instagram_and_desc_to_rosource.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3305785">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -669,6 +878,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/rails_admin/rails_admin-8b26af132f437e20545e3538fd493a07.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3493724">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7719665">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131021224642_add_admin_to_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130909194719_create_authentications.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130909170542_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/oauth_cache.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24793388">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -677,18 +934,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="20" />
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18828452">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20151225220629_change_desc_to_text.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15690376">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20151225213309_add_attributes_to_resource.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21966527">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4079498">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="29" />
           <folding />
         </state>
       </provider>

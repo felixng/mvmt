@@ -162,7 +162,7 @@ CREATE TABLE resources (
     updated_at timestamp without time zone,
     facebook character varying(255),
     instagram character varying(255),
-    "desc" character varying(255)
+    "desc" text
 );
 
 
@@ -401,4 +401,8 @@ INSERT INTO schema_migrations (version) VALUES ('20151225172457');
 INSERT INTO schema_migrations (version) VALUES ('20151225172823');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225175736');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225213309');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225220629');
 
