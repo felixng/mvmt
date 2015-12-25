@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @resource.name
+%p
+  %b Logo:
+  = @resource.logo
+%p
+  %b Website:
+  = @resource.website
+%p
+  %b Affilatelink:
+  = @resource.affilatelink
+%p
+  %b Affiliate:
+  = @resource.affiliate
+
+= link_to 'Edit', edit_resource_path(@resource)
+\|
+= link_to 'Back', resources_path

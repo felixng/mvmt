@@ -1,0 +1,12 @@
+= simple_form_for(@resource) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :logo
+    = f.input :website
+    = f.input :affilatelink
+    = f.input :affiliate
+
+  .form-actions
+    = f.button :submit
