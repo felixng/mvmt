@@ -100,6 +100,16 @@ ALTER SEQUENCE categories_id_seq OWNED BY categories.id;
 
 
 --
+-- Name: categories_resources; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE categories_resources (
+    resource_id integer NOT NULL,
+    category_id integer NOT NULL
+);
+
+
+--
 -- Name: oauth_caches; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -156,8 +166,6 @@ CREATE TABLE resources (
     name character varying(255),
     logo character varying(255),
     website character varying(255),
-    affilatelink character varying(255),
-    affiliate boolean,
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     facebook character varying(255),
@@ -405,4 +413,10 @@ INSERT INTO schema_migrations (version) VALUES ('20151225175736');
 INSERT INTO schema_migrations (version) VALUES ('20151225213309');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225220629');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225231048');
+
+INSERT INTO schema_migrations (version) VALUES ('20151225233040');
+
+INSERT INTO schema_migrations (version) VALUES ('20151226002520');
 
