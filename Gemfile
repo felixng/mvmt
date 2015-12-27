@@ -78,6 +78,7 @@ gem 'sinatra', require: false
 # Utils
 gem 'addressable'
 gem 'settingslogic'
+gem 'sprig'
 
 group :development do
   # Docs

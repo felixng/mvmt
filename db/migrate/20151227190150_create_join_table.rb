@@ -1,4 +1,4 @@
-class CreateJoinTableResourceCategory < ActiveRecord::Migration
+class CreateJoinTable < ActiveRecord::Migration
   def change
     create_join_table :resources, :categories do |t|
       # t.index [:resource_id, :category_id]

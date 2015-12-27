@@ -336,13 +336,6 @@ CREATE INDEX index_authentications_on_provider ON authentications USING btree (p
 
 
 --
--- Name: index_categories_on_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX index_categories_on_id ON categories USING btree (id);
-
-
---
 -- Name: index_rails_admin_histories; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -404,19 +397,13 @@ INSERT INTO schema_migrations (version) VALUES ('20140204233952');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225161149');
 
-INSERT INTO schema_migrations (version) VALUES ('20151225172457');
-
-INSERT INTO schema_migrations (version) VALUES ('20151225172823');
-
 INSERT INTO schema_migrations (version) VALUES ('20151225175736');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225213309');
 
 INSERT INTO schema_migrations (version) VALUES ('20151225220629');
 
-INSERT INTO schema_migrations (version) VALUES ('20151225231048');
-
 INSERT INTO schema_migrations (version) VALUES ('20151225233040');
 
-INSERT INTO schema_migrations (version) VALUES ('20151226002520');
+INSERT INTO schema_migrations (version) VALUES ('20151227190150');
 

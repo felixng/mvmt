@@ -1,4 +1,3 @@
 class Resource < ActiveRecord::Base
-  has_many:category
-  validates :category, presence: true
+  has_and_belongs_to_many :category
 end

