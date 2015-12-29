@@ -1,9 +1,10 @@
 class ResourcesController < ApplicationController
+  skip_authorization_check
+  skip_before_action :authenticate_user!
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
 
   def index
     @resources = Resource.all
-    respond_with(@resources)
   end
 
   def show

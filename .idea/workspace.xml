@@ -2,412 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43afd9e4-65b7-4f23-9360-094d37707097" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/accordion-ae16ff065be6d9ac47fa552008ce46a7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/affix-de94af8078a55e4081d3d125d72a133a.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/alert-6bb955dfe9a9dbcef998cf4ac3f7a959.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-1660d447a90469f2dda56442793b0680.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-318339f65060bad63f394ba380226799.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-4da88fd532e5984c3c88da1d7d1d5bee.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-868bf7a03de8c75a1ef7fd8c68766c4b.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-89fe8c2733e1cca42487bbc124c1414a.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-9ab0e21fdea79069f044dcb89b9e80e1.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/autocomplete-65b75d5e362aad13e843e1e0dcc46b82.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/avatar.errors-27de5348c27b9c42bbaf7e220a6b7358.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-8686ba6e09651fb20aeb358bbb440c8f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-a2c66bfd1e845ca9d5178c93ca0ee50a.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-affix-5a10d6bfb0a6aeb4030acb3c72cdf7d5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-alert-7adc181b087506b93da360be0aa5edf7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-button-828ecc48218703d193e33272d8d30a20.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-carousel-c540c4b076244e6df2709854e99392d8.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-collapse-3387a8b21abb7862bae6aac8337d6b26.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-dropdown-988a6b1e1badd4adb5a4af9da2c0f896.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-modal-8980c68a15fb277b29ffd4b128cb2290.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-popover-c9720bb6d6e962e79c5d5c91098d59bf.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-scrollspy-c39555dd3a436b5c8433bc460d1ab6f2.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-sprockets-5824503fa496c6deddbd4d393833e175.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-tab-35c07c16c43f847ed917d783c0ae3e06.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-tooltip-dbe0e18d89b3c3175196116c5caefc83.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-transition-2210979e877510a03e2b280a9e0ec039.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-typeahead-891f60f6d52c88823fbead61c4a3b869.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/boxgrid-118e6ee7226d67b9c24ac34a6a66a30c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/button-75ea6d0f2f2559e80a1a7be114ad616a.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/button-bf6f06db506a87783a0376a001d99456.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/carousel-e07cf7dd8ddfaedbb0b32ccf331749c3.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/categories-91f573c4f0196f4fb7515d98459c4684.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/climacons-webfont-68397b95fcde3f91bb3f938d94da24ab.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/climacons-webfont-6e9c8deb892166045499098cf9ac95e9.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/climacons-webfont-b166ca0cce28505b4e4c6a08d978e9b6.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/climacons-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/climacons-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/climacons-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/coffee-script-91fcbbb44d3d47b9d0e2976f8b063f4c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/collapse-28f81a400014e9f6aa77b50ae072fd0e.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/core-44cd7531331746d6bb9597e3ec7b5b0b.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-76c87d7bafdc3b01d1d8ba60cb791d07.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-af-289f31bb2fe375197fb50336ec14c845.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ar-2015e14c32159e4e57063b57b2aafb29.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ar-DZ-26cd7ff267845853f77b1d171cf37017.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-az-487ca6d2884f1cae7e67d6d7439e1840.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-be-616f2270edc65346286a4bd29217f83b.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-bg-7141ad0ad9ad81e32f30aee49410b53d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-bs-cb899b135cddac5be7bece240d1e0d5d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ca-acd538b8f4316e8f71fdaf6d30269fc5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-cs-424885bd748899c3e75810325e6db487.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-cy-GB-87cc8b16a597fa545f9987d998d23a4f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-da-b4a2613697456426b1fce81e1b051e8c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-de-7b777ad8c0e10a292f318f97cc760574.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-el-bb4201f94835a4d5863bb0e622097f08.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-AU-cd4c8f73e4e3b77372c56c838c11d1e7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-GB-cfa8181d18351f853dd23c78aa61caf2.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-NZ-6cc28b15029fa0d9a199c7a78dcd70ef.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-eo-ea78fc6b57c97c2ee66138be03384574.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-es-978be38bcd620c79cad113aade93c1b4.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-et-466a42e6a51a7fe72880fcce3f0ed343.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-eu-97b227d0ae1ebf24a1d37f5900f1818d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fa-eebb10e0252c7656b4321fc0b1e82a03.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fi-d4400dbcf22568dc5a8a4b48c03ffd20.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fo-184c75b3384a03886515a5010614af38.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-1c29720c006ed635e65a73f97a918422.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-CA-4b3bbb3cf287c70cd797f8e7d91b0377.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-CH-0e4efd294a742b32d9a7691a45d241de.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-gl-0e79ac93511b410c5070a8acee452008.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-he-226a4ccd6d8619432ef122424e290011.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hi-30d298e40f54682e63a480eb3a795391.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hr-85d0f7a68a7202de748838198192496f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hu-2620c44ae5e6d5db0c6fcea559bd40ea.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hy-b536cda1ba3b665590c32f6b73fbfb08.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-id-3ad9c3484f34b0dcd80774d73d8af812.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-is-a880e01a77dc7274538835bd982b784d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-it-861e5ad6c81736838f00adc0235be6cf.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-it-CH-7b3b7d402ec1ccc0c6e40a2efe671580.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ja-b4978400aa37c1867568fec8ee76abd5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ka-036c0baf693c6c6e3f3b9fea4eca5c69.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-kk-41eb855600f33a3c15d02fd37e443ccd.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-km-f5c7b62d3c29c3ff69252756950cf141.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ko-a602fccef485ffcfef88e87e8d6b7b56.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ky-0b367a3756ff75fab38572598e70e2a6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lb-d1d8e99798fd4d567f0452afe4f631aa.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lt-04ec22e63b67df81bc1e5838ee0ab2a5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lv-d21f8c968c5d760b7ffdd8cbe71b8fd0.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-mk-06a206e81300244b1b7a4b5490ba8077.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ml-3ad9226efd249bd7daabcbd34a0efdbd.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ms-bac9a80adac878892fb6cab92cfcdc81.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nb-f5284750b2b3a06cc9aaca582a289952.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nl-02508586e93956180e4a75102c6e988c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nl-BE-296946d60826f52ee0d7266265d87488.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nn-7033495dbe9ecc54ffc56f9443fc4998.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-no-b94fc4fb2fca26cda2b9c4cb9e45984d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pl-7d245a86ce2a3c347e0027b3c7617bbc.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pt-84febaa791c7f890fac1b9904729cc06.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pt-BR-bd680c5f018211a0d7eb239b977ebcee.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-rm-01a204f41455eb372e9fada84c4a0832.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ro-58ab4205e076167f68ac9554dcf9578b.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ru-a68b3cf0b2b04e852e210061f1811884.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sk-44d704f46846c3c6039181ca54d12a14.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sl-d881860227b2a86a2352c9a84d7083f2.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sq-73ceff27119cc84d4056a6d6774c43a7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sr-SR-888f2480f20008a55f9f545cbc17814c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sr-e927aeb345c10ee7e14e4eb6399dda03.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sv-a1c4731f5e50bca73815fe03ee5c1c79.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ta-8d2f7e6888ad1817ad2c07dde9ad787d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-th-0c103efd254f96d5bad2ab5c8b15cd31.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-tj-eeac69156c4a8a5b3c760884fb8ca54c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-tr-dfba5188e1af151fe3d89f5f199599c0.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-uk-c2631f714a28e7b68ea61b0de7721b77.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-vi-fb781d60c002eabce26c583960ad28f5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-CN-90315b3c9646055330db778870f168bb.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-HK-344e680d2579bbb06ab55b9a7485c29d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-TW-6c4705ba40f1519f82605dec812ee310.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/dialog-46422357b1c04355aa34bf50540be180.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/draggable-5219d13dbe7126ea0b87f2d284b00bf6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/dropdown-6c23bf4aa9a5d3a312fad45e93221dcb.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/droppable-d364dcc0d8fea0a9a60b8eb1e7d88082.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-bd006b20739e2907f426052c6f08b44f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-blind-b8323a8b1f4be447457e8b53632effa5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-bounce-b448e4bef74a7a4f98d0abf813e06b63.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-clip-2aadb79e0909848940df666951049859.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-drop-2ebef15e390cf1ecd20b81f926ee7877.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-explode-855302220ee3c2ca269510f5adb55e03.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-fade-09dd9bd983fc558b4f6f760bfb54dcc8.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-fold-9d1c7eef15cbd6c04c3699ac44418033.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-highlight-236bc50fc68db014df6229b7e49f2d55.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-puff-b7719859145e2b3d005a0b3fc1f7c5ca.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-pulsate-0729d294e2be430f9356b8f91f1f6cbd.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-scale-1fe684bc82f63017c07198f14ae82e88.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-shake-045717c018e9b8baf5347c9429d66ed6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-size-0db255c5f7241b727b384156f5e6ef67.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-slide-3c2e34022b12e6d4270118d333f49504.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-transfer-d81e411e92dc9c88eb11b2c42b41a967.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect.all-f543c06b0a7216c63a8e63f3c999ce90.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/head-c7149ec901b13c756f90a1eda46cf995.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ie-ed95d62719d41da2ea7fc46d853cb504.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/imagesloaded-1ccd8713b12a24bccdb18dc002b6fbe6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-6d10d4a9f4e4c2e3ea6caa1d94a91fa8.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui-1eaae12f102a6fa68de576e5bfad04c1.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.fittext-72496e4702e2468d370551adaaa2ecc3.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.iframe-transport-fedbdaba9c07bebb26e64dfa4622bc2c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.min-f4b646f846d63550cb53cfdbf9f65a23.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.pjax-2ecc98c515b83a6a619e5ba2c4798b98.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.remotipart-d093ca8889ad8fa04e023a1dd2e79439.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.remotipart.fixed-e31a944fead713ec19e8f6e991206409.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.scrollto-6d195b0bd53e7b60280e1492ad7d8d4a.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.turbolinks-220c3c8872e4f815cab56eddecd1d9b3.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.turbolinks.min-5e6f95292c302b2ad4f7f8d789af5fb7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.ui.timepicker-af3075a0377f580cbd8f69758231e171.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_2-c434b3eb362a9987505b69cde51fb1b5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_nested_form-6a6bf911f1187371513bb0020847f7f5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_ujs-185a78cc2544dcd87a410365225133f7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/menu-1a42a211f78713ca7d2ba6964dc7acba.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/modal-122d5090b9c2316180785b20daabcf4b.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/modernizr.custom-c8b8ecd1547c6507eb360235580c5b1d.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/mouse-cfa9577d73fb7aa9738ddd8b9f8cff40.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-459e2bde63b148f38ed78742a622bf94.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-ajax-cab98f8ccf7d5242faeb2fddc86ec59b.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-angular-7a6f874edaef1528a85e2dbc9bcf6c2f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-pjax-2821d090b19c91bc04b158c2d688ffeb.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-turbolinks-71bf7f554142b22dfd8fc461306d20f8.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/popover-248f7979c97d0e08ecc5bba0279b3471.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/position-b84746308a2ef260a82eabf53420f41e.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/posts-91f573c4f0196f4fb7515d98459c4684.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/progressbar-7cf0340420caba740e10b110f86d4433.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/prototype_nested_form-ad298483e87cb62682af95192982c690.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.datetimepicker-8773001a5ca74368a7ab278857f01ec2.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filter-box-b851fd7619ab0be563eaed48c1a9bdbc.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filtering-multiselect-0c4c85a2ca5d59c89fb6bf2fad846c5f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filtering-select-4140f338d8ad14e05a2e9325607123b5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.i18n-26b14b38437ec97a686ae6688cff82af.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.nested-form-hooks-645e588bc973c251ff0b1bf8f59cfc22.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.remote-form-cbde2c118f030c625d4af25d94325a7f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.widgets-595bb5ba5608c71df4e8eec1475589c3.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_confirm_dialog-f7ffe9d8b6bafdd6220299f41a17383f.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/resizable-e09af9cdebe4cbf434d7ac2e05182339.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/resources-91f573c4f0196f4fb7515d98459c4684.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/respond-663a0f11d2683694e6c955ec14429e4c.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/scrollspy-d1bab1ad92dad2cac94590f1e6824aa5.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/selectable-42d880c6998775264b5456dbcdb63d32.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/selectmenu-2a3ff1de2d4cf788a5cef6e55c60e46e.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/slider-923c70bbc7aec276560c1bcaee2f8acf.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/sortable-842499756aa913d8fabfb6ae70336412.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/spinner-849517459ae6fd1e6507b37fbf39b2be.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/tab-f98f2e6b436dbc661cdc6347a25a7dc0.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/tabs-f1c4da1dbbff533b4ac7d687b6de70e7.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/tooltip-15363814bd6674d9e2f2974ac6d9cfba.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/tooltip-a04adf2e04e07b083cf579dd5e6a4ea6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/transition-133a4f8c203d7cd147dd6f4ba4d49919.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/turbolinks-9ac32cbffee170c7d49266130a4abedc.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/themes/flatly_theme/ui-40c1f6139af26a822e4c505882b047f6.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/custom/ui-91f573c4f0196f4fb7515d98459c4684.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ui-e45d32743eef54458bf6ffbf3a1f9516.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/widget-9c4e48900aad6d95b054e6d85884f948.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_list.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/accordion-ae16ff065be6d9ac47fa552008ce46a7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/affix-de94af8078a55e4081d3d125d72a133a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/alert-6bb955dfe9a9dbcef998cf4ac3f7a959.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-1660d447a90469f2dda56442793b0680.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-318339f65060bad63f394ba380226799.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-4da88fd532e5984c3c88da1d7d1d5bee.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-868bf7a03de8c75a1ef7fd8c68766c4b.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-89fe8c2733e1cca42487bbc124c1414a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-9ab0e21fdea79069f044dcb89b9e80e1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/autocomplete-65b75d5e362aad13e843e1e0dcc46b82.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/avatar.errors-27de5348c27b9c42bbaf7e220a6b7358.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-8686ba6e09651fb20aeb358bbb440c8f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-a2c66bfd1e845ca9d5178c93ca0ee50a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-affix-5a10d6bfb0a6aeb4030acb3c72cdf7d5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-alert-7adc181b087506b93da360be0aa5edf7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-button-828ecc48218703d193e33272d8d30a20.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-carousel-c540c4b076244e6df2709854e99392d8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-collapse-3387a8b21abb7862bae6aac8337d6b26.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-dropdown-988a6b1e1badd4adb5a4af9da2c0f896.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-modal-8980c68a15fb277b29ffd4b128cb2290.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-popover-c9720bb6d6e962e79c5d5c91098d59bf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-scrollspy-c39555dd3a436b5c8433bc460d1ab6f2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-sprockets-5824503fa496c6deddbd4d393833e175.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-tab-35c07c16c43f847ed917d783c0ae3e06.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-tooltip-dbe0e18d89b3c3175196116c5caefc83.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-transition-2210979e877510a03e2b280a9e0ec039.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/bootstrap/bootstrap-typeahead-891f60f6d52c88823fbead61c4a3b869.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/boxgrid-118e6ee7226d67b9c24ac34a6a66a30c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/boxgrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/boxgrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/button-75ea6d0f2f2559e80a1a7be114ad616a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/button-bf6f06db506a87783a0376a001d99456.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/carousel-e07cf7dd8ddfaedbb0b32ccf331749c3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/categories-91f573c4f0196f4fb7515d98459c4684.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/climacons-webfont-c6b664b788ad8275f1029d67e816b006.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/climacons-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/climacons.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/coffee-script-91fcbbb44d3d47b9d0e2976f8b063f4c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/collapse-28f81a400014e9f6aa77b50ae072fd0e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/component.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/core-44cd7531331746d6bb9597e3ec7b5b0b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-76c87d7bafdc3b01d1d8ba60cb791d07.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-af-289f31bb2fe375197fb50336ec14c845.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ar-2015e14c32159e4e57063b57b2aafb29.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ar-DZ-26cd7ff267845853f77b1d171cf37017.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-az-487ca6d2884f1cae7e67d6d7439e1840.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-be-616f2270edc65346286a4bd29217f83b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-bg-7141ad0ad9ad81e32f30aee49410b53d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-bs-cb899b135cddac5be7bece240d1e0d5d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ca-acd538b8f4316e8f71fdaf6d30269fc5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-cs-424885bd748899c3e75810325e6db487.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-cy-GB-87cc8b16a597fa545f9987d998d23a4f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-da-b4a2613697456426b1fce81e1b051e8c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-de-7b777ad8c0e10a292f318f97cc760574.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-el-bb4201f94835a4d5863bb0e622097f08.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-AU-cd4c8f73e4e3b77372c56c838c11d1e7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-GB-cfa8181d18351f853dd23c78aa61caf2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-en-NZ-6cc28b15029fa0d9a199c7a78dcd70ef.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-eo-ea78fc6b57c97c2ee66138be03384574.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-es-978be38bcd620c79cad113aade93c1b4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-et-466a42e6a51a7fe72880fcce3f0ed343.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-eu-97b227d0ae1ebf24a1d37f5900f1818d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fa-eebb10e0252c7656b4321fc0b1e82a03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fi-d4400dbcf22568dc5a8a4b48c03ffd20.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fo-184c75b3384a03886515a5010614af38.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-1c29720c006ed635e65a73f97a918422.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-CA-4b3bbb3cf287c70cd797f8e7d91b0377.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-fr-CH-0e4efd294a742b32d9a7691a45d241de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-gl-0e79ac93511b410c5070a8acee452008.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-he-226a4ccd6d8619432ef122424e290011.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hi-30d298e40f54682e63a480eb3a795391.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hr-85d0f7a68a7202de748838198192496f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hu-2620c44ae5e6d5db0c6fcea559bd40ea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-hy-b536cda1ba3b665590c32f6b73fbfb08.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-id-3ad9c3484f34b0dcd80774d73d8af812.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-is-a880e01a77dc7274538835bd982b784d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-it-861e5ad6c81736838f00adc0235be6cf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-it-CH-7b3b7d402ec1ccc0c6e40a2efe671580.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ja-b4978400aa37c1867568fec8ee76abd5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ka-036c0baf693c6c6e3f3b9fea4eca5c69.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-kk-41eb855600f33a3c15d02fd37e443ccd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-km-f5c7b62d3c29c3ff69252756950cf141.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ko-a602fccef485ffcfef88e87e8d6b7b56.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ky-0b367a3756ff75fab38572598e70e2a6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lb-d1d8e99798fd4d567f0452afe4f631aa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lt-04ec22e63b67df81bc1e5838ee0ab2a5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-lv-d21f8c968c5d760b7ffdd8cbe71b8fd0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-mk-06a206e81300244b1b7a4b5490ba8077.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ml-3ad9226efd249bd7daabcbd34a0efdbd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ms-bac9a80adac878892fb6cab92cfcdc81.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nb-f5284750b2b3a06cc9aaca582a289952.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nl-02508586e93956180e4a75102c6e988c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nl-BE-296946d60826f52ee0d7266265d87488.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-nn-7033495dbe9ecc54ffc56f9443fc4998.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-no-b94fc4fb2fca26cda2b9c4cb9e45984d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pl-7d245a86ce2a3c347e0027b3c7617bbc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pt-84febaa791c7f890fac1b9904729cc06.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-pt-BR-bd680c5f018211a0d7eb239b977ebcee.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-rm-01a204f41455eb372e9fada84c4a0832.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ro-58ab4205e076167f68ac9554dcf9578b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ru-a68b3cf0b2b04e852e210061f1811884.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sk-44d704f46846c3c6039181ca54d12a14.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sl-d881860227b2a86a2352c9a84d7083f2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sq-73ceff27119cc84d4056a6d6774c43a7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sr-SR-888f2480f20008a55f9f545cbc17814c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sr-e927aeb345c10ee7e14e4eb6399dda03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-sv-a1c4731f5e50bca73815fe03ee5c1c79.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-ta-8d2f7e6888ad1817ad2c07dde9ad787d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-th-0c103efd254f96d5bad2ab5c8b15cd31.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-tj-eeac69156c4a8a5b3c760884fb8ca54c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-tr-dfba5188e1af151fe3d89f5f199599c0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-uk-c2631f714a28e7b68ea61b0de7721b77.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-vi-fb781d60c002eabce26c583960ad28f5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-CN-90315b3c9646055330db778870f168bb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-HK-344e680d2579bbb06ab55b9a7485c29d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/datepicker-zh-TW-6c4705ba40f1519f82605dec812ee310.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/dialog-46422357b1c04355aa34bf50540be180.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/draggable-5219d13dbe7126ea0b87f2d284b00bf6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/dropdown-6c23bf4aa9a5d3a312fad45e93221dcb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/droppable-d364dcc0d8fea0a9a60b8eb1e7d88082.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-bd006b20739e2907f426052c6f08b44f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-blind-b8323a8b1f4be447457e8b53632effa5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-bounce-b448e4bef74a7a4f98d0abf813e06b63.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-clip-2aadb79e0909848940df666951049859.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-drop-2ebef15e390cf1ecd20b81f926ee7877.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-explode-855302220ee3c2ca269510f5adb55e03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-fade-09dd9bd983fc558b4f6f760bfb54dcc8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-fold-9d1c7eef15cbd6c04c3699ac44418033.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-highlight-236bc50fc68db014df6229b7e49f2d55.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-puff-b7719859145e2b3d005a0b3fc1f7c5ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-pulsate-0729d294e2be430f9356b8f91f1f6cbd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-scale-1fe684bc82f63017c07198f14ae82e88.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-shake-045717c018e9b8baf5347c9429d66ed6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-size-0db255c5f7241b727b384156f5e6ef67.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-slide-3c2e34022b12e6d4270118d333f49504.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect-transfer-d81e411e92dc9c88eb11b2c42b41a967.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/effect.all-f543c06b0a7216c63a8e63f3c999ce90.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/head-c7149ec901b13c756f90a1eda46cf995.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ie-ed95d62719d41da2ea7fc46d853cb504.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/imagesloaded-1ccd8713b12a24bccdb18dc002b6fbe6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-6d10d4a9f4e4c2e3ea6caa1d94a91fa8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui-1eaae12f102a6fa68de576e5bfad04c1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.fittext-72496e4702e2468d370551adaaa2ecc3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.fittext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jquery.fittext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.iframe-transport-fedbdaba9c07bebb26e64dfa4622bc2c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.min-f4b646f846d63550cb53cfdbf9f65a23.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.pjax-2ecc98c515b83a6a619e5ba2c4798b98.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.remotipart-d093ca8889ad8fa04e023a1dd2e79439.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.remotipart.fixed-e31a944fead713ec19e8f6e991206409.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.scrollto-6d195b0bd53e7b60280e1492ad7d8d4a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.turbolinks-220c3c8872e4f815cab56eddecd1d9b3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery.turbolinks.min-5e6f95292c302b2ad4f7f8d789af5fb7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/jquery.ui.timepicker-af3075a0377f580cbd8f69758231e171.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_2-c434b3eb362a9987505b69cde51fb1b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_nested_form-6a6bf911f1187371513bb0020847f7f5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery_ujs-185a78cc2544dcd87a410365225133f7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/menu-1a42a211f78713ca7d2ba6964dc7acba.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/modal-122d5090b9c2316180785b20daabcf4b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/modernizr.custom-c8b8ecd1547c6507eb360235580c5b1d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/mouse-cfa9577d73fb7aa9738ddd8b9f8cff40.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-459e2bde63b148f38ed78742a622bf94.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-ajax-cab98f8ccf7d5242faeb2fddc86ec59b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-angular-7a6f874edaef1528a85e2dbc9bcf6c2f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-pjax-2821d090b19c91bc04b158c2d688ffeb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/nprogress-turbolinks-71bf7f554142b22dfd8fc461306d20f8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/popover-248f7979c97d0e08ecc5bba0279b3471.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/position-b84746308a2ef260a82eabf53420f41e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/posts-91f573c4f0196f4fb7515d98459c4684.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/progressbar-7cf0340420caba740e10b110f86d4433.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/prototype_nested_form-ad298483e87cb62682af95192982c690.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.datetimepicker-8773001a5ca74368a7ab278857f01ec2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filter-box-b851fd7619ab0be563eaed48c1a9bdbc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filtering-multiselect-0c4c85a2ca5d59c89fb6bf2fad846c5f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.filtering-select-4140f338d8ad14e05a2e9325607123b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.i18n-26b14b38437ec97a686ae6688cff82af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.nested-form-hooks-645e588bc973c251ff0b1bf8f59cfc22.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.remote-form-cbde2c118f030c625d4af25d94325a7f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ra.widgets-595bb5ba5608c71df4e8eec1475589c3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_confirm_dialog-f7ffe9d8b6bafdd6220299f41a17383f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/resizable-e09af9cdebe4cbf434d7ac2e05182339.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/resources-91f573c4f0196f4fb7515d98459c4684.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/respond-663a0f11d2683694e6c955ec14429e4c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/scrollspy-d1bab1ad92dad2cac94590f1e6824aa5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/selectable-42d880c6998775264b5456dbcdb63d32.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/selectmenu-2a3ff1de2d4cf788a5cef6e55c60e46e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/slider-923c70bbc7aec276560c1bcaee2f8acf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/sortable-842499756aa913d8fabfb6ae70336412.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/spinner-849517459ae6fd1e6507b37fbf39b2be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/tab-f98f2e6b436dbc661cdc6347a25a7dc0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/tabs-f1c4da1dbbff533b4ac7d687b6de70e7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/tooltip-15363814bd6674d9e2f2974ac6d9cfba.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/tooltip-a04adf2e04e07b083cf579dd5e6a4ea6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/transition-133a4f8c203d7cd147dd6f4ba4d49919.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/turbolinks-9ac32cbffee170c7d49266130a4abedc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/themes/flatly_theme/ui-40c1f6139af26a822e4c505882b047f6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/custom/ui-91f573c4f0196f4fb7515d98459c4684.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rails_admin/ui-e45d32743eef54458bf6ffbf3a1f9516.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/widget-9c4e48900aad6d95b054e6d85884f948.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_javascripts.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_javascripts.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/home.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-2f18fc801b0441824662ae02b73ded02.json" afterPath="$PROJECT_DIR$/public/assets/manifest-2f18fc801b0441824662ae02b73ded02.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/_list.html.haml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/resources/index.html.haml" afterPath="$PROJECT_DIR$/app/views/resources/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/resources_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/resources_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mvmt.iws" />
@@ -437,10 +36,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="climacons.css.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/climacons.css.scss">
+      <file leaf-file-name="resources_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/resources_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34633029">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passwords_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users/passwords_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.375">
+              <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+              <folding>
+                <element signature="n#I18n.t('brand.name')#0;n#!!top" expanded="true" />
+                <element signature="n#I18n.t 'brand.name'#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.haml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1369863">
+              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="419" selection-end-column="22" />
+              <folding>
+                <marker date="1451411795000" expanded="true" signature="0:9608" placeholder=".main" />
+                <marker date="1451411795000" expanded="true" signature="116:912" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="165:912" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="981:1775" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="1030:1775" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="1847:2645" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="1896:2645" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="2714:3509" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="2763:3509" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="3582:4383" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="3631:4383" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="4455:5253" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="4504:5253" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="5322:6117" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="5371:6117" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="6189:6987" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="6238:6987" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="7074:7877" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="7123:7877" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="7945:8732" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="7994:8732" placeholder=".rb-week" />
+                <marker date="1451411795000" expanded="true" signature="8812:9608" placeholder=".rb-overlay" />
+                <marker date="1451411795000" expanded="true" signature="8861:9608" placeholder=".rb-week" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrations_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authorization_errors_concern.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/concerns/authorization_errors_concern.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
@@ -476,8 +172,6 @@
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_list.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/pages/home.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/modernizr.custom.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/boxgrid.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/jquery.fittext.js.coffee" />
@@ -487,6 +181,13 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/climacons.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_list.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_list_resources.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/resources_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pages/home.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/resources/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
       </list>
     </option>
   </component>
@@ -553,11 +254,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,6 +357,11 @@
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dummy_app" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+    </key>
   </component>
   <component name="RunManager" selected="IRB console.IRB console: mvmt">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -865,20 +637,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2013889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2013889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.50277776" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -904,218 +676,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225213309_add_attributes_to_resource.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22727273">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225233040_remove_columns_from_resource.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19480519">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.097826086">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225175736_create_categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26086956">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9130435">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42391303">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032608695">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84782606">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_list.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/categories.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ie.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/posts.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/boxgrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1643835">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34931508">
-          <caret line="406" column="30" selection-start-line="406" selection-start-column="30" selection-end-line="406" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025974026">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/sidekiq.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_airbrake.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06849315">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_account_tabs.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/modernizr.custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032467533">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/sessions/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84931505">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5519481">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1189,17 +753,6 @@
         <state vertical-scroll-proportion="-8.75">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.125">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#194#214#0#ruby" expanded="true" />
-            <element signature="e#286#306#0#ruby" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1307,10 +860,237 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_destroy_modal.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30963302">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/climacons.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34633029">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_airbrake.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06880734">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.097402595">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20151225161149_create_resources.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25974026">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/categories_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.064935066">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5519481">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/devise_routes_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_account_tabs.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17123288">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/rails_admin/_secondary_navigation.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34246576">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51369864">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_messages.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/authorization_errors_concern.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/passwords_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/privacy.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5519481">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/robots_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.097402595">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/resources_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="419" selection-end-column="22" />
+          <folding>
+            <marker date="1451411795000" expanded="true" signature="0:9608" placeholder=".main" />
+            <marker date="1451411795000" expanded="true" signature="116:912" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="165:912" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="981:1775" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="1030:1775" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="1847:2645" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="1896:2645" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="2714:3509" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="2763:3509" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="3582:4383" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="3631:4383" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="4455:5253" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="4504:5253" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="5322:6117" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="5371:6117" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="6189:6987" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="6238:6987" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="7074:7877" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="7123:7877" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="7945:8732" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="7994:8732" placeholder=".rb-week" />
+            <marker date="1451411795000" expanded="true" signature="8812:9608" placeholder=".rb-overlay" />
+            <marker date="1451411795000" expanded="true" signature="8861:9608" placeholder=".rb-week" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+          <folding>
+            <element signature="n#I18n.t('brand.name')#0;n#!!top" expanded="true" />
+            <element signature="n#I18n.t 'brand.name'#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1369863">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
         </state>
       </provider>

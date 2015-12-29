@@ -1,27 +1,441 @@
-%h1 Listing resources
+%h1= I18n.t('brand.name')
 
-%table
-  %tr
-    %th Name
-    %th Logo
-    %th Website
-    %th Affilatelink
-    %th Affiliate
-    %th
-    %th
-    %th
+%p
+  Rails 4 starter app with social authentication and other goodies.
 
-  - @resources.each do |resource|
-    %tr
-      %td= resource.name
-      %td= resource.logo
-      %td= resource.website
-      %td= resource.affilatelink
-      %td= resource.affiliate
-      %td= link_to 'Show', resource
-      %td= link_to 'Edit', edit_resource_path(resource)
-      %td= link_to 'Destroy', resource, :method => :delete, :data => { :confirm => 'Are you sure?' }
+%p
+  = I18n.t 'brand.name'
+  uses best practices and code extracted from several production projects.
 
-%br
+- @resources.each do |resource|
+  %li.icon-clima-1.rb-span-2
+    %h3= resource.name
+    %td= resource.logo
+    %td= resource.website
+    %td= resource.affilatelink
+    %td= resource.affiliate
+    %td= link_to 'Show', resource
+    %td= link_to 'Edit', edit_resource_path(resource)
+    %td= link_to 'Destroy', resource, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-= link_to 'New Resource', new_resource_path
+.main
+  %ul#rb-grid.rb-grid.clearfix
+    %li.icon-clima-1.rb-span-2
+      %h3 Lisbon
+      %span.rb-temp 21°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Lisbon
+            %span.icon-clima-1
+            %span 21°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 19°C
+          %div
+            %span Tue
+            %span.icon-clima-2
+            %span 19°C
+          %div
+            %span Wed
+            %span.icon-clima-2
+            %span 18°C
+          %div
+            %span Thu
+            %span.icon-clima-2
+            %span 17°C
+          %div
+            %span Fri
+            %span.icon-clima-1
+            %span 19°C
+          %div
+            %span Sat
+            %span.icon-clima-1
+            %span 22°C
+          %div
+            %span Sun
+            %span.icon-clima-1
+            %span 18°C
+    %li.icon-clima-2
+      %h3 Paris
+      %span.rb-temp 11°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Paris
+            %span.icon-clima-2
+            %span 11°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 12°C
+          %div
+            %span Tue
+            %span.icon-clima-4
+            %span 11°C
+          %div
+            %span Wed
+            %span.icon-clima-4
+            %span 10°C
+          %div
+            %span Thu
+            %span.icon-clima-4
+            %span 9°C
+          %div
+            %span Fri
+            %span.icon-clima-2
+            %span 10°C
+          %div
+            %span Sat
+            %span.icon-clima-2
+            %span 10°C
+          %div
+            %span Sun
+            %span.icon-clima-2
+            %span 12°C
+    %li.icon-clima-1
+      %h3 Belgrade
+      %span.rb-temp 15°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Belgrade
+            %span.icon-clima-1
+            %span 15°C
+          %div
+            %span Mon
+            %span.icon-clima-3
+            %span 16°C
+          %div
+            %span Tue
+            %span.icon-clima-3
+            %span 17°C
+          %div
+            %span Wed
+            %span.icon-clima-3
+            %span 15°C
+          %div
+            %span Thu
+            %span.icon-clima-4
+            %span 13°C
+          %div
+            %span Fri
+            %span.icon-clima-3
+            %span 10°C
+          %div
+            %span Sat
+            %span.icon-clima-1
+            %span 11°C
+          %div
+            %span Sun
+            %span.icon-clima-1
+            %span 12°C
+    %li.icon-clima-4
+      %h3 Moscow
+      %span.rb-temp 2°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Moscow
+            %span.icon-clima-4
+            %span 1°C
+          %div
+            %span Mon
+            %span.icon-clima-4
+            %span -1°C
+          %div
+            %span Tue
+            %span.icon-clima-6
+            %span -2°C
+          %div
+            %span Wed
+            %span.icon-clima-6
+            %span -6°C
+          %div
+            %span Thu
+            %span.icon-clima-6
+            %span -4°C
+          %div
+            %span Fri
+            %span.icon-clima-5
+            %span -5°C
+          %div
+            %span Sat
+            %span.icon-clima-6
+            %span -6°C
+          %div
+            %span Sun
+            %span.icon-clima-6
+            %span -8°C
+    %li.icon-clima-1
+      %h3 New Delhi
+      %span.rb-temp 17°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city New Delhi
+            %span.icon-clima-1
+            %span 17°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 18°C
+          %div
+            %span Tue
+            %span.icon-clima-8
+            %span 19°C
+          %div
+            %span Wed
+            %span.icon-clima-8
+            %span 16°C
+          %div
+            %span Thu
+            %span.icon-clima-10
+            %span 17°C
+          %div
+            %span Fri
+            %span.icon-clima-10
+            %span 18°C
+          %div
+            %span Sat
+            %span.icon-clima-2
+            %span 17°C
+          %div
+            %span Sun
+            %span.icon-clima-1
+            %span 17°C
+    %li.icon-clima-1
+      %h3 Tel Aviv
+      %span.rb-temp 23°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Tel Aviv
+            %span.icon-clima-1
+            %span 22°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 23°C
+          %div
+            %span Tue
+            %span.icon-clima-2
+            %span 22°C
+          %div
+            %span Wed
+            %span.icon-clima-2
+            %span 22°C
+          %div
+            %span Thu
+            %span.icon-clima-2
+            %span 21°C
+          %div
+            %span Fri
+            %span.icon-clima-1
+            %span 21°C
+          %div
+            %span Sat
+            %span.icon-clima-2
+            %span 21°C
+          %div
+            %span Sun
+            %span.icon-clima-2
+            %span 24°C
+    %li.icon-clima-2
+      %h3 Cairo
+      %span.rb-temp 21°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Cairo
+            %span.icon-clima-2
+            %span 21°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 22°C
+          %div
+            %span Tue
+            %span.icon-clima-1
+            %span 20°C
+          %div
+            %span Wed
+            %span.icon-clima-1
+            %span 21°C
+          %div
+            %span Thu
+            %span.icon-clima-1
+            %span 21°C
+          %div
+            %span Fri
+            %span.icon-clima-2
+            %span 21°C
+          %div
+            %span Sat
+            %span.icon-clima-2
+            %span 22°C
+          %div
+            %span Sun
+            %span.icon-clima-2
+            %span 23°C
+    %li.icon-clima-11
+      %h3 New York
+      %span.rb-temp 3°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city New York
+            %span.icon-clima-11
+            %span 3°C
+          %div
+            %span Mon
+            %span.icon-clima-11
+            %span 3°C
+          %div
+            %span Tue
+            %span.icon-clima-11
+            %span -1°C
+          %div
+            %span Wed
+            %span.icon-clima-11
+            %span -2°C
+          %div
+            %span Thu
+            %span.icon-clima-7
+            %span 1°C
+          %div
+            %span Fri
+            %span.icon-clima-7
+            %span 0°C
+          %div
+            %span Sat
+            %span.icon-clima-11
+            %span 2°C
+          %div
+            %span Sun
+            %span.icon-clima-11
+            %span 3°C
+    %li.icon-clima-2.rb-span-2
+      %h3 San Francisco
+      %span.rb-temp 15°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city San Francisco
+            %span.icon-clima-2
+            %span 15°C
+          %div
+            %span Mon
+            %span.icon-clima-2
+            %span 16°C
+          %div
+            %span Tue
+            %span.icon-clima-2
+            %span 14°C
+          %div
+            %span Wed
+            %span.icon-clima-2
+            %span 13°C
+          %div
+            %span Thu
+            %span.icon-clima-2
+            %span 15°C
+          %div
+            %span Fri
+            %span.icon-clima-2
+            %span 15°C
+          %div
+            %span Sat
+            %span.icon-clima-1
+            %span 16°C
+          %div
+            %span Sun
+            %span.icon-clima-1
+            %span 15°C
+    %li.icon-clima-2
+      %h3 Tokyo
+      %span.rb-temp 8°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Tokyo
+            %span.icon-clima-2
+            %span 8°C
+          %div
+            %span Mon
+            %span.icon-clima-1
+            %span 7°C
+          %div
+            %span Tue
+            %span.icon-clima-2
+            %span 6°C
+          %div
+            %span Wed
+            %span.icon-clima-1
+            %span 8°C
+          %div
+            %span Thu
+            %span.icon-clima-1
+            %span 8°C
+          %div
+            %span Fri
+            %span.icon-clima-2
+            %span 6°C
+          %div
+            %span Sat
+            %span.icon-clima-2
+            %span 5°C
+          %div
+            %span Sun
+            %span.icon-clima-2
+            %span 5°C
+    %li.icon-clima-4.rb-span-4
+      %h3 Sydney
+      %span.rb-temp 25°C
+      .rb-overlay
+        %span.rb-close close
+        .rb-week
+          %div
+            %span.rb-city Sydney
+            %span.icon-clima-4
+            %span 28°C
+          %div
+            %span Mon
+            %span.icon-clima-4
+            %span 24°C
+          %div
+            %span Tue
+            %span.icon-clima-4
+            %span 26°C
+          %div
+            %span Wed
+            %span.icon-clima-2
+            %span 27°C
+          %div
+            %span Thu
+            %span.icon-clima-2
+            %span 30°C
+          %div
+            %span Fri
+            %span.icon-clima-8
+            %span 31°C
+          %div
+            %span Sat
+            %span.icon-clima-8
+            %span 29°C
+          %div
+            %span Sun
+            %span.icon-clima-8
+            %span 29°C
+

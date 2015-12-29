@@ -48,5 +48,7 @@ Rails.application.routes.draw do
 
   get 'robots.:format' => 'robots#index'
 
-  root 'pages#home'
+  root 'resources#index'
+  #root 'pages#home'
+
 end
