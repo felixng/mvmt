@@ -54,9 +54,11 @@
       <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74025977">
-              <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
-              <folding />
+            <state vertical-scroll-proportion="0.48051947">
+              <caret line="62" column="86" selection-start-line="62" selection-start-column="86" selection-end-line="62" selection-end-column="86" />
+              <folding>
+                <marker date="1451439169000" expanded="true" signature="2670:2894" placeholder="#..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1106,9 +1108,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74025977">
-          <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
-          <folding />
+        <state vertical-scroll-proportion="0.48051947">
+          <caret line="62" column="86" selection-start-line="62" selection-start-column="86" selection-end-line="62" selection-end-column="86" />
+          <folding>
+            <marker date="1451439169000" expanded="true" signature="2670:2894" placeholder="#..." />
+          </folding>
         </state>
       </provider>
     </entry>
