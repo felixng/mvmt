@@ -1,24 +1,55 @@
-%nav.navbar.navbar-default.navbar-fixed-top{role: 'navigation'}
-  .navbar-header
-    %button.navbar-toggle{type: 'button', data: {toggle: 'collapse', target: '.navbar-collapse'}}
-      %span.sr-only
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    = link_to I18n.t('brand.name'), root_path, class: 'navbar-brand'
-
-  .collapse.navbar-collapse
-    %ul.nav.navbar-nav.navbar-right
-      - if user_signed_in?
-        %li.dropdown
-          %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
-            = render 'users/avatar', size: :tiny
-            %b.caret
-          %ul.dropdown-menu
-            - if current_user.is_admin?
-              %li= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}
-            %li= link_to I18n.t('account.edit.link'), edit_user_registration_path
-            %li= link_to I18n.t('auth.logout.link'), destroy_user_session_path, rel: :nofollow
+-#%nav.navbar.navbar-default.navbar-fixed-top{role: 'navigation'}
+-#  .navbar-header
+-#    %button.navbar-toggle{type: 'button', data: {toggle: 'collapse', target: '.navbar-collapse'}}
+-#      %span.sr-only
+-#      %span.icon-bar
+-#      %span.icon-bar
+-#      %span.icon-bar
+-#    = link_to I18n.t('brand.name'), root_path, class: 'navbar-brand'
+%h1= link_to I18n.t('brand.name'), root_path, class: 'bt-menu-brand'
+%nav#bt-menu.bt-menu{role: 'navigation'}
+  %a.bt-menu-trigger{:href => "#"}
+    %span Menu
+  %ul
+    %li
+      = link_to 'About', about_path
+    %li
+      %a{:href => "#"} Resources
+    %li
+      %a{:href => "#"} Contact
+  %ul.nav.navbar-nav.navbar-right
+    %li
+      %a.bt-icon.icon-twitter{:href => "http://www.twitter.com/felixtheng"} Twitter
+    %li
+      %a.bt-icon.icon-gplus{:href => "https://plus.google.com/u/0/+FelixNgHK"} Google+
+    %li
+      %a.bt-icon.icon-facebook{:href => "http://www.facebook.com/nfelix"} Facebook
+    %li
+      %a.bt-icon.icon-github{:href => "https://github.com/nfelix"} icon-github
+    - if user_signed_in?
+      %li.dropdown
+        %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
+          = render 'users/avatar', size: :tiny
+          %b.caret
+        %ul.dropdown-menu
+          - if current_user.is_admin?
+            %li= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}
+          %li= link_to I18n.t('account.edit.link'), edit_user_registration_path
+          %li= link_to I18n.t('auth.logout.link'), destroy_user_session_path, rel: :nofollow
       - unless user_signed_in?
         %li= link_to I18n.t('auth.signup.link'), new_user_registration_path
         %li= link_to I18n.t('auth.login.link'), new_user_session_path
+    -#%ul.nav.navbar-nav.navbar-right
+    -#  - if user_signed_in?
+    -#    %li.dropdown
+    -#      %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
+    -#        = render 'users/avatar', size: :tiny
+    -#        %b.caret
+    -#      %ul.dropdown-menu
+    -#        - if current_user.is_admin?
+    -#          %li= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}
+    -#        %li= link_to I18n.t('account.edit.link'), edit_user_registration_path
+    -#        %li= link_to I18n.t('auth.logout.link'), destroy_user_session_path, rel: :nofollow
+    -#  - unless user_signed_in?
+    -#    %li= link_to I18n.t('auth.signup.link'), new_user_registration_path
+    -#    %li= link_to I18n.t('auth.login.link'), new_user_session_path

@@ -22,6 +22,9 @@
 #= require modernizr.custom.js
 #= require jquery.fittext.js
 #= require boxgrid.js
+#= require classie.js
+#= require borderMenu.js
+
 
 
 
