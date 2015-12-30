@@ -164,14 +164,17 @@ ALTER SEQUENCE rails_admin_histories_id_seq OWNED BY rails_admin_histories.id;
 CREATE TABLE resources (
     id integer NOT NULL,
     name character varying(255),
-    logo character varying(255),
     website character varying(255),
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     facebook character varying(255),
     instagram character varying(255),
     "desc" text,
-    postcode character varying(255)
+    postcode character varying(255),
+    logo_file_name character varying(255),
+    logo_content_type character varying(255),
+    logo_file_size integer,
+    logo_updated_at timestamp without time zone
 );
 
 
@@ -409,4 +412,8 @@ INSERT INTO schema_migrations (version) VALUES ('20151225233040');
 INSERT INTO schema_migrations (version) VALUES ('20151227190150');
 
 INSERT INTO schema_migrations (version) VALUES ('20151229210328');
+
+INSERT INTO schema_migrations (version) VALUES ('20151230154945');
+
+INSERT INTO schema_migrations (version) VALUES ('20151230160955');
 
