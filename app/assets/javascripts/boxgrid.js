@@ -53,7 +53,7 @@ var Boxgrid = (function() {
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		// window and body elements
 		$window = $( window ),
-		$body = $( 'BODY' ),
+		$body = $( '.container' ),
 		// transitions support
 		supportTransitions = Modernizr.csstransitions,
 		// current item's index
@@ -185,7 +185,7 @@ var Boxgrid = (function() {
 		$body.css( 'overflow-y', 'hidden' );
 		var w = $window.width(), h =  $window.height();
 		if( current === -1 ) {
-			$body.css( 'overflow-y', 'auto' );
+			$body.css( 'overflow-y', 'none' );
 		}
 		return { width : w, height : h };
 	}

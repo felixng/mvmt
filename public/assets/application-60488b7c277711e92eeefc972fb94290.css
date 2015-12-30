@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400,700,900);
 /* line 9, /Users/nfelix/.rvm/gems/ruby-2.1.3/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -8394,8 +8394,8 @@ you can use the generic selector below, but it's slower:
 
 @font-face {
   font-family: 'ClimaconsRegular';
-  src: url("../font/climacons-webfont.eot");
-  src: url("../font/climacons-webfont.eot?#iefix") format("embedded-opentype"), url("../font/climacons-webfont.woff") format("woff"), url("../font/climacons-webfont.ttf") format("truetype");
+  src: url(/assets/climacons-webfont.eot);
+  src: url(/assets/climacons-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/climacons-webfont.woff) format("woff"), url(/assets/climacons-webfont.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -8413,74 +8413,608 @@ you can use the generic selector below, but it's slower:
   text-align: center;
   line-height: 1em;
   margin-left: 0.2em;
+  color: #333;
 }
 
-/* line 25, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 26, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-1:before {
   content: '\0031';
 }
 
 /* '1' */
-/* line 26, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 27, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-2:before {
   content: '\0076';
 }
 
 /* 'v' */
-/* line 27, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 28, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-3:before {
   content: '\0033';
 }
 
 /* '3' */
-/* line 28, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 29, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-4:before {
   content: '\0034';
 }
 
 /* '4' */
-/* line 29, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 30, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-5:before {
   content: '\003B';
 }
 
 /* ';' */
-/* line 30, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 31, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-6:before {
   content: '\006F';
 }
 
 /* 'o' */
-/* line 31, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-7:before {
   content: '\005D';
 }
 
 /* ']' */
-/* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 33, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-8:before {
   content: '\0078';
 }
 
 /* 'x' */
-/* line 33, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 34, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-9:before {
   content: '\0039';
 }
 
 /* '9' */
-/* line 34, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 35, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-10:before {
   content: '\0030';
 }
 
 /* '0' */
-/* line 35, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 36, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
 .icon-clima-11:before {
   content: '\0070';
 }
 
 /* 'p' */
+@font-face {
+  font-family: "minicons-webalys";
+  src: url(/assets/demoicons/minicons-webalys.eot);
+  src: url(/assets/demoicons/minicons-webalys.eot?#iefix) format("embedded-opentype"), url(/assets/demoicons/minicons-webalys.ttf) format("truetype"), url(/assets/demoicons/minicons-webalys.svg#minicons-webalys) format("svg"), url(/assets/demoicons/minicons-webalys.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(/assets/demoicons/FontAwesome.eot);
+  src: url(/assets/demoicons/FontAwesome.eot?#iefix) format("embedded-opentype"), url(/assets/demoicons/FontAwesome.woff) format("woff"), url(/assets/demoicons/FontAwesome.ttf) format("truetype"), url(/assets/demoicons/FontAwesome.svg#FontAwesome) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 26, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-icon:before,
+.bt-icon-alt:before {
+  font-family: "minicons-webalys";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 40, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-icon-alt:before {
+  font-family: "FontAwesome";
+}
+
+/* line 44, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-window-delete:before {
+  content: "\e000";
+}
+
+/* line 48, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-download:before {
+  content: "\e002";
+}
+
+/* line 52, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-home:before {
+  content: "\e003";
+}
+
+/* line 56, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-calendar:before {
+  content: "\e004";
+}
+
+/* line 60, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-folder-add:before {
+  content: "\e001";
+}
+
+/* line 64, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-windows:before {
+  content: "\e008";
+}
+
+/* line 68, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-volume:before {
+  content: "\e00e";
+}
+
+/* line 72, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-speaker:before {
+  content: "\e011";
+}
+
+/* line 76, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-star:before {
+  content: "\e012";
+}
+
+/* line 80, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-sun:before {
+  content: "\e014";
+}
+
+/* line 84, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-trash:before {
+  content: "\e018";
+}
+
+/* line 88, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-zoom:before {
+  content: "\e005";
+}
+
+/* line 92, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-user-outline:before {
+  content: "\e006";
+}
+
+/* line 96, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-picture:before {
+  content: "\e007";
+}
+
+/* line 100, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-phone:before {
+  content: "\e009";
+}
+
+/* line 104, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-newspaper:before {
+  content: "\e00a";
+}
+
+/* line 108, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-printer:before {
+  content: "\e00b";
+}
+
+/* line 112, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-microwave:before {
+  content: "\e00c";
+}
+
+/* line 116, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-refresh:before {
+  content: "\e00d";
+}
+
+/* line 120, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-lock:before {
+  content: "\e00f";
+}
+
+/* line 124, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-email:before {
+  content: "\e010";
+}
+
+/* line 128, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-browser:before {
+  content: "\e013";
+}
+
+/* line 132, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-bubble:before {
+  content: "\e015";
+}
+
+/* line 136, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-calculator:before {
+  content: "\e016";
+}
+
+/* line 140, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-cd:before {
+  content: "\e017";
+}
+
+/* line 144, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-enter:before {
+  content: "\e019";
+}
+
+/* line 148, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-file-add:before {
+  content: "\e01a";
+}
+
+/* line 152, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-flag:before {
+  content: "\e01b";
+}
+
+/* line 156, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-twitter:before {
+  content: "\e01c";
+}
+
+/* line 160, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-gplus:before {
+  content: "\e020";
+}
+
+/* line 164, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-github:before {
+  content: "\e021";
+}
+
+/* line 168, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-facebook:before {
+  content: "\e01d";
+}
+
+/* Font Awesome */
+/* line 173, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-step-backward:before {
+  content: "\f048";
+}
+
+/* line 176, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-backward:before {
+  content: "\f04a";
+}
+
+/* line 179, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-pause:before {
+  content: "\f04c";
+}
+
+/* line 182, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-stop:before {
+  content: "\f04d";
+}
+
+/* line 185, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-forward:before {
+  content: "\f04e";
+}
+
+/* line 188, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-step-forward:before {
+  content: "\f051";
+}
+
+/* line 191, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.icon-play:before {
+  content: "\f04b";
+}
+
+/* line 198, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.avatar.tiny {
+  border-radius: 50%;
+}
+
+/* line 208, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+body {
+  background: #1abc9c;
+}
+
+/* line 212, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.container {
+  padding: 80px;
+}
+
+/* line 216, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 100;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #333;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+  transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+}
+
+/* line 232, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open {
+  height: 100%;
+  z-index: 100;
+  border-width: 0px 0px 50px 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: border-width 0.3s, background-color 0.3s;
+  transition: border-width 0.3s, background-color 0.3s;
+}
+
+/* line 241, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-overlay {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 246, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-open .bt-overlay {
+  height: 100%;
+}
+
+/* line 250, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-trigger {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 100;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* line 261, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+a.bt-menu-brand {
+  position: fixed;
+  top: 20px;
+  z-index: 100;
+  left: 50%;
+  margin-left: -56px;
+  display: block;
+  cursor: pointer;
+  color: #f9f9f9;
+}
+
+/* line 272, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-brand:hover {
+  text-decoration: none;
+}
+
+/* line 276, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-trigger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 8%;
+  background-color: #fff;
+  font-size: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+/* line 296, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-trigger span:before,
+.bt-menu-trigger span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 307, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-trigger span:before {
+  -webkit-transform: translateY(-250%);
+  transform: translateY(-250%);
+}
+
+/* line 312, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-trigger span:after {
+  -webkit-transform: translateY(250%);
+  transform: translateY(250%);
+}
+
+/* line 317, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-open .bt-menu-trigger span:before {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+/* line 322, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu-open .bt-menu-trigger span:after {
+  -webkit-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+/* line 327, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 334, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:first-of-type {
+  top: 75px;
+  left: 0;
+}
+
+/* line 339, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:nth-of-type(2) {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 345, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul li,
+.bt-menu ul li a {
+  display: block;
+}
+
+/* line 349, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:nth-of-type(2) li {
+  float: left;
+  font-size: 0px;
+}
+
+/* line 354, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul li {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+  transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+}
+
+/* line 362, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:first-of-type li,
+.bt-menu.bt-menu-open ul:nth-of-type(2) li {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s 0.1s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* First menu */
+/* line 370, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:first-of-type li {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transform: translate3d(-100%, 50%, 0);
+  transform: translate3d(-100%, 50%, 0);
+}
+
+/* line 378, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:first-of-type li {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Second menu */
+/* line 384, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:nth-of-type(2) li {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 392, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:first-child {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 397, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 402, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 407, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 412, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu.bt-menu-open ul:nth-of-type(2) li {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 417, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul li a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 423, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:first-of-type li a {
+  padding: 0 20px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+/* line 434, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:first-of-type li:last-child a {
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 438, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:nth-of-type(2) li a {
+  color: transparent;
+  text-align: center;
+  font-size: 0px;
+}
+
+/* line 444, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul li a:before {
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+/* line 454, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/menu.css.scss */
+.bt-menu ul:first-of-type li a:hover,
+.bt-menu ul:first-of-type li a:focus,
+.bt-menu ul li a:hover:before,
+.bt-menu ul li a:focus:before {
+  color: #1abc9c;
+}
+
 /* line 1, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/component.css.scss */
 .rb-grid {
   list-style: none;
@@ -9204,27 +9738,29 @@ html {
 /* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  background: #f9f9f9;
+  background: #333;
   font-weight: 400;
   font-size: 1em;
-  color: #333;
+  color: #f9f9f9;
   overflow: scroll;
   overflow-x: hidden;
+  padding-top: 0;
 }
 
-/* line 42, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 43, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 a {
   color: #555;
   text-decoration: none;
 }
 
-/* line 47, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 48, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .container {
   width: 100%;
   position: relative;
+  padding-top: 0;
 }
 
-/* line 53, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 55, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .main,
 .container > header {
   width: 90%;
@@ -9233,12 +9769,12 @@ a {
   padding: 0 1.875em 3.125em 1.875em;
 }
 
-/* line 60, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 62, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .container > header {
   padding: 1.875em;
 }
 
-/* line 64, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 66, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .container > header h1 {
   font-size: 2.125em;
   line-height: 1.3;
@@ -9248,7 +9784,7 @@ a {
   float: left;
 }
 
-/* line 73, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 75, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .container > header h1 span {
   display: block;
   font-size: 65%;
@@ -9256,7 +9792,7 @@ a {
 }
 
 /* Header Style */
-/* line 80, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 82, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-top {
   line-height: 2.5;
   font-size: 0.688em;
@@ -9268,7 +9804,7 @@ a {
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 91, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 93, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-top a {
   padding: 0 1em;
   letter-spacing: 0.1em;
@@ -9276,31 +9812,31 @@ a {
   display: inline-block;
 }
 
-/* line 98, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 100, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-top a:hover {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
 }
 
-/* line 103, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 105, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-top span.right {
   float: right;
 }
 
-/* line 107, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 109, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-top span.right a {
   float: left;
   display: block;
 }
 
 /* Demo Buttons Style */
-/* line 113, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 115, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-demos {
   float: right;
   padding-top: 0.625em;
 }
 
-/* line 118, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 120, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-demos a {
   display: inline-block;
   margin: 0.625em;
@@ -9311,25 +9847,25 @@ a {
   border-bottom: 4px solid transparent;
 }
 
-/* line 128, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 130, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-demos a:hover {
   color: #000;
   border-color: #000;
 }
 
-/* line 134, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 136, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
   color: #aaa;
   border-color: #aaa;
 }
 
-/* line 139, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 141, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .support-note {
   clear: both;
 }
 
-/* line 143, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
+/* line 145, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/default.css.scss */
 .support-note span {
   color: #ac375d;
   display: none;
@@ -9435,17 +9971,17 @@ a {
   z-index: 999999;
 }
 
-/* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
+/* line 33, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
 body {
   padding-top: 70px;
 }
 
-/* line 38, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
+/* line 39, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
 .alert a {
   white-space: nowrap;
 }
 
-/* line 44, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
+/* line 45, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/application.scss */
 #nprogress .spinner {
   bottom: 15px;
   top: auto;

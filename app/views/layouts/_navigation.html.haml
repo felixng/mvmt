@@ -7,8 +7,8 @@
 -#      %span.icon-bar
 -#    = link_to I18n.t('brand.name'), root_path, class: 'navbar-brand'
 %h1= link_to I18n.t('brand.name'), root_path, class: 'bt-menu-brand'
-%nav#bt-menu.bt-menu{role: 'navigation'}
-  %a.bt-menu-trigger{:href => "#"}
+%nav#bt-menu.bt-menu
+  %a.bt-menu-trigger#bt-menu-trigger{:href => "#"}
     %span Menu
   %ul
     %li
