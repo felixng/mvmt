@@ -2,22 +2,22 @@
 @charset "UTF-8";
 @font-face {
   font-family: "minicons-webalys";
-  src:url("demoicons/minicons-webalys.eot");
-  src:url("demoicons/minicons-webalys.eot?#iefix") format("embedded-opentype"),
-  url("demoicons/minicons-webalys.ttf") format("truetype"),
-  url("demoicons/minicons-webalys.svg#minicons-webalys") format("svg"),
-  url("demoicons/minicons-webalys.woff") format("woff");
+  src:font-url("demoicons/minicons-webalys.eot");
+  src:font-url("demoicons/minicons-webalys.eot?#iefix") format("embedded-opentype"),
+  font-url("demoicons/minicons-webalys.ttf") format("truetype"),
+  font-url("demoicons/minicons-webalys.svg#minicons-webalys") format("svg"),
+  font-url("demoicons/minicons-webalys.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FontAwesome';
-  src:url('demoicons/FontAwesome.eot');
-  src:url('demoicons/FontAwesome.eot?#iefix') format('embedded-opentype'),
-  url('demoicons/FontAwesome.woff') format('woff'),
-  url('demoicons/FontAwesome.ttf') format('truetype'),
-  url('demoicons/FontAwesome.svg#FontAwesome') format('svg');
+  src:font-url('demoicons/FontAwesome.eot');
+  src:font-url('demoicons/FontAwesome.eot?#iefix') format('embedded-opentype'),
+  font-url('demoicons/FontAwesome.woff') format('woff'),
+  font-url('demoicons/FontAwesome.ttf') format('truetype'),
+  font-url('demoicons/FontAwesome.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
