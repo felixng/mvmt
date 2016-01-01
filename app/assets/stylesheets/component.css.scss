@@ -1,3 +1,12 @@
+.rb-grid .fa {
+  width: 1.5em;
+  text-decoration: none;
+}
+
+.rb-grid .fa:hover {
+  opacity: 1;
+}
+
 .rb-grid {
 	list-style: none;
 	text-align: center;
@@ -26,8 +35,14 @@
 }
 
 .rb-grid li h3 {
-	font-size: 2.6em;
-	font-weight: 100;
+	font-size: 2em;
+	font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.rb-grid a {
+    color: #fff;
+    opacity: 0.5;
 }
 
 .rb-grid li[class^="icon-"]:before,
@@ -45,16 +60,17 @@
 	pointer-events: none;
 }
 
-.rb-temp {
+.rb-code {
 	display: block;
-	font-size: 2em;
+	font-size: 1em;
 	opacity: 0.5;
+    font-weight: 600;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
-.rb-grid li:hover .rb-temp {
+.rb-grid li:hover .rb-code {
 	opacity: 1;
 }
 
@@ -88,6 +104,7 @@
 	content: 'x';
 	font-weight: 100;
 	position: absolute;
+    text-transform: lowercase;
 	top: 0;
 	left: 0;
 	width: 100%;

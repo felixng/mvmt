@@ -1,5 +1,5 @@
 /* General Demo Style */
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
 html { height: 100%; font-size: 100%;}
 
@@ -30,10 +30,10 @@ html { height: 100%; font-size: 100%;}
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #333;
+    background: #f9f9f9;
     font-weight: 400;
     font-size: 1em;
-    color: #f9f9f9;
+    color: #333;
     overflow: scroll;
     overflow-x: hidden;
     padding-top: 0;
