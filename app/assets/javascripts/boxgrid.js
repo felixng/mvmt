@@ -53,7 +53,7 @@ var Boxgrid = (function() {
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		// window and body elements
 		$window = $( window ),
-		$body = $( '.container' ),
+		$body = $( '.con' ),
 		// transitions support
 		supportTransitions = Modernizr.csstransitions,
 		// current item's index

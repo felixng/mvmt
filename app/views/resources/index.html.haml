@@ -8,9 +8,12 @@
         =image_tag resource.logo.url, :size => "100x100", :class => "logo"
         %h3=resource.name
         %span.rb-code=resource.postcode
-        %a.fa.fa-facebook{:href => "http://www.facebook.com/nfelix"}
-        %a.fa.fa-twitter{:href => "http://www.facebook.com/nfelix"}
-        %a.fa.fa-instagram{:href => "http://www.facebook.com/nfelix"}
+        - if resource.facebook?
+          %a.fa.fa-facebook{:href => "http://www.facebook.com/" + resource.facebook}
+        - if resource.twitter?
+          %a.fa.fa-twitter{:href => "http://www.twitter.com/" + resource.twitter }
+        - if resource.instagram?
+          %a.fa.fa-instagram{:href => "http://www.instagram.com/" + resource.instagram}
         .rb-overlay
           %span.rb-close close
           .rb-week
