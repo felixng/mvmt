@@ -17,16 +17,17 @@
   %body{class: "controller__#{controller_name} action__#{action_name}"}
     = render 'layouts/navigation'
     .container
-      .errors__container
-        = render 'layouts/messages'
-      = yield
+      .main
+        .errors__container
+          = render 'layouts/messages'
+        = yield
       %footer.page__footer
         - if content_for? :footer
           = yield :footer
         - else
           = render 'layouts/footer'
-    - content_for :on_ready do
-      Boxgrid.init();
+    -#- content_for :on_ready do
+    -#  Boxgrid.init();
     = render 'layouts/analytics'
     = render 'layouts/javascripts'
 
