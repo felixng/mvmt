@@ -6,6 +6,7 @@
     %title= content_for?(:title) ? yield(:title) : I18n.t('brand.name')
     %meta{content: (content_for?(:description) ? yield(:description) : I18n.t('brand.name')), name: 'description'}
     %link{:rel => :stylesheet, :href => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'}
+
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     /[if lt IE 9]
       = javascript_include_tag 'ie', 'data-turbolinks-track' => true
@@ -14,7 +15,7 @@
     = csrf_meta_tags
     = yield :head
     = render 'layouts/airbrake'
-  %body{class: "controller__#{controller_name} action__#{action_name}"}
+  %body{class: "controller__#{controller_name} action__#{action_name}", ngapp:"mvmt"}
     = render 'layouts/navigation'
     .container
       .main

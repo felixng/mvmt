@@ -29,6 +29,7 @@
                 classie.add( menu, 'bt-menu-close' );
             },
             closeClickFn = function( ev ) {
+                ev.preventDefault();
                 resetMenu();
                 overlay.removeEventListener( eventtype, closeClickFn );
             };
@@ -54,5 +55,6 @@
     }
 
     init();
+    $(document).on('page:load', init);
 
 })();

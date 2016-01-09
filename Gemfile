@@ -80,6 +80,7 @@ gem 'sinatra', require: false
 gem 'addressable'
 gem 'settingslogic'
 gem 'sprig'
+gem 'sprig-reap'
 
 group :development do
   # Docs

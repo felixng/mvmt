@@ -175,7 +175,8 @@ CREATE TABLE resources (
     logo_content_type character varying(255),
     logo_file_size integer,
     logo_updated_at timestamp without time zone,
-    twitter character varying(255)
+    twitter character varying(255),
+    approved boolean
 );
 
 
@@ -419,4 +420,6 @@ INSERT INTO schema_migrations (version) VALUES ('20151230154945');
 INSERT INTO schema_migrations (version) VALUES ('20151230160955');
 
 INSERT INTO schema_migrations (version) VALUES ('20160102003307');
+
+INSERT INTO schema_migrations (version) VALUES ('20160109162917');
 
