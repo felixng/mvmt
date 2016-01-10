@@ -42,6 +42,7 @@ Parkour = Category.find_by name: 'Parkour'
                       		  approved: " & $L2 & "
                             })
 =end
+
 resources = Resource.create({ name:'Gravity Circus',
                               website: 'http://gravitycircuscentre.com/',
                               facebook: 'Gravity-Circus-Centre',
@@ -141,11 +142,11 @@ resources = Resource.create({ name:'Stratford Circus',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Jackson Lane',
+resources = Resource.create({ name:'Dance London',
                               website: 'http://www.dance-london.com',
                               facebook: 'dancelondonuk',
                               instagram: 'dancelondonuk',
-                              logo: seed_image('jackson-lane-medium.png'),
+                              logo: seed_image('dance-london-medium.png'),
                               twitter: 'dancelondonuk',
                               desc: 'An inclusive community for all dancers and courses for international dancers.',
                               postcode: 'SE1',
@@ -515,7 +516,7 @@ resources = Resource.create({ name:'Blaze Gymnastics UK',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Aspire Gymnastics Academy',
+resources = Resource.create({ name:'Aspire GYmnastics Academy',
                               website: 'http://www.aspiregymnastics.com/',
                               facebook: 'Aspire-GYmnastics-Academy-506498729414414',
                               instagram: '',
@@ -571,7 +572,17 @@ resources = Resource.create({ name:'Rambert School of Ballet and Contemporary Da
                               category: [Dance],
                                         approved: TRUE
                             })
-
+resources = Resource.create({ name:'Jackson Lane',
+                              website: 'http://www.jacksonslane.org.uk',
+                              facebook: 'jacksonslane',
+                              instagram: 'jacksons_lane',
+                              logo: seed_image('jacksons-lane-medium.png'),
+                              twitter: 'jacksons_lane',
+                              desc: 'Jacksons Lane is a multi-arts venue in Highgate North London. Housed in a striking red-bricked gothic church conversion, the building is home to a 160 capacity theatre, a large scale dance and rehearsal studio a cafe and bar and four other multi-purpose spaces.',
+                              postcode: 'N6 5AA',
+                              category: [Circus],
+                                        approved: TRUE
+                            })
 
 =begin
 user1 = User.find_or_initialize_by(email: 'nfelix@gmail.com', first_name: 'Felix', last_name: 'Ng', is_admin: true, encrypted_password: 'Idontknow')
