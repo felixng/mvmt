@@ -42,6 +42,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
+
 # CoffeeScript
 # Not needed in production if precompiling assets
 gem 'coffee-rails'

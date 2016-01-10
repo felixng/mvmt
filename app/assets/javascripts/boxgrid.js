@@ -193,3 +193,33 @@ var Boxgrid = (function() {
 	return { init : init };
 
 })();
+
+$(function(){
+
+
+    $('.rb-grid h3').each(function() {
+        var $name = $(this);
+
+        var divHeight = $name.height();
+        var lineHeight = $name.css('line-height').replace('px', '');
+        var lines = divHeight / lineHeight;
+
+        $name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight)
+
+        //var $numWords = $name.text().split(" ").length;
+
+        if (lines === 2) {
+            $name.addClass("small");
+        }
+        else if (lines === 3) {
+            $name.addClass("smaller");
+        }
+        else if (lines === 4) {
+            $name.addClass("xsmall");
+        }
+        else if (lines > 4) {
+            $name.addClass("xxsmall");
+        }
+    });
+
+});
