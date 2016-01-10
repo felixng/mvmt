@@ -5,7 +5,7 @@
   - @resources.each do |resource|
     %li.rb-span-1{ :class => "icon-#{Category.find(resource.category.first).name.downcase}" }
       %div.brand
-        =image_tag resource.logo.url, :size => "100x100", :class => "logo"
+        =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
       %h3=resource.name
       %span.rb-code=resource.postcode
       - if resource.facebook?
