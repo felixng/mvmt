@@ -28,6 +28,7 @@ gem 'dalli'                     # memcached
 # gem 'schema_plus'             # add better index and foreign key support
 # gem 'jbuilder'
 gem 'paperclip'
+gem 'aws-sdk-v1'
 
 # Assets
 gem 'sass-rails'

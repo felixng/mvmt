@@ -41,6 +41,9 @@ GEM
       multi_json
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
+    aws-sdk-v1 (1.66.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.7)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -374,6 +377,7 @@ DEPENDENCIES
   addressable
   airbrake (~> 3.2.1)
   awesome_print
+  aws-sdk-v1
   bootstrap-sass
   cancancan (~> 1.9)
   capybara-webkit
