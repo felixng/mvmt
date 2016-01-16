@@ -52,7 +52,7 @@ module StarterKit
 
     config.assets.precompile += %w( head )
     config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
-    
+
     config.to_prepare do
       Devise::Mailer.layout Rails.application.config.settings.mail.layout
     end
