@@ -24,6 +24,7 @@
 #= require boxgrid.js
 #= require classie.js
 #= require borderMenu.js
+#= require logo.js
 
 
 

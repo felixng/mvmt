@@ -221,5 +221,4 @@ $(function(){
             $name.addClass("xxsmall");
         }
     });
-
 });

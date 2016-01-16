@@ -71,7 +71,19 @@ a.bt-menu-brand {
   display: block;
   cursor: pointer;
   color: #555;
+}
 
+a.bt-menu-brand.scrolled {
+  background: #555;
+  color: #FFF;
+  border-radius: 25px;
+  padding: 20px;
+  margin-left: -76px;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .bt-menu-brand:hover{
