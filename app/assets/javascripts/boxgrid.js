@@ -195,18 +195,18 @@ var Boxgrid = (function() {
 })();
 
 $(function(){
-
-
     $('.rb-grid h3').each(function() {
         var $name = $(this);
 
         var divHeight = $name.height();
         var lineHeight = $name.css('line-height').replace('px', '');
-        var lines = divHeight / lineHeight;
+        var lines = Math.round(divHeight / lineHeight);
 
-        $name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight)
+        $name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight + " line: " + lines)
 
         //var $numWords = $name.text().split(" ").length;
+
+
 
         if (lines === 2) {
             $name.addClass("small");

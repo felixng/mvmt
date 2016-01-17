@@ -32,6 +32,7 @@
 // Padding to clear fixed nav
 body {
   padding-top: 70px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 // Make sure alerts are nicely formatted
