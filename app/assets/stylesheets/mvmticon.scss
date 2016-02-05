@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'mvmt';
+  src:    font-url('mvmt.eot?za3kt1');
+  src:    font-url('mvmt.eot?za3kt1#iefix') format('embedded-opentype'),
+  font-url('mvmt.ttf?za3kt1') format('truetype'),
+  font-url('mvmt.woff?za3kt1') format('woff'),
+  font-url('mvmt.svg?za3kt1#mvmt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mvmt' !important;
+  font-family: 'mvmt';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  line-height: 1em;
+  margin-left: 0.25em;
+  color: #fff;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-circus:before {
+  content: "\e900";
+}
+.ico-crossfit:before {
+  content: "\e901";
+}
+.ico-parkour:before {
+  content: "\e902";
+}
+.ico-gymnastics:before {
+  content: "\e903";
+}
+.ico-dance:before {
+  content: "\e904";
+}
+
+

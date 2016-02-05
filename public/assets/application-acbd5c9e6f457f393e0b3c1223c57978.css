@@ -8400,7 +8400,7 @@ you can use the generic selector below, but it's slower:
   font-style: normal;
 }
 
-/* line 12, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 12, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: 'ClimaconsRegular';
@@ -8416,67 +8416,67 @@ you can use the generic selector below, but it's slower:
   color: #333;
 }
 
-/* line 26, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 26, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-1:before {
   content: '\0031';
 }
 
 /* '1' */
-/* line 27, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 27, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-2:before {
   content: '\0076';
 }
 
 /* 'v' */
-/* line 28, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 28, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-3:before {
   content: '\0033';
 }
 
 /* '3' */
-/* line 29, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 29, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-4:before {
   content: '\0034';
 }
 
 /* '4' */
-/* line 30, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 30, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-5:before {
   content: '\003B';
 }
 
 /* ';' */
-/* line 31, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 31, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-6:before {
   content: '\006F';
 }
 
 /* 'o' */
-/* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 32, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-7:before {
   content: '\005D';
 }
 
 /* ']' */
-/* line 33, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 33, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-8:before {
   content: '\0078';
 }
 
 /* 'x' */
-/* line 34, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 34, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-9:before {
   content: '\0039';
 }
 
 /* '9' */
-/* line 35, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 35, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-10:before {
   content: '\0030';
 }
 
 /* '0' */
-/* line 36, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/climacons.css.scss */
+/* line 36, /Users/nfelix/Documents/git/mvmt/app/assets/stylesheets/mvmticon.scss */
 .icon-clima-11:before {
   content: '\0070';
 }
