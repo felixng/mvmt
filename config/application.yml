@@ -71,6 +71,7 @@ default_env: &default_env
   S3_BUCKET_NAME: 'mvmt'
   AWS_ACCESS_KEY_ID: 'AKIAJZC7WGDP6T5LSSPA'
   AWS_SECRET_ACCESS_KEY: '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'
+  GOOGLE_ANALYTICS_ID: 'UA-42166600-12'
 
 development:
   <<: *common
