@@ -2,8 +2,8 @@
   %h4.title
     A curated list of studios and schools for people who move.
   %br
-  - @resources.each do |resource|
-    %li.rb-span-1{ :class => "icon-#{Category.find(resource.category.first).name.downcase}" }
+  - @resources.each_with_index do |resource, index|
+    %li{ :class => "icon-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%8 == 0 && index != 24)? 2 : 1}" }
       %div.brand
         =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
       %h3=resource.name
