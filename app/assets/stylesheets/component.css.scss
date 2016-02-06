@@ -77,7 +77,7 @@
 	top: 0;
 	left: 0;
 	line-height: 2.3;
-	opacity: 0.2;
+	opacity: 0.15;
 	text-align: right;
 	pointer-events: none;
 }
@@ -87,14 +87,15 @@
 	font-size: 1em;
 	opacity: 0.5;
     font-weight: 600;
+    line-height: 1.8em;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
-.rb-grid li:hover .rb-code {
-	opacity: 1;
-}
+//.rb-grid li:hover .rb-code {
+//	opacity: 1;
+//}
 
 .rb-overlay {
 	opacity: 0;
