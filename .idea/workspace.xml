@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="869a62eb-79c0-4052-a771-0513dcc2649d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/component.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/component.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/resources/index.html.haml" afterPath="$PROJECT_DIR$/app/views/resources/index.html.haml" />
     </list>
     <ignored path="mvmt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +41,9 @@
       <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <marker date="1454715374000" expanded="true" signature="792:1677" placeholder=".rb-overlay" />
-                <marker date="1454715374000" expanded="true" signature="841:1677" placeholder=".rb-week" />
-              </folding>
+            <state vertical-scroll-proportion="-3.1666667">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,8 +51,8 @@
       <file leaf-file-name="component.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/component.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93119264">
-              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.82568806">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -966,19 +964,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <marker date="1454715374000" expanded="true" signature="792:1677" placeholder=".rb-overlay" />
-            <marker date="1454715374000" expanded="true" signature="841:1677" placeholder=".rb-week" />
-          </folding>
+        <state vertical-scroll-proportion="-3.1666667">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/component.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93119264">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.82568806">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding />
         </state>
       </provider>
