@@ -201,12 +201,7 @@ $(function(){
         var divHeight = $name.height();
         var lineHeight = $name.css('line-height').replace('px', '');
         var lines = Math.round(divHeight / lineHeight);
-
-        $name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight + " line: " + lines)
-
-        //var $numWords = $name.text().split(" ").length;
-
-
+        //$name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight + " line: " + lines)
 
         if (lines === 2) {
             $name.addClass("small");

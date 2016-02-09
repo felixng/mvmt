@@ -9,10 +9,18 @@
   font-style: normal;
 }
 
-[class^="ico-"], [class*=" ico-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
   font-family: 'mvmt' !important;
-  font-family: 'mvmt';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+}
+
+[class^="ico-"], [class*=" ico-"] {
   font-style: normal;
   font-weight: normal;
   speak: none;
