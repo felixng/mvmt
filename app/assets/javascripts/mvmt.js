@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 var app = angular.module('mvmt', []);
 //
 //app.controller('CategoryController', function() {
