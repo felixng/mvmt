@@ -5,6 +5,7 @@ class ResourcesController < ApplicationController
 
   def index
     @resources = Resource.where(:approved => true).shuffle
+    @categories = Category.all
   end
 
   def show
