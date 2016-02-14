@@ -1,0 +1,10 @@
+= simple_form_for(@product) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :id
+    = f.input :name
+    = f.input :slug
+
+  .form-actions
+    = f.button :submit
