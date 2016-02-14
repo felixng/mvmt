@@ -100,6 +100,16 @@ ALTER SEQUENCE categories_id_seq OWNED BY categories.id;
 
 
 --
+-- Name: categories_products; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE categories_products (
+    product_id integer NOT NULL,
+    category_id integer NOT NULL
+);
+
+
+--
 -- Name: categories_resources; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -130,7 +140,11 @@ CREATE TABLE products (
     name character varying(255),
     slug character varying(255),
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    image_file_name character varying(255),
+    image_content_type character varying(255),
+    image_file_size integer,
+    image_updated_at timestamp without time zone
 );
 
 
@@ -478,4 +492,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160102003307');
 INSERT INTO schema_migrations (version) VALUES ('20160109162917');
 
 INSERT INTO schema_migrations (version) VALUES ('20160214224737');
+
+INSERT INTO schema_migrations (version) VALUES ('20160214232453');
 
