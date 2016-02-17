@@ -42,7 +42,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
-
+gem 'bower-rails'
 
 # CoffeeScript
 # Not needed in production if precompiling assets
