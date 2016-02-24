@@ -1,7 +1,7 @@
 %ul#rb-grid.rb-grid.clearfix
   %h4.title
     A curated list of studios and schools for people who move.
-  .category-menu
+  .category-menu{"ng-controller"=>"CategoryController as categoryController"}
     - @categories.each_with_index do |cat, index|
       %a.category-select #{cat.name}
   %br
