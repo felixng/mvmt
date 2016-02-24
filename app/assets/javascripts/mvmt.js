@@ -1,4 +1,8 @@
 var app = angular.module('mvmt', []);
+
+$(document).on('ready page:load', ->
+  angular.bootstrap(document, ['mvmt'])
+)
 //
 //app.controller('CategoryController', function() {
 //    var catMenu = this;
