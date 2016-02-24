@@ -1,11 +1,9 @@
 %ul#rb-grid.rb-grid.clearfix
   %h4.title
     A curated list of studios and schools for people who move.
-  .category-menu{"ng-controller"=>"TestCtrl"}
+  .category-menu{"ng-controller"=>"CategoryController"}
     - @categories.each_with_index do |cat, index|
       %a.category-select #{cat.name}
-  %div
-    %button{"ng-click"=>"alertMe()"} Click Me
   %br
   - @resources.each_with_index do |resource, index|
     %li{ :class => "ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}" }

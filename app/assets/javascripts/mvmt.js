@@ -6,11 +6,11 @@ $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
   console.log('bootstrapped');
 });
-
-angular.module('mvmt', [])
-.config(["$httpProvider", function(provider) {
-  provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
-}]);
+//
+//angular.module('mvmt', [])
+//.config(["$httpProvider", function(provider) {
+//  provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+//}]);
 
 app.controller('CategoryController', function() {
    var catMenu = this;
@@ -29,8 +29,3 @@ app.controller('CategoryController', function() {
    }
 });
 
-app.controller('TestCtrl',['$scope', function($scope) {
-	$scope.alertMe = function(arguments) {
-		alert('you\'re a genius!');
-	};
-}
