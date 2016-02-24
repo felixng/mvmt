@@ -7,6 +7,11 @@ $(document).on('ready page:load', function(arguments) {
   console.log('bootstrapped');
 });
 
+angular.module('mvmt', [])
+.config(["$httpProvider", function(provider) {
+  provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+}]);
+
 app.controller('CategoryController', function() {
    var catMenu = this;
    catMenu.filters = { };
@@ -23,3 +28,9 @@ app.controller('CategoryController', function() {
        }
    }
 });
+
+app.controller('TestCtrl',['$scope', function($scope) {
+	$scope.alertMe = function(arguments) {
+		alert('you\'re a genius!');
+	};
+}
