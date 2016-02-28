@@ -4,30 +4,33 @@ var app = angular.module('mvmt', []);
 // and removes the need for ng-app in the DOM
 $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
-  console.log('bootstrapped');
 });
-//
-//angular.module('mvmt', [])
-//.config(["$httpProvider", function(provider) {
-//  provider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
-//}]);
 
-app.controller('CategoryController',['$window', '$scope',
-    function ($window, $scope) {
+app.controller('CategoryController',['$window', '$scope', '$rootScope',
+    function ($window, $scope, $rootScope) {
         var catMenu = this;
-        $scope.filters = [];
-        console.log('CategoryController hooked');
+        $rootScope.filters = [];
 
-        $scope.addToFilter = function(category){
-            console.log($scope.filters);
-            var index = $scope.filters.indexOf(category)
+        $scope.updateFilter = function(category){
+            
+            var index = $rootScope.filters.indexOf(category);
+
             if (index > -1){
-                $scope.filters.splice(index, 1, category);
+                console.log(index);
+                $rootScope.filters.splice(index, 1);
             }
             else {
-                $scope.filters.splice(index, 0, category);
+                $rootScope.filters.splice(index, 0, category);
             }
+            console.log($rootScope.filters);
+        }
+
+        $scope.inList = function(category){
+            if ($rootScope.filters.length == 0)
+                return true;
+            else return ($rootScope.filters.indexOf(category) > -1);
         }
     }
 ]);
+
 
