@@ -8,9 +8,21 @@ h4.title{
 .category-select{
   width: 120px;
   display: inline-block;
+
 }
 
 .category-menu{
   width: 100%;
   line-height: 3em;
+}
+
+a.category-select{
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+a.category-select :hover{
+  cursor: pointer;
 }
