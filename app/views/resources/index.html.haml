@@ -1,56 +1,58 @@
-%ul#rb-grid.rb-grid.clearfix{"ng-controller"=>"CategoryController as categoryController"}
+%div.home{"ng-controller"=>"CategoryController as categoryController"}
   %h4.title
     A curated list of studios and schools for people who move.
-  .category-menu
-    - @categories.each_with_index do |cat, updateFilter|
-      %a.category-select{"ng-init" => "updateFilter('#{cat.name.downcase}');", "ng-click" => "updateFilter('#{cat.name.downcase}');"} #{cat.name}
-  %br
-  - @resources.each_with_index do |resource, index|
-    %li{ :class => "#{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')"}
-      %div.brand
-        =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
-      %h3=resource.name
-      %span.rb-code=resource.postcode
-      - if resource.facebook?
-        %a.fa.fa-facebook{:href => "http://www.facebook.com/" + resource.facebook}
-      - if resource.twitter?
-        %a.fa.fa-twitter{:href => "http://www.twitter.com/" + resource.twitter }
-      - if resource.instagram?
-        %a.fa.fa-instagram{:href => "http://www.instagram.com/" + resource.instagram}
-      -#.rb-overlay
-      -#  %span.rb-close close
-      -#  .rb-week
-      -#    %div
-      -#      %span.rb-city=resource.name
-      -#      %span.icon-logo
-      -#        =image_tag resource.logo.url, :size => "300x300", :class => "logo"
-      -#      %span 21°C
-      -#    %div
-      -#      %span Mon
-      -#      %span.icon-dance
-      -#      %span 19°C
-      -#    %div
-      -#      %span Tue
-      -#      %span.icon-gymnastics
-      -#      %span 19°C
-      -#    %div
-      -#      %span Wed
-      -#      %span.icon-crossfit
-      -#      %span 18°C
-      -#    %div
-      -#      %span Thu
-      -#      %span.icon-clima-2
-      -#      %span 17°C
-      -#    %div
-      -#      %span Fri
-      -#      %span.icon-clima-2
-      -#      %span 10°C
-      -#    %div
-      -#      %span Sat
-      -#      %span.icon-clima-2
-      -#      %span 10°C
-      -#    %div
-      -#      %span Sun
-      -#      %span.icon-clima-2
-      -#      %span 12°C
+  %nav.category-menu.menu.menu--trinculo
+    %ul.menu__list
+      - @categories.each_with_index do |cat, updateFilter|
+        %li.menu__item.menu__item--current{"ng-init" => "updateFilter('#{cat.name.downcase}');"}
+          %a.menu__link{"ng-click" => "updateFilter('#{cat.name.downcase}');"} #{cat.name}
+  %ul#rb-grid.rb-grid.clearfix
+    - @resources.each_with_index do |resource, index|
+      %li{ :class => "#{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "show('#{Category.find(resource.category.first).name.downcase}')"}
+        %div.brand
+          =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
+        %h3=resource.name
+        %span.rb-code=resource.postcode
+        - if resource.facebook?
+          %a.fa.fa-facebook{:href => "http://www.facebook.com/" + resource.facebook}
+        - if resource.twitter?
+          %a.fa.fa-twitter{:href => "http://www.twitter.com/" + resource.twitter }
+        - if resource.instagram?
+          %a.fa.fa-instagram{:href => "http://www.instagram.com/" + resource.instagram}
+        -#.rb-overlay
+        -#  %span.rb-close close
+        -#  .rb-week
+        -#    %div
+        -#      %span.rb-city=resource.name
+        -#      %span.icon-logo
+        -#        =image_tag resource.logo.url, :size => "300x300", :class => "logo"
+        -#      %span 21°C
+        -#    %div
+        -#      %span Mon
+        -#      %span.icon-dance
+        -#      %span 19°C
+        -#    %div
+        -#      %span Tue
+        -#      %span.icon-gymnastics
+        -#      %span 19°C
+        -#    %div
+        -#      %span Wed
+        -#      %span.icon-crossfit
+        -#      %span 18°C
+        -#    %div
+        -#      %span Thu
+        -#      %span.icon-clima-2
+        -#      %span 17°C
+        -#    %div
+        -#      %span Fri
+        -#      %span.icon-clima-2
+        -#      %span 10°C
+        -#    %div
+        -#      %span Sat
+        -#      %span.icon-clima-2
+        -#      %span 10°C
+        -#    %div
+        -#      %span Sun
+        -#      %span.icon-clima-2
+        -#      %span 12°C
 

@@ -9,6 +9,7 @@ $(document).on('ready page:load', function(arguments) {
 app.controller('CategoryController',['$window', '$scope', '$rootScope',
     function ($window, $scope, $rootScope) {
         var catMenu = this;
+        console.log($rootScope.filters);
         $rootScope.filters = [];
 
         $scope.updateFilter = function(category){
@@ -16,7 +17,7 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope',
             var index = $rootScope.filters.indexOf(category);
 
             if (index > -1){
-                console.log(index);
+                //console.log(index);
                 $rootScope.filters.splice(index, 1);
             }
             else {
@@ -25,10 +26,16 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope',
             console.log($rootScope.filters);
         }
 
-        $scope.inList = function(category){
+        $scope.show = function(category){
             if ($rootScope.filters.length == 0)
                 return true;
             else return ($rootScope.filters.indexOf(category) > -1);
+        }
+
+        $scope.inFilter = function(category){
+            console.log($rootScope.filters);
+            if ($rootScope != undefined || $rootScope.filters != undefined)
+                return ($rootScope.filters.indexOf(category) > -1);
         }
     }
 ]);
