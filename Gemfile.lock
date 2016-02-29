@@ -156,6 +156,8 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     memcachier (0.0.2)
+    meta-tags (2.1.0)
+      actionpack (>= 3.0.0)
     method_source (0.8.2)
     mime-types (2.99)
     mimemagic (0.3.0)
@@ -396,6 +398,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   memcachier
+  meta-tags
   minitest
   newrelic_rpm
   nprogress-rails

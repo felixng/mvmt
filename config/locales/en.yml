@@ -27,6 +27,10 @@
 en:
   brand:
     name: 'MVMT'
+    url: 'https://mvmt.io/'
+    desc: 'Discover yourself through movement.'
+    title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
+    keywords: 'London Movement, London Gymnastics, London Circus, London Parkour, London Free Running, London Dance, London Crossfit'
 
   emails:
     welcome:

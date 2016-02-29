@@ -30,6 +30,7 @@ gem 'dalli'                     # memcached
 gem 'paperclip'
 gem 'aws-sdk-v1'
 
+
 # Assets
 gem 'sass-rails'
 gem 'haml-rails'
@@ -83,6 +84,7 @@ gem 'addressable'
 gem 'settingslogic'
 gem 'sprig'
 gem 'sprig-reap'
+gem 'meta-tags', :require => 'meta_tags'
 
 group :development do
   # Docs
