@@ -145,13 +145,20 @@
 	width: 100%;
 	height: 100%;
 }
-
 .rb-week > div {
-	width: 10%;
-	height: 100%;
-	float: left;
-	position: relative;
-	padding: 3% 0;
+  height: 100%;
+  float: left;
+  position: relative;
+  padding: 3% 0;
+}
+
+.rb-week .map {
+  width: 40%;
+  padding: 0;
+}
+
+.rb-week .sponsor {
+  width: 30%;
 }
 
 .rb-week > div:first-child {
@@ -170,9 +177,9 @@
 }
 
 .rb-week span.rb-city {
-	font-weight: 700;
+	font-weight: 600;
 	padding: 1% 10%;
-	font-size: 1em;
+	font-size: 0.75em;
 	line-height: 1.2;
 }
 
