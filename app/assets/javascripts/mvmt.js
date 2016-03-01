@@ -6,9 +6,10 @@ $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
 });
 
-app.controller('CategoryController',['$window', '$scope', '$rootScope',
-    function ($window, $scope, $rootScope) {
+app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
+    function ($window, $scope, $rootScope, $sce) {
         var catMenu = this;
+        $rootScope.mapUrl = '';
         $rootScope.filters = [];
 
         $scope.updateFilter = function(category){
@@ -30,6 +31,11 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope',
                 return true;
             else return ($rootScope.filters.indexOf(category) > -1);
         }
+
+        $scope.getMapUrl = function(url){
+            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
+        }
+
     }
 ]);
 

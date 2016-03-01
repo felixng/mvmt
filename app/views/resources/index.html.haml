@@ -7,7 +7,7 @@
   %br
   - @resources.each_with_index do |resource, index|
     %li{ :class => "#{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')"}
-      %div.brand
+      %div.brand{"ng-click"=>"map#{resource.__id__} = getMapUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4')"}
         =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
       %h3=resource.name
       %span.rb-code=resource.postcode
@@ -26,7 +26,7 @@
               =image_tag resource.logo.url, :size => "300x300", :class => "logo"
             %span 21°C
           %div.map
-            %iframe{:src => "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+            %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
           %div.sponsor
             %span Tue
             %span.icon-gymnastics
