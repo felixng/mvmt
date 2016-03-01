@@ -8,7 +8,7 @@ class ResourcesController < ApplicationController
     set_meta_tags description: 'Discover yourself through movement.'
     set_meta_tags keywords: %w[London Movement, London Gymnastics, London Circus, London Parkour, London Free Running, London Dance, London Crossfit]
     set_meta_tags canonical: 'https://mvmt.io/'
-    
+
     set_meta_tags og: {
                       sitename: 'MVMT',
                       title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
