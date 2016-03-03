@@ -17,7 +17,6 @@ div.heading{
 }
 
 .category-menu{
-  width: 100%;
   line-height: 3em;
 }
 
@@ -53,7 +52,7 @@ a.category-select :hover{
 }
 
 .menu__item {
-  display: block;
+  display: inline-block;
   width: 120px;
   margin: 1em 0;
 }
@@ -2541,6 +2540,14 @@ a.category-select :hover{
 
 /* [Your styles here]*/
 
+nav.menu--trinculo{
+  text-align:center;
+}
+
+.menu__list{
+  display: inline-block;
+}
+
 /* End: Name Styles */
 
 
@@ -2548,7 +2555,7 @@ a.category-select :hover{
 
 /* Stack items for smaller screens */
 @media screen and (max-width:55em) {
-  .menu__list {
+  .menu__list{
     display: block;
     margin: 0 auto;
   }
