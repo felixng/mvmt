@@ -6,10 +6,12 @@ $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
 });
 
-app.controller('CategoryController',['$window', '$scope', '$rootScope',
-    function ($window, $scope, $rootScope) {
+app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
+    function ($window, $scope, $rootScope, $sce) {
         var catMenu = this;
         console.log($rootScope.filters);
+        $rootScope.mapUrl = '';
+
         $rootScope.filters = [];
 
         $scope.updateFilter = function(category){
@@ -17,7 +19,7 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope',
             var index = $rootScope.filters.indexOf(category);
 
             if (index > -1){
-                //console.log(index);
+                console.log(index);
                 $rootScope.filters.splice(index, 1);
             }
             else {
@@ -32,11 +34,21 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope',
             else return ($rootScope.filters.indexOf(category) > -1);
         }
 
-        $scope.inFilter = function(category){
-            console.log($rootScope.filters);
+        $scope.inList = function(category){
             if ($rootScope != undefined || $rootScope.filters != undefined)
                 return ($rootScope.filters.indexOf(category) > -1);
         }
+        $scope.getMapUrl = function(url){
+            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
+        }
+
+        $scope.reapplySpan = function(){
+            //
+            // foreach li in the list, remove span class.
+            // if the calculation is right (with running count, not index), and cat is in filters, then apply span class.
+            //
+        }
+
     }
 ]);
 
