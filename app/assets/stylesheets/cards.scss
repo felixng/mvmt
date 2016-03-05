@@ -60,3 +60,14 @@
   border-color: transparent;
   background-color: #ffffff;
 }
+
+.ng-hide-remove {
+  -webkit-animation: bounceIn 2.5s;
+  animation: bounceIn 2.5s;
+}
+
+.ng-hide-add {
+  -webkit-animation: flipOutX 2.5s;
+  animation: flipOutX 2.5s;
+  display: block !important;
+}

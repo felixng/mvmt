@@ -8,7 +8,7 @@
           %a.menu__link{"ng-click" => "updateFilter('#{cat.name.downcase}');"} #{cat.name}
   %ul#rb-grid.rb-grid.clearfix
     - @resources.each_with_index do |resource, index|
-      %li{ :class => "#{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')"}
+      %li{ :class => "animated #{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')"}
         %div.brand{"ng-click"=>"map#{resource.__id__} = getMapUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4')"}
           =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
         %h3=resource.name
