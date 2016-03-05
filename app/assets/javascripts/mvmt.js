@@ -9,7 +9,7 @@ $(document).on('ready page:load', function(arguments) {
 app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
     function ($window, $scope, $rootScope, $sce) {
         var catMenu = this;
-        console.log($rootScope.filters);
+
         $rootScope.mapUrl = '';
 
         $rootScope.filters = [];
@@ -25,7 +25,6 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
             else {
                 $rootScope.filters.splice(index, 0, category);
             }
-            console.log($rootScope.filters);
         }
 
         $scope.addCurrentClass = function(category){
