@@ -28,10 +28,11 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
             console.log($rootScope.filters);
         }
 
-        $scope.show = function(category){
-            if ($rootScope.filters.length == 0)
-                return true;
-            else return ($rootScope.filters.indexOf(category) > -1);
+        $scope.addCurrentClass = function(category){
+            if (($rootScope != undefined || $rootScope.filters != undefined) && ($rootScope.filters.indexOf(category) > -1))
+                return 'menu__item--current';
+            else
+                return '';
         }
 
         $scope.inList = function(category){

@@ -4,7 +4,7 @@
   %nav.category-menu.menu.menu--trinculo
     %ul.menu__list
       - @categories.each_with_index do |cat, updateFilter|
-        %li.menu__item.menu__item--current{"ng-init" => "updateFilter('#{cat.name.downcase}');"}
+        %li.menu__item{"ng-init" => "updateFilter('#{cat.name.downcase}');", "ng-class" => "addCurrentClass('#{cat.name.downcase}')"}
           %a.menu__link{"ng-click" => "updateFilter('#{cat.name.downcase}');"} #{cat.name}
   %ul#rb-grid.rb-grid.clearfix
     - @resources.each_with_index do |resource, index|
