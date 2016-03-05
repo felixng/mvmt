@@ -31,8 +31,6 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
         $scope.addCurrentClass = function(category){
             if (($rootScope != undefined || $rootScope.filters != undefined) && ($rootScope.filters.indexOf(category) > -1))
                 return 'menu__item--current';
-            else
-                return '';
         }
 
         $scope.inList = function(category){
