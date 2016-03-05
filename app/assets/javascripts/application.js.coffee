@@ -24,6 +24,8 @@
 #= require boxgrid.js
 #= require classie.js
 #= require borderMenu.js
+#= require clipboard.min.js
+#= require categoryMenu.js
 #= require mvmt.js
 #= require logo.js
 
