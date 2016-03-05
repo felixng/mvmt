@@ -30,6 +30,83 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- Name: ad_types; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE ad_types (
+    id integer NOT NULL,
+    name character varying(255),
+    height integer,
+    width integer,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: ad_types_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE ad_types_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: ad_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE ad_types_id_seq OWNED BY ad_types.id;
+
+
+--
+-- Name: affiliates; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE affiliates (
+    id integer NOT NULL,
+    name character varying(255),
+    adv text,
+    display_count integer,
+    view_count integer,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: affiliates_categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE affiliates_categories (
+    affiliate_id integer NOT NULL,
+    category_id integer NOT NULL
+);
+
+
+--
+-- Name: affiliates_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE affiliates_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: affiliates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE affiliates_id_seq OWNED BY affiliates.id;
+
+
+--
 -- Name: authentications; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -309,6 +386,20 @@ ALTER SEQUENCE users_id_seq OWNED BY users.id;
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY ad_types ALTER COLUMN id SET DEFAULT nextval('ad_types_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY affiliates ALTER COLUMN id SET DEFAULT nextval('affiliates_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY authentications ALTER COLUMN id SET DEFAULT nextval('authentications_id_seq'::regclass);
 
 
@@ -345,6 +436,22 @@ ALTER TABLE ONLY resources ALTER COLUMN id SET DEFAULT nextval('resources_id_seq
 --
 
 ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regclass);
+
+
+--
+-- Name: ad_types_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY ad_types
+    ADD CONSTRAINT ad_types_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: affiliates_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY affiliates
+    ADD CONSTRAINT affiliates_pkey PRIMARY KEY (id);
 
 
 --
@@ -494,4 +601,10 @@ INSERT INTO schema_migrations (version) VALUES ('20160109162917');
 INSERT INTO schema_migrations (version) VALUES ('20160214224737');
 
 INSERT INTO schema_migrations (version) VALUES ('20160214232453');
+
+INSERT INTO schema_migrations (version) VALUES ('20160305123754');
+
+INSERT INTO schema_migrations (version) VALUES ('20160305124212');
+
+INSERT INTO schema_migrations (version) VALUES ('20160305130026');
 

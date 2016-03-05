@@ -1,0 +1,25 @@
+%h1 Listing affiliates
+
+%table
+  %tr
+    %th Name
+    %th Adv
+    %th Display count
+    %th View count
+    %th
+    %th
+    %th
+
+  - @affiliates.each do |affiliate|
+    %tr
+      %td= affiliate.name
+      %td= affiliate.adv
+      %td= affiliate.display_count
+      %td= affiliate.view_count
+      %td= link_to 'Show', affiliate
+      %td= link_to 'Edit', edit_affiliate_path(affiliate)
+      %td= link_to 'Destroy', affiliate, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Affiliate', new_affiliate_path

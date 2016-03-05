@@ -1,0 +1,23 @@
+%h1 Listing ad_types
+
+%table
+  %tr
+    %th Name
+    %th Height
+    %th Width
+    %th
+    %th
+    %th
+
+  - @ad_types.each do |ad_type|
+    %tr
+      %td= ad_type.name
+      %td= ad_type.height
+      %td= ad_type.width
+      %td= link_to 'Show', ad_type
+      %td= link_to 'Edit', edit_ad_type_path(ad_type)
+      %td= link_to 'Destroy', ad_type, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Ad type', new_ad_type_path

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @ad_type.name
+%p
+  %b Height:
+  = @ad_type.height
+%p
+  %b Width:
+  = @ad_type.width
+
+= link_to 'Edit', edit_ad_type_path(@ad_type)
+\|
+= link_to 'Back', ad_types_path

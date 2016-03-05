@@ -1,0 +1,11 @@
+= simple_form_for(@affiliate) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :adv
+    = f.input :display_count
+    = f.input :view_count
+
+  .form-actions
+    = f.button :submit
