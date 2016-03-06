@@ -1,3 +1,3 @@
 class AdType < ActiveRecord::Base
-    has_many :affiliates
+  has_many :affiliates
 end

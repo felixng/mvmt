@@ -74,7 +74,7 @@ CREATE TABLE affiliates (
     view_count integer,
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
-    ad_types_id integer
+    ad_type_id integer
 );
 
 
@@ -504,10 +504,10 @@ ALTER TABLE ONLY users
 
 
 --
--- Name: index_affiliates_on_ad_types_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+-- Name: index_affiliates_on_ad_type_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE INDEX index_affiliates_on_ad_types_id ON affiliates USING btree (ad_types_id);
+CREATE INDEX index_affiliates_on_ad_type_id ON affiliates USING btree (ad_type_id);
 
 
 --
