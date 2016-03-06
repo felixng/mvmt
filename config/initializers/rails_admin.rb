@@ -52,7 +52,7 @@ if defined? RailsAdmin
 
     # Exclude specific models (keep the others):
     # config.excluded_models = ['Authentication', 'User']
-    config.excluded_models = ['OauthCache']
+    config.excluded_models = ['OauthCache', 'Authentication', 'User']
 
     # Include specific models (exclude the others):
     # config.included_models = ['Authentication', 'User']
@@ -101,6 +101,56 @@ if defined? RailsAdmin
     #     configure :image_url, :string
     #     configure :created_at, :datetime
     #     configure :updated_at, :datetime
+
+    config.model 'Affiliate' do
+      include_all_fields
+      exclude_fields :display_count, :view_count, :created_at, :updated_at
+
+      field :adv do
+        pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
+          value.html_safe
+        end
+      end
+    end
+
+    config.model 'Category' do
+      include_all_fields
+      exclude_fields :created_at, :updated_at
+    end
+
+    config.model 'AdType' do
+      include_all_fields
+      exclude_fields :created_at, :updated_at
+    end
+
+    config.model 'Product' do
+      include_all_fields
+      exclude_fields :created_at, :updated_at
+    end
+
+    config.model 'Resource' do
+      include_all_fields
+      exclude_fields :created_at, :updated_at
+    end
+
+    # config.model 'Team'  do
+    #   list do
+    #     field :name do
+    #       formatted_value do # used in form views
+    #         value.to_s.upcase
+    #       end
+    #
+    #       pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
+    #         value.titleize
+    #       end
+    #
+    #       export_value do
+    #         value.camelize # used in exports, where no html/data is allowed
+    #       end
+    #     end
+    #     field :created_at
+    #   end
+    # end
 
     #   # Cross-section configuration:
 
