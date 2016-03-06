@@ -17,8 +17,13 @@ class ResourcesController < ApplicationController
                       type: 'website',
                       url:      'https://mvmt.io',
                   }
+
     @resources = Resource.where(:approved => true).shuffle
     @categories = Category.all
+
+    @affiliate = Affiliate.first()
+    @affiliate.display_count = @affiliate.display_count + 1
+    @affiliate.save()
   end
 
   def show

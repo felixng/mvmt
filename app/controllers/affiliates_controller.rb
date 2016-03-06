@@ -34,6 +34,11 @@ class AffiliatesController < ApplicationController
     respond_with(@affiliate)
   end
 
+  def random
+    @affiliate = Affiliate.find(params[:id])
+    respond_with(@affiliate)
+  end
+
   private
     def set_affiliate
       @affiliate = Affiliate.find(params[:id])
@@ -42,4 +47,5 @@ class AffiliatesController < ApplicationController
     def affiliate_params
       params.require(:affiliate).permit(:name, :adv, :display_count, :view_count)
     end
+
 end

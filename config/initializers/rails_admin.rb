@@ -52,7 +52,7 @@ if defined? RailsAdmin
 
     # Exclude specific models (keep the others):
     # config.excluded_models = ['Authentication', 'User']
-    config.excluded_models = ['OauthCache', 'Authentication', 'User']
+    config.excluded_models = ['OauthCache', 'Authentication', 'User', 'Category', 'AdType']
 
     # Include specific models (exclude the others):
     # config.included_models = ['Authentication', 'User']
@@ -104,23 +104,17 @@ if defined? RailsAdmin
 
     config.model 'Affiliate' do
       include_all_fields
-      exclude_fields :display_count, :view_count, :created_at, :updated_at
+      exclude_fields :created_at, :updated_at
+
+      edit do
+        exclude_fields :display_count, :view_count
+      end
 
       field :adv do
         pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
           value.html_safe
         end
       end
-    end
-
-    config.model 'Category' do
-      include_all_fields
-      exclude_fields :created_at, :updated_at
-    end
-
-    config.model 'AdType' do
-      include_all_fields
-      exclude_fields :created_at, :updated_at
     end
 
     config.model 'Product' do
