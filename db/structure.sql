@@ -73,7 +73,8 @@ CREATE TABLE affiliates (
     display_count integer,
     view_count integer,
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    ad_types_id integer
 );
 
 
@@ -503,6 +504,13 @@ ALTER TABLE ONLY users
 
 
 --
+-- Name: index_affiliates_on_ad_types_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_affiliates_on_ad_types_id ON affiliates USING btree (ad_types_id);
+
+
+--
 -- Name: index_authentications_on_provider; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -607,4 +615,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160305123754');
 INSERT INTO schema_migrations (version) VALUES ('20160305124212');
 
 INSERT INTO schema_migrations (version) VALUES ('20160305130026');
+
+INSERT INTO schema_migrations (version) VALUES ('20160305132153');
 
