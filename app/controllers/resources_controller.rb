@@ -22,8 +22,12 @@ class ResourcesController < ApplicationController
     @categories = Category.all
 
     @affiliate = Affiliate.first()
-    @affiliate.display_count = @affiliate.display_count + 1
-    @affiliate.save()
+
+    if @affiliate
+      @affiliate.display_count = @affiliate.display_count + 1
+      @affiliate.save()
+    end
+
   end
 
   def show

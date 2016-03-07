@@ -52,7 +52,7 @@ if defined? RailsAdmin
 
     # Exclude specific models (keep the others):
     # config.excluded_models = ['Authentication', 'User']
-    config.excluded_models = ['OauthCache', 'Authentication', 'User', 'Category', 'AdType']
+    config.excluded_models = ['OauthCache', 'Authentication', 'User']
 
     # Include specific models (exclude the others):
     # config.included_models = ['Authentication', 'User']
