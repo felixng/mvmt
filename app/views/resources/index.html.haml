@@ -34,7 +34,7 @@
               %span.icon-gymnastics
               %span 19°C
   %footer
-    - if @affiliate.adv?
+    - if @affiliate && @affiliate.adv
       #{raw @affiliate.adv}
 - content_for :on_ready do
   Boxgrid.init();
