@@ -1,21 +1,14 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @resource.name
-%p
-  %b Logo:
-  = @resource.logo
-%p
-  %b Website:
-  = @resource.website
-%p
-  %b Affilatelink:
-  = @resource.affilatelink
-%p
-  %b Affiliate:
-  = @resource.affiliate
-
-= link_to 'Edit', edit_resource_path(@resource)
-\|
-= link_to 'Back', resources_path
+.rb-overlay
+  %span.rb-close close
+  .rb-week
+    %div
+      %span.rb-city=resource.name
+      %span.icon-logo
+        =image_tag resource.logo.url, :size => "300x300", :class => "logo"
+      %p=resource.desc
+    %div.map
+      %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+    %div.sponsor
+      %span Tue
+      %span.icon-gymnastics
+      %span 19°C

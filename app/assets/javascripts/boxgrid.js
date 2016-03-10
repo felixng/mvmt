@@ -63,7 +63,7 @@ var Boxgrid = (function() {
 
 	function init( options ) {		
 		// apply fittext plugin
-		$items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
+		//$items.find( 'div.rb-week > div span' ).fitText( 1 ).end().find( 'span.rb-city' ).fitText( 0.6 );
 		initEvents();
 	}
 
@@ -76,7 +76,6 @@ var Boxgrid = (function() {
 				$overlay = $item.children( 'div.rb-overlay' );
 
 			$item.on( 'click', function() {
-
 				if( $item.data( 'isExpanded' ) ) {
 					return false;
 				}
@@ -166,7 +165,8 @@ var Boxgrid = (function() {
 
 	}
 
-	function getItemLayoutProp( $item ) {
+
+    function getItemLayoutProp( $item ) {
 		
 		var scrollT = $window.scrollTop(),
 			scrollL = $window.scrollLeft(),
@@ -194,14 +194,34 @@ var Boxgrid = (function() {
 
 })();
 
-$(function(){
-    $('.rb-grid h3').each(function() {
+function fitFontText(ele){
+        var $name = $(ele);
+        console.log('test');
+        var divHeight = $name.height();
+        var lineHeight = $name.css('line-height').replace('px', '');
+        var lines = Math.round(divHeight / lineHeight);
+        console.log(divHeight + ":" + lineHeight +  ":" + lines);
+        if (lines === 2) {
+            $name.fitText(0.4);
+        }
+        else if (lines === 3) {
+            $name.find(ele).fitText(0.5);
+        }
+        else if (lines === 4) {
+            $name.find(ele).fitText(0.6);
+        }
+        else if (lines > 4) {
+            $name.find(ele).fitText(0.7);
+        }
+}
+
+function resizeFont(ele){
+    $(ele).each(function() {
         var $name = $(this);
 
         var divHeight = $name.height();
         var lineHeight = $name.css('line-height').replace('px', '');
         var lines = Math.round(divHeight / lineHeight);
-        //$name.addClass("divHeight:" + divHeight + " lineHeight:" + lineHeight + " line: " + lines)
 
         if (lines === 2) {
             $name.addClass("small");
@@ -216,6 +236,12 @@ $(function(){
             $name.addClass("xxsmall");
         }
     });
+}
+
+$(function(){
+    resizeFont('.rb-grid h3');
+    fitFontText('.rb-city');
+    $('.category-menu').flowtype({
+        fontRatio : 70
+    });
 });
-
-

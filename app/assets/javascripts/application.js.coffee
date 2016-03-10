@@ -28,6 +28,7 @@
 #= require categoryMenu.js
 #= require mvmt.js
 #= require logo.js
+#= require flowtype.js
 
 # Add error class to .avatar images if they fail to load
 # See avatar.scss and _avatar.html.haml

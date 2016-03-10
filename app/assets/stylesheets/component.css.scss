@@ -18,7 +18,7 @@
 	width: 24%;
 	height: 15em;
 	margin: 0.5%;
-	background: #8CC7DF;
+	background-color: #8CC7DF;
 	color: #fff;
 	display: block;
 	float: left;
@@ -176,10 +176,10 @@
 	line-height: 0.8;
 }
 
-.rb-week span.rb-city {
-	font-weight: 600;
+.rb-week div.rb-city {
+    font-weight: 300;
 	padding: 1% 10%;
-	font-size: 0.75em;
+	font-size: 4em;
 	line-height: 1.2;
 }
 
@@ -192,120 +192,125 @@
 	opacity: 0.5;
 }
 
+div.basic{
+  background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+  padding: 20px;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 /* Colors */
 
 /* Grid */
-.rb-grid li.ico-dance { background: #3399CC; }
-//.rb-grid li.ico-parkour { background: #33CCCC; }
-//.rb-grid li:nth-child(3) { background: #996699; }
-.rb-grid li.ico-circus { background: #C24747; }
-//.rb-grid li.ico-parkour { background: #e2674a; }
-.rb-grid li.ico-crossfit { background: #FFCC66; }
-//.rb-grid li.ico-parkour { background: #99CC99; }
-//.rb-grid liico-parkour { background: #669999; }
-.rb-grid li.ico-gymnastics { background: #CC6699; }
-//.rb-grid li.ico-parkour { background: #339966; }
-.rb-grid li.ico-parkour { background: #666699; }
+.rb-grid li.ico-dance { background-color: #3399CC; }
+//.rb-grid li.ico-parkour { background-color: #33CCCC; }
+//.rb-grid li:nth-child(3) { background-color: #996699; }
+.rb-grid li.ico-circus { background-color: #C24747; }
+//.rb-grid li.ico-parkour { background-color: #e2674a; }
+.rb-grid li.ico-crossfit { background-color: #FFCC66; }
+//.rb-grid li.ico-parkour { background-color: #99CC99; }
+//.rb-grid liico-parkour { background-color: #669999; }
+.rb-grid li.ico-gymnastics { background-color: #CC6699; }
+//.rb-grid li.ico-parkour { background-color: #339966; }
+.rb-grid li.ico-parkour { background-color: #666699; }
 
 /* Overlay Columns */
-.rb-grid li.ico-dance .rb-week > div:nth-child(1) { background: #3399CC; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(2) { background: #2D87B4; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(3) { background: #297AA3; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(4) { background: #256E93; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(5) { background: #216283; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(6) { background: #1D5672; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(7) { background: #184962; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(8) { background: #143D52; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(11) { background-color: #3399CC; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(1) { background-color: #2D87B4; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(3) { background-color: #297AA3; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(2) { background-color: #256E93; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(5) { background-color: #216283; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(3) { background-color: #1D5672; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(7) { background-color: #184962; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(8) { background-color: #143D52; }
 
-.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background: #33CCCC; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background: #2DB4B4; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background: #29A3A3; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(4) { background: #259393; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background: #218383; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(6) { background: #1D7272; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background: #186262; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background: #145252; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background-color: #33CCCC; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background-color: #2DB4B4; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background-color: #29A3A3; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(4) { background-color: #259393; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background-color: #218383; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(6) { background-color: #1D7272; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background-color: #186262; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background-color: #145252; }
 
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(1) { background: #996699; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(2) { background: #936293; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(3) { background: #875A87; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(4) { background: #7A527A; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(5) { background: #6E496E; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(6) { background: #624162; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(7) { background: #563956; }
-//.rb-grid li:nth-child(3) .rb-week > div:nth-child(8) { background: #493149; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(1) { background-color: #996699; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(2) { background-color: #936293; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(3) { background-color: #875A87; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(4) { background-color: #7A527A; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(5) { background-color: #6E496E; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(6) { background-color: #624162; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(7) { background-color: #563956; }
+//.rb-grid li:nth-child(3) .rb-week > div:nth-child(8) { background-color: #493149; }
 
-.rb-grid li.ico-circus .rb-week > div:nth-child(1) { background: #C24747; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(2) { background: #B83D3D; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(3) { background: #A83838; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(4) { background: #993333; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(5) { background: #8A2E2E; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(6) { background: #7A2929; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(7) { background: #6B2424; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(8) { background: #5C1F1F; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(11) { background-color: #C24747; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(1) { background-color: #B83D3D; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(3) { background-color: #A83838; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(2) { background-color: #993333; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(5) { background-color: #8A2E2E; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(3) { background-color: #7A2929; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(7) { background-color: #6B2424; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(8) { background-color: #5C1F1F; }
 
-//.rb-grid li.ico-circus .rb-week > div:nth-child(1) { background: #e2674a; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(2) { background: #E05C3E; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(3) { background: #DD4D2C; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(4) { background: #D34322; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(5) { background: #C13D1F; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(6) { background: #AF371D; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(7) { background: #9E321A; }
-//.rb-grid li.ico-circus .rb-week > div:nth-child(8) { background: #8C2C17; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(1) { background-color: #e2674a; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(2) { background-color: #E05C3E; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(3) { background-color: #DD4D2C; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(4) { background-color: #D34322; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(5) { background-color: #C13D1F; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(6) { background-color: #AF371D; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(7) { background-color: #9E321A; }
+//.rb-grid li.ico-circus .rb-week > div:nth-child(8) { background-color: #8C2C17; }
 
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(1) { background: #FFCC66; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(2) { background: #FFC247; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(3) { background: #FFBB33; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(4) { background: #FFB41F; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(5) { background: #FFAD0A; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(6) { background: #F5A200; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(7) { background: #E09600; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(8) { background: #CC8800; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(11) { background-color: #FFCC66; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(1) { background-color: #FFC247; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(3) { background-color: #FFBB33; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(2) { background-color: #FFB41F; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(5) { background-color: #FFAD0A; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(3) { background-color: #F5A200; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(7) { background-color: #E09600; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(8) { background-color: #CC8800; }
 //
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(1) { background: #99CC99; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(2) { background: #85C185; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(3) { background: #77BB77; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(4) { background: #6AB46A; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(5) { background: #5CAD5C; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(6) { background: #52A352; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(7) { background: #4B954B; }
-//.rb-grid li:nth-child(7) .rb-week > div:nth-child(8) { background: #448844; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(1) { background-color: #99CC99; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(2) { background-color: #85C185; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(3) { background-color: #77BB77; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(4) { background-color: #6AB46A; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(5) { background-color: #5CAD5C; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(6) { background-color: #52A352; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(7) { background-color: #4B954B; }
+//.rb-grid li:nth-child(7) .rb-week > div:nth-child(8) { background-color: #448844; }
 //
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(1) { background: #669999; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(2) { background: #629393; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(3) { background: #5A8787; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(4) { background: #527A7A; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(5) { background: #496E6E; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(6) { background: #416262; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(7) { background: #395656; }
-//.rb-grid li:nth-child(8) .rb-week > div:nth-child(8) { background: #314949; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(1) { background-color: #669999; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(2) { background-color: #629393; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(3) { background-color: #5A8787; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(4) { background-color: #527A7A; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(5) { background-color: #496E6E; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(6) { background-color: #416262; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(7) { background-color: #395656; }
+//.rb-grid li:nth-child(8) .rb-week > div:nth-child(8) { background-color: #314949; }
 
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(1) { background: #CC6699; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(2) { background: #C7578F; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(3) { background: #C24785; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(4) { background: #B83D7A; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(5) { background: #A83870; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(6) { background: #993366; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(7) { background: #8A2E5C; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(8) { background: #7A2952; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(11) { background-color: #CC6699; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(1) { background-color: #C7578F; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(3) { background-color: #C24785; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(2) { background-color: #B83D7A; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(5) { background-color: #A83870; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(3) { background-color: #993366; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(7) { background-color: #8A2E5C; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(8) { background-color: #7A2952; }
 
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background: #339966; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background: #2E8A5C; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background: #297A52; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(4) { background: #246B47; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background: #1F5C3D; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(6) { background: #194D33; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background: #143D29; }
-//.rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background: #0F2E1F; }
-//
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(1) { background: #666699; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(2) { background: #626293; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(3) { background: #5A5A87; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(4) { background: #52527A; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(5) { background: #49496E; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(6) { background: #414162; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(7) { background: #393956; }
-//.rb-grid li:nth-child(11) .rb-week > div:nth-child(8) { background: #313149; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background-color: #339966; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background-color: #2E8A5C; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background-color: #297A52; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(4) { background-color: #246B47; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background-color: #1F5C3D; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(6) { background-color: #194D33; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background-color: #143D29; }
+//.rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background-color: #0F2E1F; }
+
+.rb-grid li.ico-parkour .rb-week > div:nth-child(11) { background-color: #666699; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background-color: #626293; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background-color: #5A5A87; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background-color: #52527A; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background-color: #49496E; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background-color: #414162; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background-color: #393956; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background-color: #313149; }
 
 @media screen and (max-width: 63.125em) {
 	
@@ -328,4 +333,10 @@
 	.rb-grid li > div {
 		text-align: center;
 	}
+}
+
+p.overlay-desc{
+  font-size: 1.2em;
+  line-height: 1em;
+  display: block;
 }
