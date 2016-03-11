@@ -158,7 +158,11 @@
 }
 
 .rb-week .sponsor {
-  width: 30%;
+  width: 15%;
+}
+
+.rb-week .sponsor a {
+  opacity: 1;
 }
 
 .rb-week > div:first-child {
@@ -219,7 +223,7 @@ div.basic{
 .rb-grid li.ico-dance .rb-week > div:nth-child(2) { background-color: #256E93; }
 .rb-grid li.ico-dance .rb-week > div:nth-child(5) { background-color: #216283; }
 .rb-grid li.ico-dance .rb-week > div:nth-child(3) { background-color: #1D5672; }
-.rb-grid li.ico-dance .rb-week > div:nth-child(7) { background-color: #184962; }
+.rb-grid li.ico-dance .rb-week > div:nth-child(4) { background-color: #184962; }
 .rb-grid li.ico-dance .rb-week > div:nth-child(8) { background-color: #143D52; }
 
 //.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background-color: #33CCCC; }
@@ -246,7 +250,7 @@ div.basic{
 .rb-grid li.ico-circus .rb-week > div:nth-child(2) { background-color: #993333; }
 .rb-grid li.ico-circus .rb-week > div:nth-child(5) { background-color: #8A2E2E; }
 .rb-grid li.ico-circus .rb-week > div:nth-child(3) { background-color: #7A2929; }
-.rb-grid li.ico-circus .rb-week > div:nth-child(7) { background-color: #6B2424; }
+.rb-grid li.ico-circus .rb-week > div:nth-child(4) { background-color: #6B2424; }
 .rb-grid li.ico-circus .rb-week > div:nth-child(8) { background-color: #5C1F1F; }
 
 //.rb-grid li.ico-circus .rb-week > div:nth-child(1) { background-color: #e2674a; }
@@ -264,7 +268,7 @@ div.basic{
 .rb-grid li.ico-crossfit .rb-week > div:nth-child(2) { background-color: #FFB41F; }
 .rb-grid li.ico-crossfit .rb-week > div:nth-child(5) { background-color: #FFAD0A; }
 .rb-grid li.ico-crossfit .rb-week > div:nth-child(3) { background-color: #F5A200; }
-.rb-grid li.ico-crossfit .rb-week > div:nth-child(7) { background-color: #E09600; }
+.rb-grid li.ico-crossfit .rb-week > div:nth-child(4) { background-color: #E09600; }
 .rb-grid li.ico-crossfit .rb-week > div:nth-child(8) { background-color: #CC8800; }
 //
 //.rb-grid li:nth-child(7) .rb-week > div:nth-child(1) { background-color: #99CC99; }
@@ -291,7 +295,7 @@ div.basic{
 .rb-grid li.ico-gymnastics .rb-week > div:nth-child(2) { background-color: #B83D7A; }
 .rb-grid li.ico-gymnastics .rb-week > div:nth-child(5) { background-color: #A83870; }
 .rb-grid li.ico-gymnastics .rb-week > div:nth-child(3) { background-color: #993366; }
-.rb-grid li.ico-gymnastics .rb-week > div:nth-child(7) { background-color: #8A2E5C; }
+.rb-grid li.ico-gymnastics .rb-week > div:nth-child(4) { background-color: #8A2E5C; }
 .rb-grid li.ico-gymnastics .rb-week > div:nth-child(8) { background-color: #7A2952; }
 
 //.rb-grid li.ico-parkour .rb-week > div:nth-child(1) { background-color: #339966; }
@@ -309,7 +313,7 @@ div.basic{
 .rb-grid li.ico-parkour .rb-week > div:nth-child(2) { background-color: #52527A; }
 .rb-grid li.ico-parkour .rb-week > div:nth-child(5) { background-color: #49496E; }
 .rb-grid li.ico-parkour .rb-week > div:nth-child(3) { background-color: #414162; }
-.rb-grid li.ico-parkour .rb-week > div:nth-child(7) { background-color: #393956; }
+.rb-grid li.ico-parkour .rb-week > div:nth-child(4) { background-color: #393956; }
 .rb-grid li.ico-parkour .rb-week > div:nth-child(8) { background-color: #313149; }
 
 @media screen and (max-width: 63.125em) {

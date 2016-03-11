@@ -22,6 +22,7 @@ class ResourcesController < ApplicationController
     @categories = Category.all
 
     @affiliate = Affiliate.getRandomHorizontalAffiliate()
+    @overlayAffiliate = Affiliate.getRandomVerticalAffiliate()
 
   end
 
