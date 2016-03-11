@@ -2,7 +2,7 @@ class AdType < ActiveRecord::Base
   has_many :affiliates
 
   def self.getHorizontalTypes
-    return AdType.where( :height <= :width )
+    return AdType.where( :width <= :height )
   end
 
   def self.getVerticalTypes
