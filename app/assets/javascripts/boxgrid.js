@@ -114,46 +114,57 @@ var Boxgrid = (function() {
 
 			} );
 
-			$close.on( 'click', function() {
+            var closeOverlay = function() {
 
-				$body.css( 'overflow-y', 'auto' );
+                $body.css( 'overflow-y', 'auto' );
 
-				var layoutProp = getItemLayoutProp( $item ),
-					clipPropFirst = 'rect(' + layoutProp.top + 'px ' + ( layoutProp.left + layoutProp.width ) + 'px ' + ( layoutProp.top + layoutProp.height ) + 'px ' + layoutProp.left + 'px)',
-					clipPropLast = 'auto';
+                var layoutProp = getItemLayoutProp( $item ),
+                    clipPropFirst = 'rect(' + layoutProp.top + 'px ' + ( layoutProp.left + layoutProp.width ) + 'px ' + ( layoutProp.top + layoutProp.height ) + 'px ' + layoutProp.left + 'px)',
+                    clipPropLast = 'auto';
 
-				// reset current
-				current = -1;
+                // reset current
+                current = -1;
 
-				$overlay.css( {
-					clip : supportTransitions ? clipPropFirst : clipPropLast,
-					opacity : supportTransitions ? 1 : 0,
-					pointerEvents : 'none'
-				} );
+                $overlay.css( {
+                    clip : supportTransitions ? clipPropFirst : clipPropLast,
+                    opacity : supportTransitions ? 1 : 0,
+                    pointerEvents : 'none'
+                } );
 
-				if( supportTransitions ) {
-					$overlay.on( transEndEventName, function() {
+                if( supportTransitions ) {
+                    $overlay.on( transEndEventName, function() {
 
-						$overlay.off( transEndEventName );
-						setTimeout( function() {
-							$overlay.css( 'opacity', 0 ).on( transEndEventName, function() {
-								$overlay.off( transEndEventName ).css( { clip : clipPropLast, zIndex: -1 } );
-								$item.data( 'isExpanded', false );
-							} );
-						}, 25 );
+                        $overlay.off( transEndEventName );
+                        setTimeout( function() {
+                            $overlay.css( 'opacity', 0 ).on( transEndEventName, function() {
+                                $overlay.off( transEndEventName ).css( { clip : clipPropLast, zIndex: -1 } );
+                                $item.data( 'isExpanded', false );
+                            } );
+                        }, 25 );
 
-					} );
-				}
-				else {
-					$overlay.css( 'z-index', -1 );
-					$item.data( 'isExpanded', false );
-				}
+                    } );
+                }
+                else {
+                    $overlay.css( 'z-index', -1 );
+                    $item.data( 'isExpanded', false );
+                }
 
-				return false;
+                return false;
 
-			} );
+            };
 
-		} );
+            $(document).keydown(function(e) {
+                // ESCAPE key pressed
+                if (e.keyCode == 27) {
+                    closeOverlay();
+                }
+            });
+
+            $close.on( 'click', function() {
+                closeOverlay();
+            });
+
+        } );
 
 		$( window ).on( 'debouncedresize', function() { 
 			winsize = getWindowSize();
