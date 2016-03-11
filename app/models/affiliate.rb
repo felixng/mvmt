@@ -8,4 +8,34 @@ class Affiliate < ActiveRecord::Base
     self.view_count ||= 0
   end
 
+  def self.incrementDisplayCount(affiliate)
+    if affiliate
+      affiliate.display_count = @affiliate.display_count + 1
+      affiliate.save()
+    end
+  end
+
+
+  def self.getBanner(query)
+    @affiliate = Affiliate.find(query)
+    incrementDisplayCount(@affiliate)
+
+    return @affiliate
+  end
+
+  def self.getRandomBanner
+    @affiliate = Affiliate.offset(rand(Affiliate.count)).first
+    incrementDisplayCount(@affiliate)
+
+    return @affiliate
+  end
+
+  def self.getRandomBannerWithAdType(adType)
+    @affiliate = Affiliate.where(:ad_type => adType)
+    @affiliate.first(:offset => rand(@affiliate.count))
+    incrementDisplayCount(@affiliate)
+
+    return @affiliate
+  end
+
 end

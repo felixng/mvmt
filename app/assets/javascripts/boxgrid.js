@@ -194,27 +194,6 @@ var Boxgrid = (function() {
 
 })();
 
-function fitFontText(ele){
-        var $name = $(ele);
-        console.log('test');
-        var divHeight = $name.height();
-        var lineHeight = $name.css('line-height').replace('px', '');
-        var lines = Math.round(divHeight / lineHeight);
-        console.log(divHeight + ":" + lineHeight +  ":" + lines);
-        if (lines === 2) {
-            $name.fitText(1);
-        }
-        else if (lines === 3) {
-            $name.find(ele).fitText(1);
-        }
-        else if (lines === 4) {
-            $name.find(ele).fitText(1);
-        }
-        else if (lines > 4) {
-            $name.find(ele).fitText(1);
-        }
-}
-
 function resizeFont(ele){
     $(ele).each(function() {
         var $name = $(this);

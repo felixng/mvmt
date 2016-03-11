@@ -24,6 +24,9 @@
         .errors__container
           = render 'layouts/messages'
         = yield
+      .footer
+        - if @affiliate && @affiliate.adv
+          #{raw @affiliate.adv}
       %footer.page__footer
         - if content_for? :footer
           = yield :footer
