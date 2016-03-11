@@ -63,7 +63,7 @@ var Boxgrid = (function() {
 
 	function init( options ) {		
 		// apply fittext plugin
-		//$items.find( 'div.rb-week > div span' ).fitText( 1 ).end().find( 'span.rb-city' ).fitText( 0.6 );
+		$items.find( 'div.rb-week > div span' ).fitText( 1 ).end().find( 'div.rb-city' ).fitText( 0.7 );
 		initEvents();
 	}
 
@@ -202,16 +202,16 @@ function fitFontText(ele){
         var lines = Math.round(divHeight / lineHeight);
         console.log(divHeight + ":" + lineHeight +  ":" + lines);
         if (lines === 2) {
-            $name.fitText(0.4);
+            $name.fitText(1);
         }
         else if (lines === 3) {
-            $name.find(ele).fitText(0.5);
+            $name.find(ele).fitText(1);
         }
         else if (lines === 4) {
-            $name.find(ele).fitText(0.6);
+            $name.find(ele).fitText(1);
         }
         else if (lines > 4) {
-            $name.find(ele).fitText(0.7);
+            $name.find(ele).fitText(1);
         }
 }
 
@@ -240,8 +240,5 @@ function resizeFont(ele){
 
 $(function(){
     resizeFont('.rb-grid h3');
-    fitFontText('.rb-city');
-    $('.category-menu').flowtype({
-        fontRatio : 70
-    });
+    //fitFontText('.rb-city');
 });
