@@ -21,7 +21,7 @@ class ResourcesController < ApplicationController
     @resources = Resource.where(:approved => true).shuffle
     @categories = Category.all
 
-    @affiliate = Affiliate.getRandomBanner()
+    @affiliate = Affiliate.getRandomHorizontalAffiliate()
 
   end
 

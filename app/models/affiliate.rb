@@ -30,12 +30,24 @@ class Affiliate < ActiveRecord::Base
     return @affiliate
   end
 
-  def self.getRandomBannerWithAdType(adType)
-    @affiliate = Affiliate.where(:ad_type => adType)
-    @affiliate.first(:offset => rand(@affiliate.count))
-    incrementDisplayCount(@affiliate)
+  def self.getRandomVerticalAffiliate
+    @adtypes = AdType.getVerticalTypes()
+    @affiliates = Affiliate.where(ad_type: @adtypes)
+    if @affiliates
+      @affiliate = @affiliates.offset(rand(@affiliates.count)).first
+      incrementDisplayCount(@affiliate)
+      return @affiliate
+    end
+  end
 
-    return @affiliate
+  def self.getRandomHorizontalAffiliate
+    @adtypes = AdType.getHorizontalTypes()
+    @affiliates = Affiliate.where(ad_type: @adtypes)
+    if @affiliates
+      @affiliate = @affiliates.offset(rand(@affiliates.count)).first
+      incrementDisplayCount(@affiliate)
+      return @affiliate
+    end
   end
 
 end
