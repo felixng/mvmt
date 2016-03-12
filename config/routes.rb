@@ -55,4 +55,15 @@ Rails.application.routes.draw do
   root 'resources#index'
   #root 'pages#home'
 
+  #api
+  namespace :api do
+    namespace :v1 do
+      resources :resources, only: [:index, :create, :show, :update, :destroy]
+      resources :ad_types, only: [:index, :create, :show, :update, :destroy]
+      resources :categories, only: [:index, :create, :show, :update, :destroy]
+      resources :affiliates, only: [:index, :create, :show, :update, :destroy]
+    end
+  end
+
 end
+

@@ -29,7 +29,7 @@ gem 'dalli'                     # memcached
 # gem 'jbuilder'
 gem 'paperclip'
 gem 'aws-sdk-v1'
-
+gem 'active_model_serializers'
 
 # Assets
 gem 'sass-rails'
