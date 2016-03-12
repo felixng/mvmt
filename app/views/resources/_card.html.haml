@@ -1,0 +1,12 @@
+%li{ :class => "animated #{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')", "ng-click"=>"map#{resource.__id__} = getMapUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4')"}
+  %div.brand
+    =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
+  %h3.card-title=resource.name
+  %span.rb-code=resource.postcode
+  - if resource.facebook?
+    %a.fa.fa-facebook{:href => "http://www.facebook.com/" + resource.facebook}
+  - if resource.twitter?
+    %a.fa.fa-twitter{:href => "http://www.twitter.com/" + resource.twitter }
+  - if resource.instagram?
+    %a.fa.fa-instagram{:href => "http://www.instagram.com/" + resource.instagram}
+  = render partial: 'resources/overlay', locals: { resource: resource }

@@ -8,30 +8,6 @@
           %a.menu__link{"ng-click" => "updateFilter('#{cat.name.downcase}');"} #{cat.name}
   %ul#rb-grid.rb-grid.clearfix
     - @resources.each_with_index do |resource, index|
-      %li{ :class => "animated #{Category.find(resource.category.first).name.downcase} ico-#{Category.find(resource.category.first).name.downcase} rb-span-#{(index%21%8 == 0)? 2 : 1}", "ng-show" => "inList('#{Category.find(resource.category.first).name.downcase}')", "ng-click"=>"map#{resource.__id__} = getMapUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4')"}
-        %div.brand
-          =image_tag asset_url(resource.logo.url), :size => "100x100", :class => "logo"
-        %h3.card-title=resource.name
-        %span.rb-code=resource.postcode
-        - if resource.facebook?
-          %a.fa.fa-facebook{:href => "http://www.facebook.com/" + resource.facebook}
-        - if resource.twitter?
-          %a.fa.fa-twitter{:href => "http://www.twitter.com/" + resource.twitter }
-        - if resource.instagram?
-          %a.fa.fa-instagram{:href => "http://www.instagram.com/" + resource.instagram}
-        .rb-overlay
-          %span.rb-close close
-          .rb-week
-            %div.basic
-              %div.icon-logo
-                =image_tag resource.logo.url, :size => "200x200", :class => "logo"
-              %div.rb-city=resource.name
-              %p.overlay-desc=resource.desc
-            %div.sponsor
-              %span #{raw @overlayAffiliate.adv}
-            %div.map
-              %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
-            %div.sponsor
-              %span #{raw @overlayAffiliate.adv}
+      = render partial: 'resources/card', locals: { resource: resource, index: index}
 - content_for :on_ready do
   Boxgrid.init();

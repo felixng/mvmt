@@ -1,0 +1,14 @@
+.rb-overlay
+  %span.rb-close close
+  .rb-week
+    %div.basic
+      %div.icon-logo
+        =image_tag resource.logo.url, :size => "200x200", :class => "logo"
+      %div.rb-city=resource.name
+      %p.overlay-desc=resource.desc
+    %div.sponsor
+      %span #{raw @overlayAffiliate.adv}
+    %div.map
+      %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+    %div.sponsor
+      %span #{raw @overlayAffiliate.adv}
