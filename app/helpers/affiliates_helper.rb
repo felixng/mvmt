@@ -1,8 +1,12 @@
 module AffiliatesHelper
-  def displayAd
-    @affiliate = Affiliate.first()
-    @affiliate.display_count = @affiliate.display_count + 1
-    @affiliate.save()
+
+  def getRandomVerticalAffiliate
+    @affiliate = Affiliate.getRandomVerticalAffiliate
+    return @affiliate.adv
+  end
+
+  def getRandomHorizontalAffiliate
+    @affiliate = Affiliate.getRandomHorizontalAffiliate
     return @affiliate.adv
   end
 end
