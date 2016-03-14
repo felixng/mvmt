@@ -62,7 +62,6 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
                             "Content-Type": "application/json"
                         }
                     }).success(function(response){
-                        console.log(response);
                     }).error(function(error){
                         console.log(error);
                     });
