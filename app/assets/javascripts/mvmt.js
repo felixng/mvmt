@@ -6,8 +6,8 @@ $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
 });
 
-app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
-    function ($window, $scope, $rootScope, $sce) {
+app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', '$http',
+    function ($window, $scope, $rootScope, $sce, $http) {
         var catMenu = this;
 
         $rootScope.mapUrl = '';
@@ -45,6 +45,28 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce',
             // foreach li in the list, remove span class.
             // if the calculation is right (with running count, not index), and cat is in filters, then apply span class.
             //
+        }
+
+        $scope.updateClickThrough = function(id){
+            $http.get("http://localhost:3000/api/v1/resources/" + id)
+                .then(function(response){
+                    $http({
+                        url: 'http://localhost:3000/api/v1/resources/' + id,
+                        dataType: 'json',
+                        method: 'PUT',
+                        data: {
+                            id: id,
+                            clickthrough: response.data.resource.clickthrough + 1
+                        },
+                        headers: {
+                            "Content-Type": "application/json"
+                        }
+                    }).success(function(response){
+                        console.log(response);
+                    }).error(function(error){
+                        console.log(error);
+                    });
+            });
         }
 
     }

@@ -32,7 +32,7 @@ gem 'aws-sdk-v1'
 
 #api
 gem 'active_model_serializers'
-gem 'rack-cors'
+gem 'rack-cors', :require => 'rack/cors'
 
 # Assets
 gem 'sass-rails'

@@ -56,6 +56,13 @@ module StarterKit
     config.to_prepare do
       Devise::Mailer.layout Rails.application.config.settings.mail.layout
     end
+
+    # config.middleware.insert_before 'Warden::Manager', "Rack::Cors" do
+    #   allow do
+    #     origins 'localhost:3000', '127.0.0.1:3000', 'mvmt.io', 'mvmt.herokuapp.com'
+    #     resource '*', :headers => :any, :methods => [:get, :post, :options]
+    #   end
+    # end
   end
 end
 
