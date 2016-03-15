@@ -24,7 +24,7 @@
 #= require borderMenu.js
 #= require clipboard.min.js
 #= require categoryMenu.js
-#= require mvmt.js
+#= require mvmt.js.erb
 #= require logo.js
 #= require flowtype.js
 

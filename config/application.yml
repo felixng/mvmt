@@ -73,11 +73,14 @@ default_env: &default_env
   AWS_SECRET_ACCESS_KEY: 'KJP8zajkiirQ/skQ4M9hflGaFQbLUMEdm03fWWcS'
   GOOGLE_ANALYTICS_ID: 'UA-42166600-12'
 
+  API_HOST: http://localhost:3000/api/v1
+
 development:
   <<: *common
   env:
     <<: *default_env
     ALLOW_EMAIL_PREVIEW: true
+    API_HOST: http://localhost:3000/api/v1
 
 test:
   <<: *common
@@ -95,3 +98,4 @@ production:
     # Set dummy key so rake assets:precompile succeeds
     DEVISE_SECRET_KEY: ''
     GOOGLE_ANALYTICS_ID: 'UA-42166600-12'
+    API_HOST: 'http://mvmt.io/api/v1'
