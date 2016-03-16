@@ -39,7 +39,7 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
 
         function performMapSearch(name){
             var request = {
-                key: 'AIzaSyDf0bPpbqr3E7iD7Ab2K8jgZszADG_Ir7M',
+                key: 'AIzaSyBKchSg9fgIojtkcWQnrLY9xRTsCYWy05Y',
                 query: name
             };
 
@@ -48,14 +48,16 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
                 url: 'https://maps.googleapis.com/maps/api/place/textsearch/json',
                 params: request
             }).then(function successCallback(response) {
-                console.log(response);
+                return response;
             }, function errorCallback(response) {
                 console.log(response);
             });
         }
 
         $scope.setMapUrl = function(name){
-            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
+            var response = performMapSearch(name);
+            var place_id = response.result.place_id;
+            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:' + place_id + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
         }
 
         function getPlaceIdFromGoogle(){
