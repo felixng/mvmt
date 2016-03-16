@@ -36,8 +36,30 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
             if ($rootScope != undefined || $rootScope.filters != undefined)
                 return ($rootScope.filters.indexOf(category) > -1);
         }
-        $scope.getMapUrl = function(url){
+
+        function performMapSearch(name){
+            var request = {
+                key: 'AIzaSyDf0bPpbqr3E7iD7Ab2K8jgZszADG_Ir7M',
+                query: name
+            };
+
+            $http({
+                method: 'GET',
+                url: 'https://maps.googleapis.com/maps/api/place/textsearch/json',
+                params: request
+            }).then(function successCallback(response) {
+                console.log(response);
+            }, function errorCallback(response) {
+                console.log(response);
+            });
+        }
+
+        $scope.setMapUrl = function(name){
             return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjx9f6OsEdkgRsWosuIP7Njs&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
+        }
+
+        function getPlaceIdFromGoogle(){
+
         }
 
         $scope.reapplySpan = function(){

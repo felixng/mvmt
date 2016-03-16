@@ -302,7 +302,8 @@ CREATE TABLE resources (
     twitter character varying(255),
     approved boolean,
     "fetch" boolean,
-    clickthrough integer DEFAULT 0
+    clickthrough integer DEFAULT 0,
+    "placeId" character varying(255)
 );
 
 
@@ -621,4 +622,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160305130026');
 INSERT INTO schema_migrations (version) VALUES ('20160305132153');
 
 INSERT INTO schema_migrations (version) VALUES ('20160314225542');
+
+INSERT INTO schema_migrations (version) VALUES ('20160316204231');
 
