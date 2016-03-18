@@ -14,9 +14,7 @@ class Api::V1::ResourcesController < Api::V1::BaseController
     end
   end
 
-
   private
-
   def create_params
     params.require(:resource).permit(
         :id, :name, :clickthrough
