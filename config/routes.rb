@@ -62,9 +62,9 @@ Rails.application.routes.draw do
       resources :ad_types, only: [:index, :create, :show, :update, :destroy]
       resources :categories, only: [:index, :create, :show, :update, :destroy]
       resources :affiliates, only: [:index, :create, :show, :update, :destroy]
-      resources :resources do
-        get 'placeId', on: :member
-      end
+      # resources :resources do
+      #   get 'placeId', on: :member
+      # end
     end
   end
 
