@@ -9,6 +9,6 @@
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
     %div.map
-      %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+      %iframe{"ng-src" => "{{map#{resource.id}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}

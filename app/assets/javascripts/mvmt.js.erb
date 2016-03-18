@@ -37,39 +37,66 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
                 return ($rootScope.filters.indexOf(category) > -1);
         }
 
-        function performMapSearch(name){
-            var request = {
-                key: 'AIzaSyBKchSg9fgIojtkcWQnrLY9xRTsCYWy05Y',
-                query: name
-            };
-
-            $http({
-                method: 'GET',
-                url: 'https://maps.googleapis.com/maps/api/place/textsearch/json',
-                params: request
-            }).then(function successCallback(response) {
-                return response;
-            }, function errorCallback(response) {
-                console.log(response);
-            });
+//        function performMapSearch(name){
+//            $http.jsonp("https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyDf0bPpbqr3E7iD7Ab2K8jgZszADG_Ir7M&query=" + name + "&callback=JSON_CALLBACK").success(function(data){
+//                    console.log(data);
+//                });
+//
+////                    .then(
+////            function successCallback(response) {
+////                //return response.data;
+////                //console.log(data);
+////                console.log(response);
+////            }, function errorCallback(response) {
+////                //console.log(response);
+////            });
+//        }
+        function updatePlaceId(id, placeId){
+            $http.get( "/api/v1/resources/" + id)
+                    .then(function(response){
+                        $http({
+                            url: "/api/v1/resources/" + id,
+                            dataType: 'json',
+                            method: 'PUT',
+                            data: {
+                                id: id,
+                                placeId: placeId
+                            },
+                            headers: {
+                                "Content-Type": "application/json"
+                            }
+                        }).success(function(response){
+                        }).error(function(error){
+                            console.log(error);
+                        });
+                    });
         }
 
-        $scope.setMapUrl = function(name){
-            var response = performMapSearch(name);
-            var place_id = response.result.place_id;
-            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=place_id:' + place_id + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
+        $scope.MapUrl = function(name){
+            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + name + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4');
         }
 
-        function getPlaceIdFromGoogle(){
-
-        }
-
-        $scope.reapplySpan = function(){
-            //
-            // foreach li in the list, remove span class.
-            // if the calculation is right (with running count, not index), and cat is in filters, then apply span class.
-            //
-        }
+//        $scope.setMapUrl = function(id, name, placeId){
+//            if (placeId == '-1')
+//            {
+//                $http.get("/api/v1/resources/" + id + "/placeId")
+//                        .then(function(response){
+//                            console.log(response.data.status)
+//                            if (response.data.status == "OK"){
+//                                if (response.data && response.data.results.length > 0)
+//                                {
+//                                    placeId = response.data.results[0].place_id;
+//                                    updatePlaceId(id, placeId);
+//                                    console.log(MapUrl(placeId));
+//                                    return MapUrl(placeId);
+//                                }
+//                            }
+//                        })
+//            }
+//            else{
+//                return MapUrl(placeId);
+//            }
+//        }
 
         $scope.updateClickThrough = function(id){
             $http.get( "/api/v1/resources/" + id)

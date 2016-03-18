@@ -14,9 +14,16 @@ class Api::V1::ResourcesController < Api::V1::BaseController
     end
   end
 
+  def placeId
+    resource = Resource.find(params[:id])
+
+    response = HTTParty.get 'https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyDf0bPpbqr3E7iD7Ab2K8jgZszADG_Ir7M&query=' + URI.encode(resource.name)
+    puts response
+    render(json: response)
+  end
+
 
   private
-
   def create_params
     params.require(:resource).permit(
         :id, :name, :clickthrough

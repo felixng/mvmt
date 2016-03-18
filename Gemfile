@@ -29,6 +29,7 @@ gem 'dalli'                     # memcached
 # gem 'jbuilder'
 gem 'paperclip'
 gem 'aws-sdk-v1'
+gem 'httparty'
 
 #api
 gem 'active_model_serializers'

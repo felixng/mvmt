@@ -9,7 +9,6 @@
     = display_meta_tags
     //%meta{content: (content_for?(:description) ? yield(:description) : I18n.t('brand.name')), name: 'description'}
     %link{:rel => :stylesheet, :href => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'}
-    %script{:rel => :javascript, :async => true, :src => 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDf0bPpbqr3E7iD7Ab2K8jgZszADG_Ir7M&libraries=places', :defer => true}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     /[if lt IE 9]
       = javascript_include_tag 'ie', 'data-turbolinks-track' => true

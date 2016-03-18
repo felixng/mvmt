@@ -303,7 +303,7 @@ CREATE TABLE resources (
     approved boolean,
     "fetch" boolean,
     clickthrough integer DEFAULT 0,
-    "placeId" character varying(255)
+    "placeId" character varying(255) DEFAULT '-1'::character varying
 );
 
 
