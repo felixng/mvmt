@@ -1,14 +1,26 @@
-.rb-overlay
-  %span.rb-close close
-  .rb-week
-    %div
-      %span.rb-city=resource.name
-      %span.icon-logo
-        =image_tag resource.logo.url, :size => "300x300", :class => "logo"
-      %p=resource.desc
-    %div.map
-      %iframe{"ng-src" => "{{map#{resource.__id__}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
-    %div.sponsor
-      %span Tue
-      %span.icon-gymnastics
-      %span 19°C
+%ul.studio
+  %li{:class => "ico-#{Category.find(@resource.category.first).name.downcase}"}
+    .rb-overlay
+      .rb-week
+        %div.basic
+          %div.icon-logo
+            =image_tag @resource.logo.url, :size => "200x200", :class => "logo"
+          %div.rb-city=@resource.name
+          - if @resource.website?
+            %div.overlay-details
+              %a{:href => @resource.website} #{@resource.website}
+          %div.overlay-details
+            - if @resource.facebook?
+              %a.fa.fa-facebook{:href => "http://www.facebook.com/" + @resource.facebook}
+            - if @resource.twitter?
+              %a.fa.fa-twitter{:href => "http://www.twitter.com/" + @resource.twitter }
+            - if @resource.instagram?
+              %a.fa.fa-instagram{:href => "http://www.instagram.com/" + @resource.instagram}
+          %p.overlay-desc=@resource.desc
+        %div.sponsor
+          %span #{raw getRandomVerticalAffiliate()}
+        %div.map
+          %iframe{"ng-src" => "{{map#{@resource.id}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+        %div.sponsor
+          %span #{raw getRandomVerticalAffiliate()}
+

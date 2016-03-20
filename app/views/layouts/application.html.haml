@@ -4,10 +4,7 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"}
     %meta{charset: "utf-8"}/
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
-
-    //%title= content_for?(:title) ? yield(:title) : I18n.t('brand.name')
     = display_meta_tags
-    //%meta{content: (content_for?(:description) ? yield(:description) : I18n.t('brand.name')), name: 'description'}
     %link{:rel => :stylesheet, :href => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     /[if lt IE 9]
@@ -24,16 +21,14 @@
         .errors__container
           = render 'layouts/messages'
         = yield
-      .footer
-        - if @affiliate && @affiliate.adv
-          #{raw @affiliate.adv}
+      -#.footer
+      -#  - if @affiliate && @affiliate.adv
+      -#    #{raw @affiliate.adv}
       %footer.page__footer
         - if content_for? :footer
           = yield :footer
         - else
           = render 'layouts/footer'
-    -#- content_for :on_rea dy do
-    -#  Boxgrid.init();
     = render 'layouts/analytics'
     = render 'layouts/javascripts'
 

@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   get 'robots.:format' => 'robots#index'
 
   root 'resources#index'
+  get '/resources/:id' => 'resources#show'
   #root 'pages#home'
 
   #api

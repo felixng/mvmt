@@ -27,7 +27,7 @@ class ResourcesController < ApplicationController
   end
 
   def show
-    respond_with(@resource)
+    @resource
   end
 
   def new
