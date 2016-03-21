@@ -56,7 +56,7 @@ class ResourcesController < ApplicationController
 
   private
     def set_resource
-      @resource = Resource.friendly.find(params[:id])
+      @resource = Resource.friendly.find(params[:id].downcase)
     end
 
     def resource_params
