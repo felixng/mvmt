@@ -140,7 +140,7 @@ var Boxgrid = (function() {
                                 $overlay.off( transEndEventName ).css( { clip : clipPropLast, zIndex: -1 } );
                                 $item.data( 'isExpanded', false );
                             } );
-                        }, 25 );
+                        }, 15 );
 
                     } );
                 }

@@ -116,6 +116,8 @@ GEM
     font-awesome-rails (4.5.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -394,6 +396,7 @@ DEPENDENCIES
   devise-async
   factory_girl_rails
   ffaker
+  friendly_id (~> 5.1.0)
   guard-rspec
   haml-rails
   headjs-rails
