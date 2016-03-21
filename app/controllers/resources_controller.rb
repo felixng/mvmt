@@ -2,6 +2,7 @@ class ResourcesController < ApplicationController
   skip_authorization_check
   skip_before_action :authenticate_user!
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
+  layout "single", only: [:show]
 
   def index
     set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
