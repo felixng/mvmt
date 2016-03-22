@@ -14,18 +14,16 @@
     = csrf_meta_tags
     = yield :head
     = render 'layouts/airbrake'
-  %body{class: "controller__#{controller_name} action__#{action_name}"}
+  %body{class: "controller__#{controller_name} action__#{action_name} studio studio-#{Category.find(@resource.category.first).name.downcase}" }
     = render 'layouts/navigation'
-    .container
-      .main
-        .errors__container
-          = render 'layouts/messages'
-        = yield
-      %footer.page__footer
-        - if content_for? :footer
-          = yield :footer
-        - else
-          = render 'layouts/footer'
+    .errors__container
+      = render 'layouts/messages'
+    = yield
+    %footer.page__footer
+      - if content_for? :footer
+        = yield :footer
+      - else
+        = render 'layouts/footer'
     = render 'layouts/analytics'
     = render 'layouts/javascripts'
 

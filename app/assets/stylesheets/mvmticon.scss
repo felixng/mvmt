@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.rb-grid [class^="ico-"], [class*=" ico-"] {
+  margin-left: 0.25em;
+}
+
 [class^="ico-"], [class*=" ico-"] {
   font-style: normal;
   font-weight: normal;
@@ -29,7 +33,6 @@
   width: 1em;
   text-align: center;
   line-height: 1em;
-  margin-left: 0.25em;
   color: #fff;
 
   /* Better Font Rendering =========== */
@@ -37,19 +40,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ico-circus:before {
+.rb-grid .ico-circus:before {
   content: "\e900";
 }
-.ico-crossfit:before {
+.rb-grid  .ico-crossfit:before {
   content: "\e901";
 }
-.ico-parkour:before {
+.rb-grid .ico-parkour:before {
   content: "\e902";
 }
-.ico-gymnastics:before {
+.rb-grid .ico-gymnastics:before {
   content: "\e903";
 }
-.ico-dance:before {
+.rb-grid .ico-dance:before {
   content: "\e904";
 }
 
