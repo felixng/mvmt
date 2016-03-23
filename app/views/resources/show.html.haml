@@ -18,7 +18,10 @@
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
     %div.map
-      %iframe{"ng-src" => "{{map#{@resource.id}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
+      %h3.map-placeholder MAP
+      %iframe{"ng-src" => 'https://www.google.com/maps/embed/v1/place?q=' + @resource.name + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4',
+              :frameborder => "0", :style => "border:0; width: 100%; height: 100%",
+              :allowfullscreen => true}
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
 

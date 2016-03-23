@@ -153,6 +153,29 @@
   padding: 3% 0;
 }
 
+h3.map-placeholder{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 6em;
+  opacity: 0.25;
+  padding-top: 50%;
+  z-index: 5;
+}
+
+.rb-grid h3.map-placeholder{
+  font-size: 6em;
+  font-weight: 400;
+}
+
+.rb-week .map .google-map {
+  height:100%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
 .rb-week .map {
   width: 40%;
   padding: 0;
@@ -299,7 +322,7 @@ div.basic{
 
 p.overlay-desc{
   font-size: 1.2em;
-  line-height: 1em;
+  line-height: 1.2em;
   display: block;
 }
 
@@ -313,21 +336,12 @@ div.overlay-details a{
 
 .studio div.rb-overlay{
   opacity : 1;
-  zIndex: 999;
-}
-
-.studio {
-  display: block;
 }
 
 .studio div.rb-overlay {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  z-index: -1;
   pointer-events: none;
   cursor: default;
 }
@@ -336,8 +350,7 @@ body.studio{
   padding: 0px;
 }
 
-.studio h1,
-.studio a{
+.studio .rb-overlay a{
   color: #FFF;
 }
 
