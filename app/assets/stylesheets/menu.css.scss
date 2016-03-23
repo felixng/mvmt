@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-.avatar.tiny {
-  border-radius: 50%;
-}
-
 body  {
     background: #1abc9c;
 }
@@ -74,7 +70,7 @@ a.bt-menu-brand {
   color: #555;
 }
 
-a.bt-menu-brand.scrolled {
+a.bt-menu-brand.scrolled, a.bt-add.scrolled {
   background: #555;
   color: #FFF;
   border-radius: 25px;
@@ -87,11 +83,11 @@ a.bt-menu-brand.scrolled {
   transition: all 0.3s ease-in-out;
 }
 
-.bt-menu-brand:hover{
+.bt-menu-brand:hover, .bt-add:hover{
   text-decoration: none;
 }
 
-.bt-menu-trigger span {
+.bt-menu-trigger span, .bt-add span {
     position: absolute;
     top: 50%;
     left: 0;
@@ -140,6 +136,26 @@ a.bt-menu-brand.scrolled {
 .bt-menu-open .bt-menu-trigger span:after {
     -webkit-transform: translateY(300%);
     transform: translateY(300%);
+}
+
+.bt-add {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  z-index: 100;
+  display: block;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.bt-add span:before {
+  position: absolute;
+  content: '';
+  transform: rotate(90deg);
+  width: 100%;
+  height: 100%;
+  background: #555;
 }
 
 .bt-menu ul {
@@ -271,4 +287,10 @@ a.bt-menu-brand.scrolled {
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
     color: #1abc9c;
+}
+
+.bt-user{
+  position: absolute;
+  top: 15px;
+  right: 75px;
 }

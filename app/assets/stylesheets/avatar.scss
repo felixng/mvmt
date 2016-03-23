@@ -4,6 +4,7 @@
   overflow: hidden;
   text-align: center;
   vertical-align: middle;
+  border-radius: 50%;
 
   &.tiny {
     width: 24px;
@@ -17,10 +18,10 @@
     }
   }
   &.thumb {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     img {
-      max-width: 48px;
+      max-width: 45px;
     }
     .default {
       font-size: 38px;
