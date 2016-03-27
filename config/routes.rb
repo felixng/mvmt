@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about', as: 'about'
   get '/advertise' => 'pages#advertise', as: 'advertise'
   get '/resources' => 'products#index', as: 'resources'
+  get 'project/new_release' => 'resources#modal', :as => :modal
 
   # OAuth
   oauth_prefix = Rails.application.config.auth.omniauth.path_prefix

@@ -21,6 +21,11 @@
 
         var menu = document.getElementById( 'bt-menu' ),
             trigger = document.getElementById( 'bt-menu-trigger' ),
+            add = document.getElementById('bt-add');
+
+        var modalManager = $("body").data("modalmanager");
+
+
             //menu.querySelector( 'a.bt-menu-trigger' ),
         // event type (if mobile use touch events)
             eventtype = mobilecheck() ? 'touchstart' : 'click',
@@ -51,6 +56,13 @@
                 overlay.addEventListener( eventtype, closeClickFn );
             }
         });
+
+        //add.addEventListener( eventtype, function( ev ) {
+        //    ev.stopPropagation();
+        //    ev.preventDefault();
+        //
+        //    console.log('here');
+        //});
 
     }
 

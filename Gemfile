@@ -42,6 +42,7 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'headjs-rails'
+gem 'bootstrap-modal-rails'
 
 # Javascript
 gem 'jquery-rails'
