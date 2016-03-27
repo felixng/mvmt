@@ -1,7 +1,7 @@
 %div.home{"ng-controller"=>"CategoryController as categoryController"}
   %h4.title
     A curated list of studios and schools for people who move.
-  = link_to 'Test', new_user_registration_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}
+  -#= link_to 'Test', new_user_registration_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}
   %nav.category-menu.menu.menu--trinculo
     %ul.menu__list
       - @categories.each_with_index do |cat, updateFilter|

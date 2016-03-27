@@ -12,12 +12,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # GET /resource/sign_up
   def new
     check_for_existing_account
-    # super
-
-    respond_to do |format|
-      format.html
-      format.js
-    end
+    super
   end
 
   # GET /resource/after
