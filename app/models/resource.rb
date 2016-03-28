@@ -1,4 +1,5 @@
 class Resource < ActiveRecord::Base
+  extend FriendlyId
   has_and_belongs_to_many :category
   has_attached_file :logo,
                     :styles => {
@@ -9,10 +10,4 @@ class Resource < ActiveRecord::Base
   attr_accessor :delete_asset
   before_validation { self.asset.clear if self.delete_asset == '1' }
 
-  extend FriendlyId
-  friendly_id :name, use: :slugged
-
-  def to_param
-    "#{id} #{name}".parameterize
-  end
 end

@@ -43,6 +43,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'headjs-rails'
 gem 'bootstrap-modal-rails'
+gem 'sitemap_generator'
 
 # Javascript
 gem 'jquery-rails'

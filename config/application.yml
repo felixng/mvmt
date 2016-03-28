@@ -43,7 +43,7 @@ default_env: &default_env
 
   # Host used to determine direct requests vs CDN.
   # See RobotsController.
-  CANONICAL_HOST: 'mvmt.herokuapp.com'
+  CANONICAL_HOST: 'https://mvmt.io'
 
   AUTH_FACEBOOK_KEY: '1584642161826737'
   AUTH_FACEBOOK_SECRET: 'ba483f4532ef9d6ad76c4e67db9b50ce'
