@@ -12,9 +12,9 @@
           %div= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}
           %div= link_to I18n.t('account.edit.link'), edit_user_registration_path
           %div= link_to I18n.t('auth.logout.link'), destroy_user_session_path, rel: :nofollow
-    - unless user_signed_in?
-      %div= link_to I18n.t('auth.signup.link'), new_user_registration_path
-      %div= link_to I18n.t('auth.login.link'), new_user_session_path
+    -#- unless user_signed_in?
+    -#  %div= link_to I18n.t('auth.signup.link'), new_user_registration_path
+    -#  %div= link_to I18n.t('auth.login.link'), new_user_session_path
   - if user_signed_in? && current_user.is_admin?
     %a#bt-add.bt-add{"ng-click" => "toggleModal()"}
       %span Add
