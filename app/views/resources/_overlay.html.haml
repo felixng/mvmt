@@ -19,7 +19,7 @@
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
     %div.map
-      %h3.map-placeholder MAP
+      -#%h3.map-placeholder MAP
       %iframe.google-map{"ng-src" => "{{map#{resource.id}}}", :frameborder => "0", :style => "border:0; width: 100%; height: 100%", :allowfullscreen => true}
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}

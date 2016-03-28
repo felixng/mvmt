@@ -155,7 +155,7 @@ var Boxgrid = (function() {
 
             $(document).keydown(function(e) {
                 // ESCAPE key pressed
-                if (e.keyCode == 27) {
+                if (e.keyCode == 27 && $item.data( 'isExpanded' )) {
                     closeOverlay();
                 }
             });
@@ -166,13 +166,13 @@ var Boxgrid = (function() {
 
         } );
 
-		$( window ).on( 'debouncedresize', function() { 
-			winsize = getWindowSize();
-			// todo : cache the current item
-			if( current !== -1 ) {
-				$items.eq( current ).children( 'div.rb-overlay' ).css( 'clip', 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)' );
-			}
-		} );
+		//$( window ).on( 'debouncedresize', function() {
+		//	winsize = getWindowSize();
+		//	// todo : cache the current item
+		//	if( current !== -1 ) {
+		//		$items.eq( current ).children( 'div.rb-overlay' ).css( 'clip', 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)' );
+		//	}
+		//} );
 
 	}
 
