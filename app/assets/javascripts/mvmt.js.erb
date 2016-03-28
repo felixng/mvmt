@@ -48,12 +48,13 @@ app.directive('modal', function () {
     };
 });
 
-app.controller('MvmtCtrl', function ($scope) {
-    $scope.showModal = false;
-    $scope.toggleModal = function(){
-        $scope.showModal = !$scope.showModal;
-    };
-});
+app.controller('MvmtCtrl',['$scope', function ($scope) {
+        $scope.showModal = false;
+        $scope.toggleModal = function () {
+            $scope.showModal = !$scope.showModal;
+        };
+    }
+]);
 
 app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', '$http',
     function ($window, $scope, $rootScope, $sce, $http) {
