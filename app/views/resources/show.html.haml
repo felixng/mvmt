@@ -14,7 +14,6 @@
           %a.fa.fa-twitter{:href => "http://www.twitter.com/" + @resource.twitter }
         - if @resource.instagram?
           %a.fa.fa-instagram{:href => "http://www.instagram.com/" + @resource.instagram}
-        -#= resources_path(@resource)
       %p.overlay-desc=@resource.desc
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}

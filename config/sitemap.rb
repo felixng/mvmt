@@ -23,6 +23,6 @@ SitemapGenerator::Sitemap.create do
   # Add all articles:
   #
     Resource.find_each do |resource|
-      add resources_path(resource), :lastmod => resource.updated_at
+      add 'resources/' + resource.slug, :lastmod => resource.updated_at
     end
 end
