@@ -1,5 +1,6 @@
 module AffiliatesHelper
 
+
   def getRandomVerticalAffiliate
     @affiliate = Affiliate.getRandomVerticalAffiliate
     return @affiliate.adv
