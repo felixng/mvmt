@@ -15,8 +15,9 @@
     - unless user_signed_in?
       %div= link_to I18n.t('auth.signup.link'), new_user_registration_path
       %div= link_to I18n.t('auth.login.link'), new_user_session_path
-  %a#bt-add.bt-add{"ng-click" => "toggleModal()"}
-    %span Add
+  - if user_signed_in? && current_user.is_admin?
+    %a#bt-add.bt-add{"ng-click" => "toggleModal()"}
+      %span Add
   %ul
     %li
       %a{:href => request.base_url} MVMT
@@ -32,5 +33,5 @@
       %a.fa.fa-twitter{:href => "http://www.twitter.com/felixtheng"} Twitter
     %li
       %a.fa.fa-google-plus{:href => "https://plus.google.com/u/0/+FelixNgHK"} Google+
-  -##modal-window.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog"}
+  -#modal-window.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog"}
   = render 'layouts/modal'
