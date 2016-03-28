@@ -35,8 +35,7 @@ https://github.com/nfelix/mvmt/
           = render 'layouts/messages'
         = yield
       .footer
-        - if @affiliate && @affiliate.adv
-          #{raw @affiliate.adv}
+        #{raw getRandomHorizontalAffiliate()}
       %footer.page__footer
         - if content_for? :footer
           = yield :footer
