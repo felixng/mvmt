@@ -21,3 +21,15 @@
     }
   }
 }
+
+.studio .page__footer {
+  margin-top: 0px;
+  padding: 20px 10px;
+
+  a {
+    color: #fff;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
