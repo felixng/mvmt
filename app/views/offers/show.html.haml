@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @offer.title
+%p
+  %b Desc:
+  = @offer.desc
+%p
+  %b Code:
+  = @offer.code
+%p
+  %b Link:
+  = @offer.link
+
+= link_to 'Edit', edit_offer_path(@offer)
+\|
+= link_to 'Back', offers_path

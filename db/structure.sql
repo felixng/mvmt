@@ -147,6 +147,43 @@ ALTER SEQUENCE authentications_id_seq OWNED BY authentications.id;
 
 
 --
+-- Name: brands; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE brands (
+    id integer NOT NULL,
+    title character varying(255),
+    "desc" text,
+    website character varying(255),
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    logo_file_name character varying(255),
+    logo_content_type character varying(255),
+    logo_file_size integer,
+    logo_updated_at timestamp without time zone
+);
+
+
+--
+-- Name: brands_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE brands_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: brands_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE brands_id_seq OWNED BY brands.id;
+
+
+--
 -- Name: categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -240,6 +277,46 @@ CREATE TABLE oauth_caches (
     created_at timestamp without time zone,
     updated_at timestamp without time zone
 );
+
+
+--
+-- Name: offers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE offers (
+    id integer NOT NULL,
+    title character varying(255),
+    "desc" text,
+    code character varying(255),
+    link character varying(255),
+    "startDate" date,
+    "endDate" date,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    image_file_name character varying(255),
+    image_content_type character varying(255),
+    image_file_size integer,
+    image_updated_at timestamp without time zone
+);
+
+
+--
+-- Name: offers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE offers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: offers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE offers_id_seq OWNED BY offers.id;
 
 
 --
@@ -444,6 +521,13 @@ ALTER TABLE ONLY authentications ALTER COLUMN id SET DEFAULT nextval('authentica
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY brands ALTER COLUMN id SET DEFAULT nextval('brands_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY categories ALTER COLUMN id SET DEFAULT nextval('categories_id_seq'::regclass);
 
 
@@ -452,6 +536,13 @@ ALTER TABLE ONLY categories ALTER COLUMN id SET DEFAULT nextval('categories_id_s
 --
 
 ALTER TABLE ONLY friendly_id_slugs ALTER COLUMN id SET DEFAULT nextval('friendly_id_slugs_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY offers ALTER COLUMN id SET DEFAULT nextval('offers_id_seq'::regclass);
 
 
 --
@@ -507,6 +598,14 @@ ALTER TABLE ONLY authentications
 
 
 --
+-- Name: brands_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY brands
+    ADD CONSTRAINT brands_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -520,6 +619,14 @@ ALTER TABLE ONLY categories
 
 ALTER TABLE ONLY friendly_id_slugs
     ADD CONSTRAINT friendly_id_slugs_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: offers_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY offers
+    ADD CONSTRAINT offers_pkey PRIMARY KEY (id);
 
 
 --
@@ -709,4 +816,8 @@ INSERT INTO schema_migrations (version) VALUES ('20160314225542');
 INSERT INTO schema_migrations (version) VALUES ('20160321182947');
 
 INSERT INTO schema_migrations (version) VALUES ('20160321183247');
+
+INSERT INTO schema_migrations (version) VALUES ('20160330221113');
+
+INSERT INTO schema_migrations (version) VALUES ('20160330221135');
 

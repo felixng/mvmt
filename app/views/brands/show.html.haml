@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @brand.title
+%p
+  %b Desc:
+  = @brand.desc
+%p
+  %b Website:
+  = @brand.website
+
+= link_to 'Edit', edit_brand_path(@brand)
+\|
+= link_to 'Back', brands_path
