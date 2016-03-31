@@ -1,4 +1,4 @@
-class Api::V1::ResourceSerializer < ActiveModel::Serializer
+class Api::V1::PlaceSerializer < ActiveModel::Serializer
   attributes :name
   attributes :desc
   attributes :logo

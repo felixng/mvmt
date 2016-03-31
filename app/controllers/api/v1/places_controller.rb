@@ -1,7 +1,7 @@
 class Api::V1::PlacesController < Api::V1::BaseController
   def show
     resource = Place.find(params[:id])
-    render(json: Api::V1::ResourceSerializer.new(resource).to_json)
+    render(json: Api::V1::PlaceSerializer.new(resource).to_json)
   end
 
   def update
@@ -16,7 +16,7 @@ class Api::V1::PlacesController < Api::V1::BaseController
 
   private
   def create_params
-    params.require(:resource).permit(
+    params.require(:place).permit(
         :id, :name, :clickthrough
     )
   end
