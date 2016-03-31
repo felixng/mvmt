@@ -1,60 +1,3 @@
-var app = angular.module('mvmt', []);
-
-// This will cause your app to compile when Turbolinks loads a new page
-// and removes the need for ng-app in the DOM
-$(document).on('ready page:load', function(arguments) {
-  angular.bootstrap(document.body, ['mvmt']);
-});
-
-app.directive('modal', function () {
-    return {
-        template: '<div class="">' +
-        '<div class="modal-dialog">' +
-        '<div class="modal-content">' +
-        '<div class="modal-header">' +
-        '<button type="button" class="close" ng-click="toggleModal();" data-dismiss="modal" aria-hidden="true">&times;</button>' +
-        '<h4 class="modal-title">{{ title }}</h4>' +
-        '</div>' +
-        '<div class="modal-body" ng-transclude></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>',
-        restrict: 'E',
-        transclude: true,
-        replace:true,
-        scope:true,
-        link: function postLink(scope, element, attrs) {
-            scope.title = attrs.title;
-
-            scope.$watch(attrs.visible, function(value){
-                if(value == true)
-                    $(element).modal('show');
-                else
-                    $(element).modal('hide');
-            });
-
-            $(element).on('shown.bs.modal', function(){
-                scope.$apply(function(){
-                    scope.$parent[attrs.visible] = true;
-                });
-            });
-
-            $(element).on('hidden.bs.modal', function(){
-                scope.$apply(function(){
-                    scope.$parent[attrs.visible] = false;
-                });
-            });
-        }
-    };
-});
-
-app.controller('MvmtCtrl',['$scope', function ($scope) {
-        $scope.showModal = false;
-        $scope.toggleModal = function () {
-            $scope.showModal = !$scope.showModal;
-        };
-    }
-]);
 
 app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', '$http',
     function ($window, $scope, $rootScope, $sce, $http) {
@@ -113,10 +56,8 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
                     }).error(function(error){
                         console.log(error);
                     });
-            });
+                });
         }
 
     }
 ]);
-
-
