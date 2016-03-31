@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "resources/edit", :type => :view do
+RSpec.describe "places/edit", :type => :view do
   before(:each) do
-    @resource = assign(:resource, Resource.create!(
+    @resource = assign(:resource, Place.create!(
       :name => "MyString",
       :logo => "MyString",
       :website => "MyString",

@@ -17447,7 +17447,7 @@ function adjustMatchers(matchers) {
 function $SceDelegateProvider() {
   this.SCE_CONTEXTS = SCE_CONTEXTS;
 
-  // Resource URLs can also be trusted by policy.
+  // Place URLs can also be trusted by policy.
   var resourceUrlWhitelist = ['self'],
       resourceUrlBlacklist = [];
 
@@ -17810,7 +17810,7 @@ function $SceDelegateProvider() {
  * *Please note*:
  * The browser's
  * [Same Origin Policy](https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_XMLHttpRequest)
- * and [Cross-Origin Resource Sharing (CORS)](http://www.w3.org/TR/cors/)
+ * and [Cross-Origin Place Sharing (CORS)](http://www.w3.org/TR/cors/)
  * policy apply in addition to this and may further restrict whether the template is successfully
  * loaded.  This means that without the right CORS policy, loading templates from a different domain
  * won't work on all browsers.  Also, loading templates from `file://` URL does not work on some
@@ -25107,7 +25107,7 @@ var ngIfDirective = ['$animate', function($animate) {
  *
  * In addition, the browser's
  * [Same Origin Policy](https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_XMLHttpRequest)
- * and [Cross-Origin Resource Sharing (CORS)](http://www.w3.org/TR/cors/)
+ * and [Cross-Origin Place Sharing (CORS)](http://www.w3.org/TR/cors/)
  * policy may further restrict whether the template is successfully loaded.
  * For example, `ngInclude` won't work for cross-domain requests on all browsers and for `file://`
  * access on some browsers.

@@ -1,6 +1,6 @@
 class CreateResources < ActiveRecord::Migration
   def change
-    create_table :resources do |t|
+    create_table :places do |t|
       t.string :name
       t.string :logo
       t.string :website

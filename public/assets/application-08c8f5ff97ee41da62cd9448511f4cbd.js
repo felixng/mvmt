@@ -12700,10 +12700,10 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
         }
 
         $scope.updateClickThrough = function(id){
-            $http.get( "/api/v1/resources/" + id)
+            $http.get( "/api/v1/places/" + id)
                 .then(function(response){
                     $http({
-                        url: "/api/v1/resources/" + id,
+                        url: "/api/v1/places/" + id,
                         dataType: 'json',
                         method: 'PUT',
                         data: {

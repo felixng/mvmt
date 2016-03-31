@@ -4,8 +4,8 @@ class AddLogoColumnToResourcesAgain < ActiveRecord::Migration
   def change
     revert AddLogoColumnToResources
 
-    remove_column  :resources, :logo, :string
+    remove_column  :places, :logo, :string
 
-    add_attachment :resources, :logo
+    add_attachment :places, :logo
   end
 end

@@ -215,21 +215,21 @@ ALTER SEQUENCE categories_id_seq OWNED BY categories.id;
 
 
 --
--- Name: categories_products; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: categories_places; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE categories_products (
-    product_id integer NOT NULL,
+CREATE TABLE categories_places (
+    place_id integer NOT NULL,
     category_id integer NOT NULL
 );
 
 
 --
--- Name: categories_resources; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: categories_products; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE categories_resources (
-    resource_id integer NOT NULL,
+CREATE TABLE categories_products (
+    product_id integer NOT NULL,
     category_id integer NOT NULL
 );
 
@@ -320,6 +320,51 @@ ALTER SEQUENCE offers_id_seq OWNED BY offers.id;
 
 
 --
+-- Name: places; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE places (
+    id integer NOT NULL,
+    name character varying(255),
+    website character varying(255),
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    facebook character varying(255),
+    instagram character varying(255),
+    "desc" text,
+    postcode character varying(255),
+    logo_file_name character varying(255),
+    logo_content_type character varying(255),
+    logo_file_size integer,
+    logo_updated_at timestamp without time zone,
+    twitter character varying(255),
+    approved boolean,
+    "fetch" boolean,
+    clickthrough integer DEFAULT 0,
+    slug character varying(255)
+);
+
+
+--
+-- Name: places_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE places_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: places_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE places_id_seq OWNED BY places.id;
+
+
+--
 -- Name: products; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -389,51 +434,6 @@ CREATE SEQUENCE rails_admin_histories_id_seq
 --
 
 ALTER SEQUENCE rails_admin_histories_id_seq OWNED BY rails_admin_histories.id;
-
-
---
--- Name: resources; Type: TABLE; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE TABLE resources (
-    id integer NOT NULL,
-    name character varying(255),
-    website character varying(255),
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone,
-    facebook character varying(255),
-    instagram character varying(255),
-    "desc" text,
-    postcode character varying(255),
-    logo_file_name character varying(255),
-    logo_content_type character varying(255),
-    logo_file_size integer,
-    logo_updated_at timestamp without time zone,
-    twitter character varying(255),
-    approved boolean,
-    "fetch" boolean,
-    clickthrough integer DEFAULT 0,
-    slug character varying(255)
-);
-
-
---
--- Name: resources_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE resources_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: resources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE resources_id_seq OWNED BY resources.id;
 
 
 --
@@ -549,6 +549,13 @@ ALTER TABLE ONLY offers ALTER COLUMN id SET DEFAULT nextval('offers_id_seq'::reg
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY places ALTER COLUMN id SET DEFAULT nextval('places_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY products ALTER COLUMN id SET DEFAULT nextval('products_id_seq'::regclass);
 
 
@@ -557,13 +564,6 @@ ALTER TABLE ONLY products ALTER COLUMN id SET DEFAULT nextval('products_id_seq':
 --
 
 ALTER TABLE ONLY rails_admin_histories ALTER COLUMN id SET DEFAULT nextval('rails_admin_histories_id_seq'::regclass);
-
-
---
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY resources ALTER COLUMN id SET DEFAULT nextval('resources_id_seq'::regclass);
 
 
 --
@@ -630,6 +630,14 @@ ALTER TABLE ONLY offers
 
 
 --
+-- Name: places_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY places
+    ADD CONSTRAINT places_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: products_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -643,14 +651,6 @@ ALTER TABLE ONLY products
 
 ALTER TABLE ONLY rails_admin_histories
     ADD CONSTRAINT rails_admin_histories_pkey PRIMARY KEY (id);
-
-
---
--- Name: resources_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY resources
-    ADD CONSTRAINT resources_pkey PRIMARY KEY (id);
 
 
 --
@@ -711,17 +711,17 @@ CREATE INDEX index_friendly_id_slugs_on_sluggable_type ON friendly_id_slugs USIN
 
 
 --
+-- Name: index_places_on_slug; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_places_on_slug ON places USING btree (slug);
+
+
+--
 -- Name: index_rails_admin_histories; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_rails_admin_histories ON rails_admin_histories USING btree (item, "table", month, year);
-
-
---
--- Name: index_resources_on_slug; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX index_resources_on_slug ON resources USING btree (slug);
 
 
 --
@@ -820,4 +820,8 @@ INSERT INTO schema_migrations (version) VALUES ('20160321183247');
 INSERT INTO schema_migrations (version) VALUES ('20160330221113');
 
 INSERT INTO schema_migrations (version) VALUES ('20160330221135');
+
+INSERT INTO schema_migrations (version) VALUES ('20160331201155');
+
+INSERT INTO schema_migrations (version) VALUES ('20160331202941');
 

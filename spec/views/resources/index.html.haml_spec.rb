@@ -1,16 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe "resources/index", :type => :view do
+RSpec.describe "places/index", :type => :view do
   before(:each) do
-    assign(:resources, [
-      Resource.create!(
+    assign(:places, [
+      Place.create!(
         :name => "Name",
         :logo => "Logo",
         :website => "Website",
         :affilatelink => "Affilatelink",
         :affiliate => false
       ),
-      Resource.create!(
+      Place.create!(
         :name => "Name",
         :logo => "Logo",
         :website => "Website",
@@ -20,7 +20,7 @@ RSpec.describe "resources/index", :type => :view do
     ])
   end
 
-  it "renders a list of resources" do
+  it "renders a list of places" do
     render
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Logo".to_s, :count => 2

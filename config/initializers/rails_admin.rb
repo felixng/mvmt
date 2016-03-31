@@ -122,7 +122,7 @@ if defined? RailsAdmin
       exclude_fields :created_at, :updated_at
     end
 
-    config.model 'Resource' do
+    config.model 'Place' do
       include_all_fields
       exclude_fields :created_at, :updated_at
     end

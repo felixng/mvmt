@@ -1,11 +1,11 @@
-class Api::V1::ResourcesController < Api::V1::BaseController
+class Api::V1::PlacesController < Api::V1::BaseController
   def show
-    resource = Resource.find(params[:id])
+    resource = Place.find(params[:id])
     render(json: Api::V1::ResourceSerializer.new(resource).to_json)
   end
 
   def update
-    resource = Resource.find(params[:id])
+    resource = Place.find(params[:id])
 
     if !resource.update_attributes(update_params)
       return api_error(status: 422, errors: user.errors)

@@ -1,5 +1,5 @@
 class AddTwitterToResources < ActiveRecord::Migration
   def change
-    add_column :resources, :twitter, :string
+    add_column :places, :twitter, :string
   end
 end

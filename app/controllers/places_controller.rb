@@ -1,4 +1,4 @@
-class ResourcesController < ApplicationController
+class PlacesController < ApplicationController
   skip_authorization_check
   skip_before_action :authenticate_user!
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
@@ -9,7 +9,7 @@ class ResourcesController < ApplicationController
     set_meta_tags canonical: 'https://mvmt.io/'
     set_meta()
 
-    @resources = Resource.where(:approved => true).shuffle
+    @resources = Place.where(:approved => true).shuffle
     @categories = Category.all
 
     @affiliate = Affiliate.getRandomHorizontalAffiliate()
@@ -26,7 +26,7 @@ class ResourcesController < ApplicationController
   end
 
   def new
-    @resource = Resource.new
+    @resource = Place.new
     respond_with(@resource)
   end
 
@@ -34,7 +34,7 @@ class ResourcesController < ApplicationController
   end
 
   def create
-    @resource = Resource.new(resource_params)
+    @resource = Place.new(resource_params)
     @resource.save
     respond_with(@resource)
   end
@@ -67,7 +67,7 @@ class ResourcesController < ApplicationController
     end
 
     def set_resource
-      @resource = Resource.friendly.find(params[:id].downcase)
+      @resource = Place.friendly.find(params[:id].downcase)
     end
 
     def resource_params

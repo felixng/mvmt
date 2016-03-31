@@ -30,7 +30,7 @@ Parkour = Category.find_by name: 'Parkour'
 
 #Google template
 =begin
-=resources = Resource.create({ name:'" & $A2 & "',
+=places = Place.create({ name:'" & $A2 & "',
                               website: '" & $C2 & "',
                               facebook: '" & $I2 & "',
                               instagram: '" & $J2 & "',
@@ -43,7 +43,7 @@ Parkour = Category.find_by name: 'Parkour'
                             })
 =end
 
-resources = Resource.create({ name:'Gravity Circus',
+resources = Place.create({ name:'Gravity Circus',
                               website: 'http://gravitycircuscentre.com/',
                               facebook: 'Gravity-Circus-Centre',
                               instagram: '',
@@ -54,7 +54,7 @@ resources = Resource.create({ name:'Gravity Circus',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'National Centre for Circus Arts ',
+resources = Place.create({ name:'National Centre for Circus Arts ',
                               website: 'https://www.nationalcircus.org.uk/',
                               facebook: 'NationalCentreforCircusArts',
                               instagram: 'nationalcircus',
@@ -65,7 +65,7 @@ resources = Resource.create({ name:'National Centre for Circus Arts ',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Aircraft Circus',
+resources = Place.create({ name:'Aircraft Circus',
                               website: 'http://aircraftcircus.com',
                               facebook: 'AirCraftCircus',
                               instagram: '',
@@ -76,7 +76,7 @@ resources = Resource.create({ name:'Aircraft Circus',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Flying Fantastic',
+resources = Place.create({ name:'Flying Fantastic',
                               website: 'http://www.flyingfantastic.co.uk',
                               facebook: 'flyingfantastic1',
                               instagram: '',
@@ -87,7 +87,7 @@ resources = Resource.create({ name:'Flying Fantastic',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'London Academy of Pole Dancing',
+resources = Place.create({ name:'London Academy of Pole Dancing',
                               website: 'http://www.laphq.co.uk/',
                               facebook: 'LAPHQ/',
                               instagram: 'londondanceacademy',
@@ -98,7 +98,7 @@ resources = Resource.create({ name:'London Academy of Pole Dancing',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'London Dance Academy',
+resources = Place.create({ name:'London Dance Academy',
                               website: 'http://londondanceacademy.laphq.co.uk',
                               facebook: 'LAPHQ/',
                               instagram: 'londondanceacademy',
@@ -109,7 +109,7 @@ resources = Resource.create({ name:'London Dance Academy',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'École de Pole',
+resources = Place.create({ name:'École de Pole',
                               website: 'http://www.ecoledepole.co.uk',
                               facebook: 'ecoledepole',
                               instagram: 'ecoledepole',
@@ -120,7 +120,7 @@ resources = Resource.create({ name:'École de Pole',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'My Aerial Home',
+resources = Place.create({ name:'My Aerial Home',
                               website: 'http://www.myaerialhome.co.uk',
                               facebook: 'MyAerialHome',
                               instagram: '',
@@ -131,7 +131,7 @@ resources = Resource.create({ name:'My Aerial Home',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Stratford Circus',
+resources = Place.create({ name:'Stratford Circus',
                               website: 'https://stratford-circus.com/classes/',
                               facebook: 'stratfordcircus1',
                               instagram: '',
@@ -142,7 +142,7 @@ resources = Resource.create({ name:'Stratford Circus',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Dance London',
+resources = Place.create({ name:'Dance London',
                               website: 'http://www.dance-london.com',
                               facebook: 'dancelondonuk',
                               instagram: 'dancelondonuk',
@@ -153,7 +153,7 @@ resources = Resource.create({ name:'Dance London',
                               category: [Circus],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Crossfit Centrol London',
+resources = Place.create({ name:'Crossfit Centrol London',
                               website: 'http://crossfitcentrallondon.co.uk/',
                               facebook: 'CFCentralLondon',
                               instagram: '',
@@ -164,7 +164,7 @@ resources = Resource.create({ name:'Crossfit Centrol London',
                               category: [Crossfit],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Reebok CrossFit Thames',
+resources = Place.create({ name:'Reebok CrossFit Thames',
                               website: 'http://crossfitthames.com/',
                               facebook: 'thamescrossfit',
                               instagram: '',
@@ -175,7 +175,7 @@ resources = Resource.create({ name:'Reebok CrossFit Thames',
                               category: [Crossfit],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'CrossFit Vauxhall',
+resources = Place.create({ name:'CrossFit Vauxhall',
                               website: 'http://crossfitvauxhall.co.uk/',
                               facebook: 'CrossfitVauxhall',
                               instagram: '',
@@ -186,7 +186,7 @@ resources = Resource.create({ name:'CrossFit Vauxhall',
                               category: [Crossfit],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Crossfit 1971',
+resources = Place.create({ name:'Crossfit 1971',
                               website: 'http://crossfit1971.com/',
                               facebook: 'crossfit1971',
                               instagram: 'crossfit1971',
@@ -197,7 +197,7 @@ resources = Resource.create({ name:'Crossfit 1971',
                               category: [Crossfit],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'CrossFit Performance 360',
+resources = Place.create({ name:'CrossFit Performance 360',
                               website: 'http://www.p360uk.com',
                               facebook: 'Performance360-246350145485231',
                               instagram: '',
@@ -208,7 +208,7 @@ resources = Resource.create({ name:'CrossFit Performance 360',
                               category: [Crossfit],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Crossfit SE11',
+resources = Place.create({ name:'Crossfit SE11',
                               website: 'http://crossfitse11.com',
                               facebook: 'crossfitse11',
                               instagram: 'crossfitse11',
@@ -219,7 +219,7 @@ resources = Resource.create({ name:'Crossfit SE11',
                               category: [Crossfit, Gymnastics],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Crossfit London',
+resources = Place.create({ name:'Crossfit London',
                               website: 'http://crossfitlondonuk.com',
                               facebook: 'crossfitlon.UK',
                               instagram: 'crossfitlondon',
@@ -230,7 +230,7 @@ resources = Resource.create({ name:'Crossfit London',
                               category: [Crossfit, Gymnastics],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Pineapple',
+resources = Place.create({ name:'Pineapple',
                               website: 'http://www.pineapple.uk.com',
                               facebook: 'pineappledance',
                               instagram: 'pineappledancestudios',
@@ -242,7 +242,7 @@ resources = Resource.create({ name:'Pineapple',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Husky Studio',
+resources = Place.create({ name:'Husky Studio',
                               website: 'http://www.huskystudios.co.uk',
                               facebook: 'huskystudiosLDN',
                               instagram: '',
@@ -254,7 +254,7 @@ resources = Resource.create({ name:'Husky Studio',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Dancework',
+resources = Place.create({ name:'Dancework',
                               website: 'http://danceworks.net ',
                               facebook: 'danceworksw1',
                               instagram: 'danceworkslondon',
@@ -265,7 +265,7 @@ resources = Resource.create({ name:'Dancework',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Studio68',
+resources = Place.create({ name:'Studio68',
                               website: 'http://www.studio68london.net',
                               facebook: 'studio68london',
                               instagram: 'studio68london',
@@ -277,7 +277,7 @@ resources = Resource.create({ name:'Studio68',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'The Place',
+resources = Place.create({ name:'The Place',
                               website: 'http://www.theplace.org.uk/',
                               facebook: 'theplace',
                               instagram: '',
@@ -289,7 +289,7 @@ resources = Resource.create({ name:'The Place',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Greenwich ',
+resources = Place.create({ name:'Greenwich ',
                               website: 'http://www.greenwichdance.org.uk/',
                               facebook: '',
                               instagram: '',
@@ -300,7 +300,7 @@ resources = Resource.create({ name:'Greenwich ',
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Southwark Gymnastics Club',
+resources = Place.create({ name:'Southwark Gymnastics Club',
                               website: 'http://southwarkgymnastics.co.uk',
                               facebook: 'SouthwarkGymnasticsClub',
                               instagram: 'southwarkgymnasticsclub',
@@ -312,7 +312,7 @@ resources = Resource.create({ name:'Southwark Gymnastics Club',
                               category: [Gymnastics],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Parkour Generations',
+resources = Place.create({ name:'Parkour Generations',
                               website: 'http://parkourgenerations.com',
                               facebook: 'parkourgenerations',
                               instagram: 'ParkourGenerations',
@@ -323,7 +323,7 @@ resources = Resource.create({ name:'Parkour Generations',
                               category: [Parkour],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'The Chainstore Gym & Parkour Academy - Parkour Generations',
+resources = Place.create({ name:'The Chainstore Gym & Parkour Academy - Parkour Generations',
                               website: 'http://parkourgenerations.com/chainstore/facilities/',
                               facebook: 'parkourgenerations',
                               instagram: 'ParkourGenerations',
@@ -334,7 +334,7 @@ resources = Resource.create({ name:'The Chainstore Gym & Parkour Academy - Parko
                               category: [Parkour],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'3Run Evolution Academy',
+resources = Place.create({ name:'3Run Evolution Academy',
                               website: 'http://www.3run.co.uk/academy/',
                               facebook: '3RUNTEAM',
                               instagram: '',
@@ -346,7 +346,7 @@ resources = Resource.create({ name:'3Run Evolution Academy',
                               category: [Parkour],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Paramount Parkour Academy',
+resources = Place.create({ name:'Paramount Parkour Academy',
                               website: 'http://paramountparkour.com',
                               facebook: 'ParamountParkour',
                               instagram: '',
@@ -357,7 +357,7 @@ resources = Resource.create({ name:'Paramount Parkour Academy',
                               category: [Parkour],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'LEAP',
+resources = Place.create({ name:'LEAP',
                               website: 'http://parkourgenerations.com/chainstore/leap/',
                               facebook: '',
                               instagram: '',
@@ -368,7 +368,7 @@ resources = Resource.create({ name:'LEAP',
                               category: [Parkour],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Free Move',
+resources = Place.create({ name:'Free Move',
                               website: 'http://www.freemove.co.uk ',
                               facebook: '',
                               instagram: '',
@@ -379,7 +379,7 @@ resources = Resource.create({ name:'Free Move',
                               category: [Parkour],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'North London Street Dance Academy',
+resources = Place.create({ name:'North London Street Dance Academy',
                               website: 'http://www.nlsda.co.uk/',
                               facebook: 'northlondonstreetdanceacademy',
                               instagram: 'northlondonstreetdanceacademy',
@@ -391,7 +391,7 @@ resources = Resource.create({ name:'North London Street Dance Academy',
                               category: [Dance],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Tropicana Dance School',
+resources = Place.create({ name:'Tropicana Dance School',
                               website: 'http://www.tropicanadanceschool.com/',
                               facebook: 'tropicanadanceschool',
                               instagram: '',
@@ -403,7 +403,7 @@ resources = Resource.create({ name:'Tropicana Dance School',
                               category: [Dance],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Salsateca',
+resources = Place.create({ name:'Salsateca',
                               website: 'http://www.salsateca.co.uk/',
                               facebook: 'salsatecadanceschool',
                               instagram: '',
@@ -414,7 +414,7 @@ resources = Resource.create({ name:'Salsateca',
                               category: [Dance],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Young Dancers Academy and West London School of Dance',
+resources = Place.create({ name:'Young Dancers Academy and West London School of Dance',
                               website: 'http://www.westlondonschoolofdance.co.uk/',
                               facebook: 'Young-Dancers-Academy-and-West-London-School-of-Dance-338598709526848',
                               instagram: '',
@@ -426,7 +426,7 @@ resources = Resource.create({ name:'Young Dancers Academy and West London School
                               category: [Dance],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Crossfit Aldgate',
+resources = Place.create({ name:'Crossfit Aldgate',
                               website: 'http://crossfitaldgate.com/',
                               facebook: 'crossfitaldgate',
                               instagram: 'crossfit_aldgate',
@@ -437,7 +437,7 @@ resources = Resource.create({ name:'Crossfit Aldgate',
                               category: [Crossfit],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'CrossFit Evolving',
+resources = Place.create({ name:'CrossFit Evolving',
                               website: 'http://www.crossfitevolving.com/',
                               facebook: 'CrossFitEvolving',
                               instagram: 'crossfitevolving',
@@ -448,7 +448,7 @@ resources = Resource.create({ name:'CrossFit Evolving',
                               category: [Crossfit],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'London Gymnastics',
+resources = Place.create({ name:'London Gymnastics',
                               website: 'https://www.british-gymnastics.org/london',
                               facebook: 'LondonGymnastics',
                               instagram: 'londongymnastics',
@@ -460,7 +460,7 @@ resources = Resource.create({ name:'London Gymnastics',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Elite Gymnastics Club',
+resources = Place.create({ name:'Elite Gymnastics Club',
                               website: 'http://www.elite-gymnastics.co.uk/',
                               facebook: 'Elite-Gymnastics-Club-195481340583763',
                               instagram: '',
@@ -471,7 +471,7 @@ resources = Resource.create({ name:'Elite Gymnastics Club',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Flair Gymnastics',
+resources = Place.create({ name:'Flair Gymnastics',
                               website: 'http://www.ukflair.com/',
                               facebook: 'ukflair',
                               instagram: '',
@@ -482,7 +482,7 @@ resources = Resource.create({ name:'Flair Gymnastics',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Jamies Gymnastics Academy',
+resources = Place.create({ name:'Jamies Gymnastics Academy',
                               website: 'http://www.jamiesgymnasticsacademy.co.uk/',
                               facebook: 'jga86',
                               instagram: '',
@@ -493,7 +493,7 @@ resources = Resource.create({ name:'Jamies Gymnastics Academy',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'East London Gym',
+resources = Place.create({ name:'East London Gym',
                               website: 'http://www.eastlondongym.co.uk/',
                               facebook: 'elgadults',
                               instagram: '',
@@ -504,7 +504,7 @@ resources = Resource.create({ name:'East London Gym',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Blaze Gymnastics UK',
+resources = Place.create({ name:'Blaze Gymnastics UK',
                               website: 'http://www.blazegymnastics.co.uk/',
                               facebook: 'blazegymuk',
                               instagram: '',
@@ -516,7 +516,7 @@ resources = Resource.create({ name:'Blaze Gymnastics UK',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Aspire GYmnastics Academy',
+resources = Place.create({ name:'Aspire GYmnastics Academy',
                               website: 'http://www.aspiregymnastics.com/',
                               facebook: 'Aspire-GYmnastics-Academy-506498729414414',
                               instagram: '',
@@ -527,7 +527,7 @@ resources = Resource.create({ name:'Aspire GYmnastics Academy',
                               category: [Gymnastics],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Parkour UK',
+resources = Place.create({ name:'Parkour UK',
                               website: 'http://www.parkouruk.org/',
                               facebook: 'ParkourUK',
                               instagram: '',
@@ -538,7 +538,7 @@ resources = Resource.create({ name:'Parkour UK',
                               category: [Parkour],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'SingleBound',
+resources = Place.create({ name:'SingleBound',
                               website: 'http://www.singlebound.co.uk/',
                               facebook: 'SingleBoundCoaching',
                               instagram: '',
@@ -549,7 +549,7 @@ resources = Resource.create({ name:'SingleBound',
                               category: [Parkour],
                                         approved: FALSE
                             })
-resources = Resource.create({ name:'Trinity Laban Conservatoire of Music and Dance',
+resources = Place.create({ name:'Trinity Laban Conservatoire of Music and Dance',
                               website: 'http://www.trinitylaban.ac.uk/',
                               facebook: 'trinity.laban',
                               instagram: '',
@@ -560,7 +560,7 @@ resources = Resource.create({ name:'Trinity Laban Conservatoire of Music and Dan
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Rambert School of Ballet and Contemporary Dance',
+resources = Place.create({ name:'Rambert School of Ballet and Contemporary Dance',
                               website: 'http://www.rambertschool.org.uk/',
                               facebook: 'Rambert-School-of-Ballet-and-Contemporary-Dance-127864160561762',
                               instagram: 'rambertschool',
@@ -572,7 +572,7 @@ resources = Resource.create({ name:'Rambert School of Ballet and Contemporary Da
                               category: [Dance],
                                         approved: TRUE
                             })
-resources = Resource.create({ name:'Jackson Lane',
+resources = Place.create({ name:'Jackson Lane',
                               website: 'http://www.jacksonslane.org.uk',
                               facebook: 'jacksonslane',
                               instagram: 'jacksons_lane',
@@ -597,7 +597,7 @@ user1.save!
 
 =begin
 Google = {
-    :class  => Resource,
+    :class  => Place,
     :source => open('https://spreadsheets.google.com/feeds/list/1p_57ky6F0791RZd0baSSBI9wuqs1hydLydEPs5ANlYE/1/public/values?alt=json'),
     :parser => Sprig::Parser::GoogleSpreadsheetJson,
     :option => find_existing_by['name']

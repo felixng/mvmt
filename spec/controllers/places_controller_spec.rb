@@ -18,10 +18,10 @@ require 'rails_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-RSpec.describe ResourcesController, :type => :controller do
+RSpec.describe PlacesController, :type => :controller do
 
   # This should return the minimal set of attributes required to create a valid
-  # Resource. As you add validations to Resource, be sure to
+  # Place. As you add validations to Place, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
@@ -33,20 +33,20 @@ RSpec.describe ResourcesController, :type => :controller do
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
-  # ResourcesController. Be sure to keep this updated too.
+  # PlacesController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all resources as @resources" do
-      resource = Resource.create! valid_attributes
+    it "assigns all places as @places" do
+      resource = Place.create! valid_attributes
       get :index, {}, valid_session
-      expect(assigns(:resources)).to eq([resource])
+      expect(assigns(:places)).to eq([resource])
     end
   end
 
   describe "GET show" do
     it "assigns the requested resource as @resource" do
-      resource = Resource.create! valid_attributes
+      resource = Place.create! valid_attributes
       get :show, {:id => resource.to_param}, valid_session
       expect(assigns(:resource)).to eq(resource)
     end
@@ -55,13 +55,13 @@ RSpec.describe ResourcesController, :type => :controller do
   describe "GET new" do
     it "assigns a new resource as @resource" do
       get :new, {}, valid_session
-      expect(assigns(:resource)).to be_a_new(Resource)
+      expect(assigns(:resource)).to be_a_new(Place)
     end
   end
 
   describe "GET edit" do
     it "assigns the requested resource as @resource" do
-      resource = Resource.create! valid_attributes
+      resource = Place.create! valid_attributes
       get :edit, {:id => resource.to_param}, valid_session
       expect(assigns(:resource)).to eq(resource)
     end
@@ -69,28 +69,28 @@ RSpec.describe ResourcesController, :type => :controller do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new Resource" do
+      it "creates a new Place" do
         expect {
           post :create, {:resource => valid_attributes}, valid_session
-        }.to change(Resource, :count).by(1)
+        }.to change(Place, :count).by(1)
       end
 
       it "assigns a newly created resource as @resource" do
         post :create, {:resource => valid_attributes}, valid_session
-        expect(assigns(:resource)).to be_a(Resource)
+        expect(assigns(:resource)).to be_a(Place)
         expect(assigns(:resource)).to be_persisted
       end
 
       it "redirects to the created resource" do
         post :create, {:resource => valid_attributes}, valid_session
-        expect(response).to redirect_to(Resource.last)
+        expect(response).to redirect_to(Place.last)
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved resource as @resource" do
         post :create, {:resource => invalid_attributes}, valid_session
-        expect(assigns(:resource)).to be_a_new(Resource)
+        expect(assigns(:resource)).to be_a_new(Place)
       end
 
       it "re-renders the 'new' template" do
@@ -107,20 +107,20 @@ RSpec.describe ResourcesController, :type => :controller do
       }
 
       it "updates the requested resource" do
-        resource = Resource.create! valid_attributes
+        resource = Place.create! valid_attributes
         put :update, {:id => resource.to_param, :resource => new_attributes}, valid_session
         resource.reload
         skip("Add assertions for updated state")
       end
 
       it "assigns the requested resource as @resource" do
-        resource = Resource.create! valid_attributes
+        resource = Place.create! valid_attributes
         put :update, {:id => resource.to_param, :resource => valid_attributes}, valid_session
         expect(assigns(:resource)).to eq(resource)
       end
 
       it "redirects to the resource" do
-        resource = Resource.create! valid_attributes
+        resource = Place.create! valid_attributes
         put :update, {:id => resource.to_param, :resource => valid_attributes}, valid_session
         expect(response).to redirect_to(resource)
       end
@@ -128,13 +128,13 @@ RSpec.describe ResourcesController, :type => :controller do
 
     describe "with invalid params" do
       it "assigns the resource as @resource" do
-        resource = Resource.create! valid_attributes
+        resource = Place.create! valid_attributes
         put :update, {:id => resource.to_param, :resource => invalid_attributes}, valid_session
         expect(assigns(:resource)).to eq(resource)
       end
 
       it "re-renders the 'edit' template" do
-        resource = Resource.create! valid_attributes
+        resource = Place.create! valid_attributes
         put :update, {:id => resource.to_param, :resource => invalid_attributes}, valid_session
         expect(response).to render_template("edit")
       end
@@ -143,14 +143,14 @@ RSpec.describe ResourcesController, :type => :controller do
 
   describe "DELETE destroy" do
     it "destroys the requested resource" do
-      resource = Resource.create! valid_attributes
+      resource = Place.create! valid_attributes
       expect {
         delete :destroy, {:id => resource.to_param}, valid_session
-      }.to change(Resource, :count).by(-1)
+      }.to change(Place, :count).by(-1)
     end
 
-    it "redirects to the resources list" do
-      resource = Resource.create! valid_attributes
+    it "redirects to the places list" do
+      resource = Place.create! valid_attributes
       delete :destroy, {:id => resource.to_param}, valid_session
       expect(response).to redirect_to(resources_url)
     end

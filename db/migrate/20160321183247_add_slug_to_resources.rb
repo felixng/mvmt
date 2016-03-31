@@ -1,6 +1,6 @@
 class AddSlugToResources < ActiveRecord::Migration
   def change
-    add_column :resources, :slug, :string
-    add_index :resources, :slug
+    add_column :places, :slug, :string
+    add_index :places, :slug
   end
 end

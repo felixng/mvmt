@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   get '/privacy' => 'pages#privacy', as: 'privacy'
   get '/about' => 'pages#about', as: 'about'
   get '/advertise' => 'pages#advertise', as: 'advertise'
-  get '/resources' => 'products#index', as: 'resources'
-  get 'project/new_release' => 'resources#modal', :as => :modal
+  get '/places' => 'products#index', as: 'places'
+  get 'project/new_release' => 'places#modal', :as => :modal
 
   # OAuth
   oauth_prefix = Rails.application.config.auth.omniauth.path_prefix
@@ -55,18 +55,18 @@ Rails.application.routes.draw do
 
   get 'robots.:format' => 'robots#index'
 
-  root 'resources#index'
-  get '/resources/:id' => 'resources#show'
+  root 'places#index'
+  get '/places/:id' => 'places#show'
   #root 'pages#home'
 
   #api
   namespace :api do
     namespace :v1 do
-      resources :resources, only: [:index, :create, :show, :update, :destroy]
+      resources :places, only: [:index, :create, :show, :update, :destroy]
       resources :ad_types, only: [:index, :create, :show, :update, :destroy]
       resources :categories, only: [:index, :create, :show, :update, :destroy]
       resources :affiliates, only: [:index, :create, :show, :update, :destroy]
-      # resources :resources do
+      # places :places do
       #   get 'placeId', on: :member
       # end
     end

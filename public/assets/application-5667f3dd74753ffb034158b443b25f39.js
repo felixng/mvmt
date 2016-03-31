@@ -12648,10 +12648,10 @@ app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', 
             console.log();
             console.log();
             
-            $http.get(  + "/resources/" + id)
+            $http.get(  + "/places/" + id)
                 .then(function(response){
                     $http({
-                        url:  + '/resources/' + id,
+                        url:  + '/places/' + id,
                         dataType: 'json',
                         method: 'PUT',
                         data: {
