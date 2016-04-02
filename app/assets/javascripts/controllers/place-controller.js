@@ -1,14 +1,16 @@
-
-app.controller('CategoryController',['$window', '$scope', '$rootScope', '$sce', '$http',
+app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$http',
     function ($window, $scope, $rootScope, $sce, $http) {
         var catMenu = this;
-
         $rootScope.mapUrl = '';
-
         $rootScope.filters = [];
+        $rootScope.places = [];
 
         $scope.getAllStudios = function(){
-
+            $http.get( "/api/v1/places/")
+                .then(function(response){
+                    console.log(response.data.places);
+                    $rootScope.places = response.data.places;
+                });
         }
 
         $scope.updateFilter = function(category){

@@ -1,4 +1,9 @@
 class Api::V1::PlacesController < Api::V1::BaseController
+  def index
+    @place = Place.all
+    render(json: @place)
+  end
+
   def show
     resource = Place.find(params[:id])
     render(json: Api::V1::PlaceSerializer.new(resource).to_json)
@@ -6,7 +11,6 @@ class Api::V1::PlacesController < Api::V1::BaseController
 
   def update
     resource = Place.find(params[:id])
-
     if !resource.update_attributes(update_params)
       return api_error(status: 422, errors: user.errors)
     else
