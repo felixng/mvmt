@@ -33,10 +33,28 @@ class PlacesController < ApplicationController
   def edit
   end
 
+  # def create
+  #   @resource = Place.new(resource_params)
+  #   @resource.save
+  #   respond_with(@resource)
+  # end
+
   def create
-    @resource = Place.new(resource_params)
-    @resource.save
-    respond_with(@resource)
+    @place = Place.new(resource_params)
+
+    respond_to do |format|
+      if @place.save
+        format.html { redirect_to @place, notice: 'Person was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @place }
+        # added:
+        format.js   { render action: 'show', status: :created, location: @place }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @place.errors, status: :unprocessable_entity }
+        # added:
+        format.js   { render json: @place.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def update

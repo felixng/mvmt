@@ -41,9 +41,10 @@
     .auth__links
       By signing up, you agree to the
       = link_to 'Terms', terms_path
-      and
-      = succeed '.' do
-        = link_to 'Privacy', privacy_path
+      of MVMT
+      -#and
+      -#= succeed '.' do
+      -#  = link_to 'Privacy', privacy_path
 
   - content_for :on_ready do
     $('input[name="user[email]"]').on('click keydown', function(){$(this).closest('form').find('.collapse').addClass('in')});

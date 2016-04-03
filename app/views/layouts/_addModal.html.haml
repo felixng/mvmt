@@ -1,0 +1,14 @@
+%modal.ng-hide{:title => "Add a new place", "ng-show" => "showModal"}
+  = simple_form_for(Place.new) do |f|
+    = f.error_notification
+
+    .form-inputs
+      = f.input :name
+      = f.input :website
+      = f.input :facebook
+      = f.input :twitter
+      = f.input :instagram
+      = f.input :logo
+
+    .form-actions
+      = f.button :submit
