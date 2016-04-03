@@ -1,4 +1,5 @@
 class Api::V1::PlaceSerializer < ActiveModel::Serializer
+  attributes :id
   attributes :name
   attributes :desc
   attributes :logo
