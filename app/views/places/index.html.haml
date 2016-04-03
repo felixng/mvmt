@@ -1,4 +1,4 @@
-%div.home{"ng-controller"=>"PlacesController as placesController", "ng-init" => "getAllStudios();"}
+%div.home{"ng-controller"=>"PlacesController as placesController", "ng-init" => "init();"}
   %h4.title
     A curated list of studios and schools for people who move.
   -#= link_to 'Test', new_user_registration_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}
@@ -12,14 +12,16 @@
     -#- @resources.each_with_index do |resource, index|
     -#= render partial: 'places/card', locals: { resource: resource, index: index}
     %li{ :class => "animated {{place.category[0].name}} ico-{{place.category[0].name | lowercase}}",
-          "ng-repeat" => "place in places"}
+          "ng-class" => "getCardClass($index)",
+          "ng-repeat" => "place in places | filter: categoryComparer(filters) ", "on-finish-render" => "ngRepeatFinished"}
       %div.brand
-        %img{ :alt => "place.name", :class => "logo", :height => "100", :src => "{{place.logo}}", :width => "100", "ng-show" => "place.logo"}
+        %img{ :alt => "{{place.name}}", :class => "logo", :height => "100", "ng-src" => "{{place.logo}}", :width => "100"}
       %h3.card-title {{place.name}}
       %span.rb-code {{place.postcode}}
       %a.fa.fa-facebook{:href => "http://www.facebook.com/{{place.facebook}}", "ng-show" => "place.facebook"}
       %a.fa.fa-twitter{:href => "http://www.facebook.com/{{place.twitter}}", "ng-show" => "place.twitter"}
       %a.fa.fa-instagram{:href => "http://www.facebook.com/{{place.instagram}}", "ng-show" => "place.instagram"}
       -#= render partial: 'places/overlay', locals: { resource: resource }
-- content_for :on_ready do
-  Boxgrid.init();
+      = render partial: 'places/overlay'
+-#- content_for :on_ready do
+-#  Boxgrid.init();

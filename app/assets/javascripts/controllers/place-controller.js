@@ -5,12 +5,32 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $rootScope.filters = [];
         $rootScope.places = [];
 
-        $scope.getAllStudios = function(){
+        $scope.init = function(){
+            getAllStudios();
+        }
+
+        $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+            resizeFont('.rb-grid h3');
+            Boxgrid.init();
+        });
+
+        $scope.getCardClass = function(index){
+            return {
+                'rb-span-2': index%21%8 == 0
+            };
+        }
+
+        function getAllStudios(){
             $http.get( "/api/v1/places/")
                 .then(function(response){
-                    console.log(response.data.places);
                     $rootScope.places = response.data.places;
                 });
+        }
+
+        $scope.categoryComparer = function( filters ) {
+            return function( item ) {
+                return filters.indexOf(item.category[0].name.toLowerCase()) > 0;
+            };
         }
 
         $scope.updateFilter = function(category){
@@ -18,7 +38,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             var index = $rootScope.filters.indexOf(category);
 
             if (index > -1){
-                console.log(index);
                 $rootScope.filters.splice(index, 1);
             }
             else {
@@ -59,6 +78,30 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         console.log(error);
                     });
                 });
+        }
+
+
+        function resizeFont(ele){
+            $(ele).each(function() {
+                var $name = $(this);
+
+                var divHeight = $name.height();
+                var lineHeight = $name.css('line-height').replace('px', '');
+                var lines = Math.round(divHeight / lineHeight);
+
+                if (lines === 2) {
+                    $name.addClass("small");
+                }
+                else if (lines === 3) {
+                    $name.addClass("smaller");
+                }
+                else if (lines === 4) {
+                    $name.addClass("xsmall");
+                }
+                else if (lines > 4) {
+                    $name.addClass("xxsmall");
+                }
+            });
         }
 
     }

@@ -227,8 +227,8 @@ function resizeFont(ele){
         }
     });
 }
-
-$(function(){
-    resizeFont('.rb-grid h3');
-    //fitFontText('.rb-city');
-});
+//
+//$(function(){
+//    resizeFont('.rb-grid h3');
+//    //fitFontText('.rb-city');
+//});

@@ -29,6 +29,7 @@
 #= require flowtype.js
 #= require overlay.js
 #= require controllers/place-controller.js
+#= require directives/mvmt-directives.js
 
 # Add error class to .avatar images if they fail to load
 # See avatar.scss and _avatar.html.haml
