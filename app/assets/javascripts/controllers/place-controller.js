@@ -185,9 +185,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         });
 
         $scope.getCardClass = function(index){
-            return {
-                'rb-span-2': index%21%8  == 0
-            };
+            if (index%21%8 == 0){
+                console.log('rb-span-2');
+                return 'rb-span-2';
+            }
+            //return {
+            //    'rb-span-2': (index%21%8  == 0)
+            //};
         }
 
         function getAllStudios(){
