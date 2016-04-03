@@ -62,7 +62,7 @@ class PlacesController < ApplicationController
                         locale: 'en_GB',
                         type: 'website',
                         url: url_for(),
-                        image: root_url + ActionController::Base.helpers.image_path('mvmt-logo.png')
+                        image: root_url + 'mvmt-logo.png'
                     }
 
     end
