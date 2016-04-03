@@ -153,3 +153,7 @@ a {
 	text-align: center;
 	padding: 0.313em 0;
 }
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}

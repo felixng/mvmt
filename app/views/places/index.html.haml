@@ -21,7 +21,6 @@
       %a.fa.fa-facebook{:href => "http://www.facebook.com/{{place.facebook}}", "ng-show" => "place.facebook"}
       %a.fa.fa-twitter{:href => "http://www.facebook.com/{{place.twitter}}", "ng-show" => "place.twitter"}
       %a.fa.fa-instagram{:href => "http://www.facebook.com/{{place.instagram}}", "ng-show" => "place.instagram"}
-      -#= render partial: 'places/overlay', locals: { resource: resource }
       = render partial: 'places/overlay'
 -#- content_for :on_ready do
 -#  Boxgrid.init();
