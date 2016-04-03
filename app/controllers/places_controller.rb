@@ -61,7 +61,7 @@ class PlacesController < ApplicationController
                         description: 'Discover yourself through movement.',
                         locale: 'en_GB',
                         type: 'website',
-                        url:      'https://mvmt.io',
+                        url: url_for()
                     }
 
     end
