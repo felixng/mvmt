@@ -27,7 +27,6 @@
 #= require mvmt.js.erb
 #= require logo.js
 #= require flowtype.js
-#= require overlay.js
 #= require controllers/place-controller.js
 #= require directives/mvmt-directives.js
 

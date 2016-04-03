@@ -30,7 +30,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 function init(options) {
                     // apply fittext plugin
                     $items = $('#rb-grid > li');
-                    console.log($items);
                     $items.find('div.rb-week > div span').fitText(1).end().find('div.rb-city').fitText(0.7);
                     initEvents();
                 }
@@ -44,7 +43,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             $overlay = $item.children('div.rb-overlay');
 
                         $item.on('click', function () {
-                            console.log('click!');
                             if ($item.data('isExpanded')) {
                                 return false;
                             }
@@ -181,7 +179,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
         $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
             resizeFont('.rb-grid h3');
-            console.log('calling init');
             Boxgrid.init();
         });
 
