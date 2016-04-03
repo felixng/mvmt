@@ -207,10 +207,10 @@ h3.map-placeholder{
 	line-height: 0.8;
 }
 
-.rb-week div.rb-city {
+.rb-week div.rb-city.ng-binding {
     font-weight: 300;
 	padding: 3% 10%;
-	font-size: 4em;
+	font-size: 4em !important;
 	line-height: 1.2;
 }
 

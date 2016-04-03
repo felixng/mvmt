@@ -57,10 +57,10 @@
   background-color: #ffffff;
 }
 
-.card.ng-enter {
+.place-card.ng-enter {
   animation: bounceIn 1s;
 }
 
-.card.ng-leave {
+.place-card.ng-leave {
   animation: bounceOut 0.6s;
 }
