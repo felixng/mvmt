@@ -49,10 +49,6 @@
   right: 3px;
 }
 
-.brand {
-
-}
-
 .logo {
   opacity: 0.7;
   padding: 4px;
@@ -61,13 +57,10 @@
   background-color: #ffffff;
 }
 
-.ng-hide-remove {
-  -webkit-animation: bounceIn 2.5s;
-  animation: bounceIn 2.5s;
+.card.ng-enter {
+  animation: bounceIn 1s;
 }
 
-.ng-hide-add {
-  -webkit-animation: flipOutX 2.5s;
-  animation: flipOutX 2.5s;
-  display: block !important;
+.card.ng-leave {
+  animation: bounceOut 0.6s;
 }

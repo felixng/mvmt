@@ -202,7 +202,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         }
 
         $scope.updateFilter = function(category){
-
             var index = $rootScope.filters.indexOf(category);
 
             if (index > -1){
@@ -224,7 +223,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         }
 
         function MapUrl(name){
-
             return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + encodeURIComponent(name) + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
         }
 
