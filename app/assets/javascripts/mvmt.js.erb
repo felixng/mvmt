@@ -51,6 +51,7 @@ app.directive('modal', function () {
 app.controller('MvmtCtrl',['$scope', function ($scope) {
         $scope.showModal = false;
         $scope.toggleModal = function () {
+            console.log('in');
             $scope.showModal = !$scope.showModal;
         };
     }
