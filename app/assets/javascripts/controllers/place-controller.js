@@ -57,7 +57,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                 clipPropFirst = 'rect(' + layoutProp.top + 'px ' + ( layoutProp.left + layoutProp.width ) + 'px ' + ( layoutProp.top + layoutProp.height ) + 'px ' + layoutProp.left + 'px)',
                                 clipPropLast = 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)';
 
-                            console.log(layoutProp);
+                            console.log(winsize.width);
 
                             $overlay.css({
                                 clip: supportTransitions ? clipPropFirst : clipPropLast,
