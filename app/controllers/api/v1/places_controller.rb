@@ -1,7 +1,7 @@
 class Api::V1::PlacesController < Api::V1::BaseController
   def index
-    # @place = Place.where(:approved => true).shuffle
-    @place = Place.all
+    @place = Place.where(:approved => true).shuffle
+    #@place = Place.all
     render(json: @place)
   end
 
