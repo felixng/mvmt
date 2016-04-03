@@ -243,7 +243,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         method: 'PUT',
                         data: {
                             id: id,
-                            clickthrough: response.data.resource.clickthrough + 1
+                            clickthrough: response.data.place.clickthrough + 1
                         },
                         headers: {
                             "Content-Type": "application/json"
