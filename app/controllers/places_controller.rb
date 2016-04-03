@@ -61,7 +61,8 @@ class PlacesController < ApplicationController
                         description: 'Discover yourself through movement.',
                         locale: 'en_GB',
                         type: 'website',
-                        url: url_for()
+                        url: url_for(),
+                        image: ActionController::Base.helpers.image_url('mvmt-logo.png')
                     }
 
     end
