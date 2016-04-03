@@ -197,7 +197,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
         $scope.categoryComparer = function( filters ) {
             return function( item ) {
-                return filters.indexOf(item.category[0].name.toLowerCase()) > 0;
+                return filters.indexOf(item.category[0].name.toLowerCase()) >= 0;
             };
         }
 
@@ -224,12 +224,11 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         }
 
         function MapUrl(name){
-            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + name + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
+
+            return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + encodeURIComponent(name) + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
         }
 
         $scope.ClickThroughUpdate = function(id, name){
-            console.log(id);
-            console.log(name);
             $rootScope.map[id] = MapUrl(name);
 
             $http.get( "/api/v1/places/" + id)
