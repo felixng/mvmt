@@ -28,12 +28,9 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                     winsize = getWindowSize();
 
                 function init(options) {
-                    //reset after angular
-                    $items = $('#rb-grid > li');
-
                     // apply fittext plugin
+                    $items = $('#rb-grid > li');
                     $items.find('div.rb-week > div span').fitText(1).end().find('div.rb-city').fitText(0.7);
-
                     initEvents();
                 }
 
@@ -56,8 +53,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             var layoutProp = getItemLayoutProp($item),
                                 clipPropFirst = 'rect(' + layoutProp.top + 'px ' + ( layoutProp.left + layoutProp.width ) + 'px ' + ( layoutProp.top + layoutProp.height ) + 'px ' + layoutProp.left + 'px)',
                                 clipPropLast = 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)';
-
-                            console.log(winsize.width);
 
                             $overlay.css({
                                 clip: supportTransitions ? clipPropFirst : clipPropLast,
@@ -185,13 +180,15 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
             resizeFont('.rb-grid h3');
             Boxgrid.init();
-
         });
 
         $scope.getCardClass = function(index){
             if (index%21%8 == 0){
                 return 'rb-span-2';
+
             }
+
+
             //return {
             //    'rb-span-2': (index%21%8  == 0)
             //};

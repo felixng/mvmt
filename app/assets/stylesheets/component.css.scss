@@ -108,7 +108,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: 100%;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -176,7 +176,7 @@ h3.map-placeholder{
   height:100vh;
   width: 100%;
   left: 0;
-  
+  z-index: 10;
 }
 
 .rb-week .map {
@@ -207,18 +207,11 @@ h3.map-placeholder{
 	line-height: 0.8;
 }
 
-.rb-week div.rb-city.ng-binding {
+.rb-week div.rb-city {
     font-weight: 300;
 	padding: 3% 10%;
 	font-size: 4em !important;
 	line-height: 1.2;
-}
-
-.rb-week div.rb-city {
-  font-weight: 300;
-  padding: 3% 10%;
-  font-size: 4em !important;
-  line-height: 1.2;
 }
 
 .rb-week [class^="ico-"]:before {
@@ -244,12 +237,6 @@ div.basic{
 .rb-grid li.ico-crossfit, .studio-crossfit { background-color: #FFCC66; }
 .rb-grid li.ico-gymnastics, .studio-gymnastics  { background-color: #CC6699; }
 .rb-grid li.ico-parkour, .studio-parkour{ background-color: #666699; }
-
-//.rb-grid li.ico-dance, .studio-dance { background-color: #3BADFF; }
-//.rb-grid li.ico-circus, .studio-circus { background-color: #FFC741; }
-//.rb-grid li.ico-crossfit, .studio-crossfit { background-color: #FF6F6F; }
-//.rb-grid li.ico-gymnastics, .studio-gymnastics  { background-color: #FF9B3B; }
-//.rb-grid li.ico-parkour, .studio-parkour{ background-color: #06D6B3; }
 
 /* Overlay Columns */
 .rb-grid li.ico-dance .rb-week > div:nth-child(11) { background-color: #3399CC; }
