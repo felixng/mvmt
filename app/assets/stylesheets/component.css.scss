@@ -232,11 +232,11 @@ div.basic{
 /* Colors */
 
 /* Grid */
-.rb-grid li.ico-dance, .studio-dance { background-color: #3399CC; }
-.rb-grid li.ico-circus, .studio-circus { background-color: #C24747; }
-.rb-grid li.ico-crossfit, .studio-crossfit { background-color: #FFCC66; }
-.rb-grid li.ico-gymnastics, .studio-gymnastics  { background-color: #CC6699; }
-.rb-grid li.ico-parkour, .studio-parkour{ background-color: #666699; }
+.rb-grid li.ico-dance, .studio-dance { background-color: $dance-color; }
+.rb-grid li.ico-circus, .studio-circus { background-color: $circus-color; }
+.rb-grid li.ico-crossfit, .studio-crossfit { background-color: $crossfit-color; }
+.rb-grid li.ico-gymnastics, .studio-gymnastics  { background-color: $gymnastics-color; }
+.rb-grid li.ico-parkour, .studio-parkour{ background-color: $parkour-color; }
 
 /* Overlay Columns */
 .rb-grid li.ico-dance .rb-week > div:nth-child(11) { background-color: #3399CC; }
