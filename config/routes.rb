@@ -40,7 +40,7 @@ Rails.application.routes.draw do
       passwords: 'users/passwords', confirmations: 'users/confirmations', unlocks: 'users/unlocks'},
     path_names: {sign_up: 'signup', sign_in: 'login', sign_out: 'logout'}
   devise_scope :user do
-    get "#{devise_prefix}/after" => 'places#index', as: 'user_root'
+    get "#{devise_prefix}/after" => 'users/registrations#after_auth', as: 'user_root'
   end
   get devise_prefix => redirect('/a/signup')
 
