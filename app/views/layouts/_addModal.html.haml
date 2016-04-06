@@ -1,5 +1,9 @@
 %modal.ng-hide{:title => "Add a new place", "ng-show" => "showModal"}
-  = simple_form_for(Place.new) do |f|
+  = simple_form_for(Place.new,
+                    method: :post,
+                    remote: true,
+                    html:{role: :form, 'data-model' => 'place'},
+                    input_html:{"data-remote" => true, "data-url" => "/api/v1/places", "data-type" => :json}) do |f|
     = f.error_notification
 
     .form-inputs
@@ -9,6 +13,7 @@
       = f.input :twitter
       = f.input :instagram
       = f.input :logo
+      -#= f.association :category
 
     .form-actions
       = f.button :submit

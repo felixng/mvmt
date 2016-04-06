@@ -18,7 +18,9 @@ https://github.com/nfelix/mvmt/
 
     %script{:src => "https://www.dwin2.com/pub.268283.min.js", "async" => true}
     %script{:src => "//load.sumome.com/", "data-sumo-site-id" => "8591f12b0d44f77831df88439e81d6e04019a689b99acf3253daf9736b0f90f2", "async" => true}
-    %meta{charset: "utf-8"}/
+    %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-570384c0cbab44dc", "async" => true}
+
+    %meta{charset: "utf-8"}
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
     = display_meta_tags
     %link{:rel => :stylesheet, :href => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'}
@@ -30,7 +32,7 @@ https://github.com/nfelix/mvmt/
     = csrf_meta_tags
     = yield :head
     = render 'layouts/airbrake'
-  %body{class: "controller__#{controller_name} action__#{action_name} studio studio-#{Category.find(@resource.category.first).name.downcase}" }
+  %body{class: "controller__#{controller_name} action__#{action_name} studio studio-#{Category.find(@place.category.first).name.downcase}" }
     = render 'layouts/navigation'
     .errors__container
       = render 'layouts/messages'

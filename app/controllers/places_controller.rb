@@ -5,11 +5,12 @@ class PlacesController < ApplicationController
   layout "single", only: [:show]
 
   def index
+
     set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
     set_meta_tags canonical: 'https://mvmt.io/'
     set_meta()
 
-    @resources = Place.where(:approved => true).shuffle
+    @places = Place.where(:approved => true).shuffle
     @categories = Category.all
 
     @affiliate = Affiliate.getRandomHorizontalAffiliate()
@@ -18,36 +19,37 @@ class PlacesController < ApplicationController
   end
 
   def show
-    set_meta_tags title: @resource.name + ' - MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    set_meta_tags title: @place.name + ' - MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
     set_meta_tags canonical: url_for()
     set_meta()
 
-    @resource
+    @place
   end
 
   def new
-    @resource = Place.new
-    respond_with(@resource)
+    puts 'new'
+    @place = Place.new
+    respond_with(@place)
   end
 
   def edit
   end
 
   # def create
-  #   @resource = Place.new(resource_params)
-  #   @resource.save
-  #   respond_with(@resource)
+  #   @place = Place.new(resource_params)
+  #   @place.save
+  #   respond_with(@place)
   # end
 
   def create
     @place = Place.new(resource_params)
-
     respond_to do |format|
       if @place.save
-        format.html { redirect_to @place, notice: 'Person was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @place }
-        # added:
-        format.js   { render action: 'show', status: :created, location: @place }
+        # format.html { redirect_to @place, notice: 'Person was successfully created.' }
+        # format.json { render json: @place, status: :created, location: @place }
+        # # added:
+        # format.js   { render action: 'show', status: :created, location: @place }
+        respond_with(@place)
       else
         format.html { render action: 'new' }
         format.json { render json: @place.errors, status: :unprocessable_entity }
@@ -58,13 +60,13 @@ class PlacesController < ApplicationController
   end
 
   def update
-    @resource.update(resource_params)
-    respond_with(@resource)
+    @place.update(resource_params)
+    respond_with(@place)
   end
 
   def destroy
-    @resource.destroy
-    respond_with(@resource)
+    @place.destroy
+    respond_with(@place)
   end
 
   private
@@ -86,10 +88,11 @@ class PlacesController < ApplicationController
     end
 
     def set_resource
-      @resource = Place.friendly.find(params[:id].downcase)
+      puts 'set_resource'
+      @place = Place.friendly.find(params[:id].downcase)
     end
 
     def resource_params
-      params.require(:resource).permit(:name, :logo, :website, :affilatelink, :affiliate)
+      params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram)
     end
 end

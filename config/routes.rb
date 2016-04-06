@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :affiliates
   resources :products
   resources :categories
+  resources :places
 
   if defined? Sidekiq
     require 'sidekiq/web'
@@ -22,8 +23,8 @@ Rails.application.routes.draw do
   get '/privacy' => 'pages#privacy', as: 'privacy'
   get '/about' => 'pages#about', as: 'about'
   get '/advertise' => 'pages#advertise', as: 'advertise'
-  get '/places' => 'products#index', as: 'places'
-  get 'project/new_release' => 'places#modal', :as => :modal
+  # get '/places' => 'products#index', as: 'places'
+  # get 'project/new_release' => 'places#modal', :as => :modal
 
   # OAuth
   oauth_prefix = Rails.application.config.auth.omniauth.path_prefix
@@ -39,7 +40,7 @@ Rails.application.routes.draw do
       passwords: 'users/passwords', confirmations: 'users/confirmations', unlocks: 'users/unlocks'},
     path_names: {sign_up: 'signup', sign_in: 'login', sign_out: 'logout'}
   devise_scope :user do
-    get "#{devise_prefix}/after" => 'users/registrations#after_auth', as: 'user_root'
+    get "#{devise_prefix}/after" => 'places#index', as: 'user_root'
   end
   get devise_prefix => redirect('/a/signup')
 
@@ -56,7 +57,8 @@ Rails.application.routes.draw do
   get 'robots.:format' => 'robots#index'
 
   root 'places#index'
-  get '/places/:id' => 'places#show'
+  # get '/places/:id' => 'places#show'
+
   #root 'pages#home'
 
   #api

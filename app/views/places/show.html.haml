@@ -1,24 +1,24 @@
-.rb-overlay{:class => "ico-#{Category.find(@resource.category.first).name.downcase}"}
+.rb-overlay{:class => "ico-#{Category.find(@place.category.first).name.downcase}"}
   .rb-week
     %div.basic
       %div.icon-logo
-        =image_tag @resource.logo.url, :size => "200x200", :class => "logo"
-      %div.rb-city=@resource.name
-      - if @resource.website?
+        =image_tag @place.logo.url, :size => "200x200", :class => "logo"
+      %div.rb-city=@place.name
+      - if @place.website?
         %div.overlay-details
-          %a{:href => @resource.website} #{@resource.website}
+          %a{:href => @place.website} #{@place.website}
       %div.overlay-details
-        - if @resource.facebook?
-          %a.fa.fa-facebook{:href => "http://www.facebook.com/" + @resource.facebook}
-        - if @resource.twitter?
-          %a.fa.fa-twitter{:href => "http://www.twitter.com/" + @resource.twitter }
-        - if @resource.instagram?
-          %a.fa.fa-instagram{:href => "http://www.instagram.com/" + @resource.instagram}
-      %p.overlay-desc=@resource.desc
+        - if @place.facebook?
+          %a.fa.fa-facebook{:href => "http://www.facebook.com/" + @place.facebook}
+        - if @place.twitter?
+          %a.fa.fa-twitter{:href => "http://www.twitter.com/" + @place.twitter }
+        - if @place.instagram?
+          %a.fa.fa-instagram{:href => "http://www.instagram.com/" + @place.instagram}
+      %p.overlay-desc=@place.desc
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
     %div.map
-      %iframe{"ng-src" => 'https://www.google.com/maps/embed/v1/place?q=' + @resource.name + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15',
+      %iframe{"ng-src" => 'https://www.google.com/maps/embed/v1/place?q=' + @place.name + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15',
               :frameborder => "0", :style => "border:0; width: 100%; height: 100%",
               :allowfullscreen => true}
     %div.sponsor
