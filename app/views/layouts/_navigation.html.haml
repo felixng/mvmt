@@ -3,10 +3,10 @@
   %a.bt-menu-trigger#bt-menu-trigger{:href => "#"}
     %span Menu
   %div.dropdown.bt-user
-    - if user_signed_in?
+    - if user_signed_in? && current_user.is_admin?
       %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
         = render 'users/avatar', size: :thumb
-        %b.caret
+        -#%b.caret
       %div.dropdown-menu
         - if current_user.is_admin?
           %div= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}

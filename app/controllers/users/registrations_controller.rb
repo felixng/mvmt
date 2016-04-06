@@ -40,7 +40,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     # Place will not yet be saved if user is signing up with OAuth
     elsif resource.persisted? && resource.valid?
       path = after_sign_in_path_for(current_user)
-      path = user_home_path unless valid_after_sign_in_path?(path)
+      path = root_path unless valid_after_sign_in_path?(path)
       redirect_to path
 
     # Redisplay registration form with OAuth data for user to confirm
