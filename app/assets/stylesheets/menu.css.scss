@@ -298,3 +298,17 @@ a.bt-menu-brand.scrolled, a.bt-add.scrolled {
 .modal-dialog {
   color: #555;
 }
+@media screen and (max-width: 63.125em) {
+  .bt-menu ul {
+    padding-bottom: 50px;
+  }
+
+  .bt-menu.bt-menu-open{
+    border-width: 0px 0px 100px 150px;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
