@@ -7,6 +7,8 @@
       %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
         = render 'users/avatar', size: :thumb
         -#%b.caret
+    - if user_signed_in? && !current_user.is_admin?
+      = render 'users/avatar', size: :thumb
       %div.dropdown-menu
         - if current_user.is_admin?
           %div= link_to I18n.t('admin.link'), rails_admin_path, data: {"no-turbolink" => true}
