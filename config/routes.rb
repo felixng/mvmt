@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   # Static pages
   match '/error' => 'pages#error', via: [:get, :post], as: 'error_page'
-  match '/affiliate' => 'pages#affiliate', via: [:get, :post], as: 'affiliate_page'
+  match '/disclosure' => 'pages#affiliate', via: [:get, :post], as: 'disclosure'
   get '/terms' => 'pages#terms', as: 'terms'
   get '/privacy' => 'pages#privacy', as: 'privacy'
   get '/about' => 'pages#about', as: 'about'
