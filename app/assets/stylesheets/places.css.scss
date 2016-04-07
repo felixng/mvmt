@@ -34,6 +34,7 @@ a.category-select :hover{
 .menu {
   line-height: 1;
   margin: 0 auto 3em;
+  width: 100%
 }
 
 .menu__list {
@@ -45,6 +46,7 @@ a.category-select :hover{
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .menu__list a {
@@ -53,8 +55,7 @@ a.category-select :hover{
 
 .menu__item {
   display: inline-block;
-  width: 120px;
-  margin: 1em 0;
+  width: 18%;
 }
 
 .menu__link {
@@ -997,7 +998,8 @@ a.category-select :hover{
 
 /* Trinculo */
 .menu--trinculo .menu__item {
-  margin: 0 1.75em;
+  width: 18%;
+  padding: 0 2%;
 }
 
 .menu--trinculo .menu__link {
@@ -2578,5 +2580,9 @@ nav.menu--trinculo{
   .menu__list{
     display: block;
     margin: 0 auto;
+  }
+
+  a.menu__link{
+    font-size: 0.8em;
   }
 }
