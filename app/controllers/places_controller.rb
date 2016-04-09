@@ -5,7 +5,6 @@ class PlacesController < ApplicationController
   layout "single", only: [:show]
 
   def index
-
     set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
     set_meta_tags canonical: 'https://mvmt.io/'
     set_meta()
@@ -15,7 +14,6 @@ class PlacesController < ApplicationController
 
     @affiliate = Affiliate.getRandomHorizontalAffiliate()
     @overlayAffiliate = Affiliate.getRandomVerticalAffiliate()
-
   end
 
   def show
@@ -42,13 +40,13 @@ class PlacesController < ApplicationController
   # end
 
   def create
-    @place =Placed.new(place_params)
-    @place.save
+    @place =Place.new(place_params)
+    # @place.save
     respond_with(@place)
   end
 
   def update
-    @place.update(resource_params)
+    @place.update(place_params)
     respond_with(@place)
   end
 
@@ -79,7 +77,7 @@ class PlacesController < ApplicationController
       @place = Place.friendly.find(params[:id].downcase)
     end
 
-    def resource_params
+    def place_params
       params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram)
     end
 end
