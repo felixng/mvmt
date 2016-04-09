@@ -4,7 +4,7 @@
                     method: :post,
                     remote: true,
                     html:{role: :form, 'data-model' => 'place'},
-                    input_html:{"data-remote" => true, "data-url" => "/api/v1/places", "data-type" => :json}) do |f|
+                    html:{"data-remote" => true, "data-url" => "/api/v1/places", "data-type" => :json, "class" => "simform"}) do |f|
     = f.error_notification
 
     .form-inputs
@@ -15,6 +15,8 @@
       = f.input :instagram
       = f.input :logo
       = f.association :category
+
+    %p.form-inputs *A new place won't appear on MVMT until an admin has approved it.  It has to at least have one social account in order to be considered to be approved.
 
     .form-actions
       = f.button :submit
