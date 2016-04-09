@@ -1,4 +1,8 @@
 class Api::V1::PlacesController < Api::V1::BaseController
+  def new
+    @place = Place.new
+  end
+
   def index
     @place = Place.where(:approved => true).shuffle
     #@place = Place.all
@@ -6,17 +10,31 @@ class Api::V1::PlacesController < Api::V1::BaseController
   end
 
   def create
+
     if @place.present?
       render nothing: true, status: :conflict
     else
-      @place = Place.new
-      @place.assign_attributes(@json['place'])
-      if @place.save
-        render json: @place
-      else
-        render nothing: true, status: :bad_request
-      end
+      @place = AdType.create(place_params)
+      render json: @place
     end
+
+      # render json: @place
+      # if
+      #   render json: @place
+      # else
+      #   respond_to do |format|
+      #     format.html { render text: @place.assign_attributes({name:'Test'}) }
+      #     format.json { render text: @place.assign_attributes({name:'Test'}) }
+      #   end
+      # end
+
+    # respond_to do |format|
+    #   format.html {render text: "Your data was sucessfully loaded. Thanks"}
+    #   format.json {
+    #     Place.create(@json['place'])
+    #     render text: Place.last.to_json  # !
+    #   }
+    # end
   end
 
   def show
@@ -42,5 +60,9 @@ class Api::V1::PlacesController < Api::V1::BaseController
 
   def update_params
     create_params
+  end
+
+  def place_params
+    params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram)
   end
 end

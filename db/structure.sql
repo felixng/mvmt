@@ -326,18 +326,18 @@ ALTER SEQUENCE offers_id_seq OWNED BY offers.id;
 CREATE TABLE places (
     id integer NOT NULL,
     name character varying(255),
-    website character varying(255),
+    website character varying(255) DEFAULT ''::character varying,
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
-    facebook character varying(255),
-    instagram character varying(255),
-    "desc" text,
-    postcode character varying(255),
+    facebook character varying(255) DEFAULT ''::character varying,
+    instagram character varying(255) DEFAULT ''::character varying,
+    "desc" text DEFAULT ''::text,
+    postcode character varying(255) DEFAULT ''::character varying,
     logo_file_name character varying(255),
     logo_content_type character varying(255),
     logo_file_size integer,
     logo_updated_at timestamp without time zone,
-    twitter character varying(255),
+    twitter character varying(255) DEFAULT ''::character varying,
     approved boolean,
     "fetch" boolean,
     clickthrough integer DEFAULT 0,
@@ -824,4 +824,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160330221135');
 INSERT INTO schema_migrations (version) VALUES ('20160331201155');
 
 INSERT INTO schema_migrations (version) VALUES ('20160331202941');
+
+INSERT INTO schema_migrations (version) VALUES ('20160408202109');
 
