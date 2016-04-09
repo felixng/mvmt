@@ -1,4 +1,4 @@
-%modal.ng-hide{:title => "Add a new place", "ng-show" => "showModal"}
+%modal.ng-hide{:title => "Add A New Place", "ng-show" => "showModal"}
   = simple_form_for(Place.new,
                     url: "/api/v1/places",
                     method: :post,
@@ -10,13 +10,16 @@
     .form-inputs
       = f.input :name
       = f.input :website
+      = f.input :logo, input_html: { id: 'logo' }
+      %label{:for => 'logo'}
+        %span Choose a file…
+      = f.association :category
+
+    .form-inputs
       = f.input :facebook
       = f.input :twitter
       = f.input :instagram
-      = f.input :logo
-      = f.association :category
-
-    %p.form-inputs *A new place won't appear on MVMT until an admin has approved it.  It has to at least have one social account in order to be considered to be approved.
+      %p *A new place won't appear on MVMT until an admin has approved it.  It has to at least have one social account in order to be considered to be approved.
 
     .form-actions
       = f.button :submit

@@ -51,8 +51,36 @@ app.directive('modal', function () {
 app.controller('MvmtCtrl',['$scope', function ($scope) {
         $scope.showModal = false;
         $scope.toggleModal = function () {
-            console.log('in');
             $scope.showModal = !$scope.showModal;
+
+            setUpFileInput();
         };
+
+        function setUpFileInput(){
+            var div = document.querySelector( '.form-group.place_logo' );
+
+            var label	 = div.nextElementSibling;
+            var labelVal = label.innerHTML;
+
+            var fileInput = document.getElementById("logo");
+            fileInput.addEventListener( 'change', function( e )
+            {
+                var fileName = '';
+
+                if( this.files && this.files.length > 1 )
+                    fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+                else
+                    fileName = e.target.value.split( '\\' ).pop();
+
+                if( fileName )
+                    label.querySelector( 'span' ).innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+
+            // Firefox bug fix
+            fileInput.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+            fileInput.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+        }
     }
 ]);
