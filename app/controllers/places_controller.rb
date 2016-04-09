@@ -42,7 +42,7 @@ class PlacesController < ApplicationController
   # end
 
   def create
-    @place = Brand.new(place_params)
+    @place =Placed.new(place_params)
     @place.save
     respond_with(@place)
   end

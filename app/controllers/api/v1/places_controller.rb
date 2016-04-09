@@ -5,36 +5,22 @@ class Api::V1::PlacesController < Api::V1::BaseController
 
   def index
     @place = Place.where(:approved => true).shuffle
-    #@place = Place.all
     render(json: @place)
   end
 
   def create
-
     if @place.present?
       render nothing: true, status: :conflict
     else
-      @place = AdType.create(place_params)
-      render json: @place
+      @place = Place.create(place_params)
+      if @place.save
+        render json: @place
+      else
+        respond_to do |format|
+          return api_error(status: 500, errors: @place.error)
+        end
+      end
     end
-
-      # render json: @place
-      # if
-      #   render json: @place
-      # else
-      #   respond_to do |format|
-      #     format.html { render text: @place.assign_attributes({name:'Test'}) }
-      #     format.json { render text: @place.assign_attributes({name:'Test'}) }
-      #   end
-      # end
-
-    # respond_to do |format|
-    #   format.html {render text: "Your data was sucessfully loaded. Thanks"}
-    #   format.json {
-    #     Place.create(@json['place'])
-    #     render text: Place.last.to_json  # !
-    #   }
-    # end
   end
 
   def show
