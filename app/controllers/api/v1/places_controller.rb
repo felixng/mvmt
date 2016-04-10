@@ -20,6 +20,7 @@ class Api::V1::PlacesController < Api::V1::BaseController
           return api_error(status: 500, errors: @place.error)
         end
       end
+      # render json: place_params
     end
   end
 
@@ -49,6 +50,6 @@ class Api::V1::PlacesController < Api::V1::BaseController
   end
 
   def place_params
-    params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram)
+    params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram, :category_ids)
   end
 end
