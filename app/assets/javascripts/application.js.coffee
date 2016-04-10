@@ -12,7 +12,6 @@
 #
 #= require jquery_2
 #= require jquery_ujs
-#= require modal.js
 #= require bootstrap
 #= require nprogress
 #= require nprogress-turbolinks

@@ -10,9 +10,9 @@
     .form-inputs
       = f.input :name
       = f.input :website
-      = f.input :logo, input_html: { id: 'logo' }
-      %label{:for => 'logo'}
-        %span Choose a file…
+      -#= f.input :logo, input_html: { id: 'logo' }
+      -#%label{:for => 'logo'}
+      -#  %span Choose a file…
       = f.association :category
 
     .form-inputs
