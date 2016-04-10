@@ -2,6 +2,7 @@ div.modal-dialog{
   top: 10vh;
   height: auto;
   width: 580px;
+  max-width: 95vw;
 }
 
 .modal-body{
@@ -46,7 +47,8 @@ div.modal-dialog{
       margin-top: 5px;
       width: 250px;
       height:39px;
-      resize: none
+      resize: none;
+      max-width: 40vw;
     }
 
     input[type=file]{
@@ -71,6 +73,7 @@ div.modal-dialog{
       overflow: hidden;
       padding: 0.625rem 1.25rem;
       border: 2px solid rgba(85, 85, 85, 0.8);
+      max-width: 40vw;
     }
 
 
@@ -88,6 +91,7 @@ div.modal-dialog{
       width: 250px;
       resize: none;
       height: 125px;
+      max-width: 40vw;
     }
 
     input[type=submit]{

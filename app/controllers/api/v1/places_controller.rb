@@ -20,7 +20,6 @@ class Api::V1::PlacesController < Api::V1::BaseController
           return api_error(status: 500, errors: @place.error)
         end
       end
-      # render json: place_params
     end
   end
 
