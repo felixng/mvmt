@@ -32,6 +32,11 @@ gem 'paperclip'
 gem 'aws-sdk-v1'
 # gem 'httparty'
 
+#cron
+gem 'whenever', :require => false
+gem 'savon', '~> 2.0'
+gem "koala", "~> 2.2"
+
 #api
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'

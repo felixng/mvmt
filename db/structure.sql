@@ -184,6 +184,16 @@ ALTER SEQUENCE brands_id_seq OWNED BY brands.id;
 
 
 --
+-- Name: brands_offers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE brands_offers (
+    offer_id integer NOT NULL,
+    brand_id integer NOT NULL
+);
+
+
+--
 -- Name: categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -268,6 +278,40 @@ ALTER SEQUENCE friendly_id_slugs_id_seq OWNED BY friendly_id_slugs.id;
 
 
 --
+-- Name: logs; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE logs (
+    id integer NOT NULL,
+    entity character varying(255),
+    entity_id character varying(255),
+    action character varying(255),
+    "desc" character varying(255),
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: logs_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE logs_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: logs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE logs_id_seq OWNED BY logs.id;
+
+
+--
 -- Name: oauth_caches; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -341,7 +385,8 @@ CREATE TABLE places (
     approved boolean,
     "fetch" boolean,
     clickthrough integer DEFAULT 0,
-    slug character varying(255)
+    slug character varying(255),
+    last_fetch date
 );
 
 
@@ -542,6 +587,13 @@ ALTER TABLE ONLY friendly_id_slugs ALTER COLUMN id SET DEFAULT nextval('friendly
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY logs ALTER COLUMN id SET DEFAULT nextval('logs_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY offers ALTER COLUMN id SET DEFAULT nextval('offers_id_seq'::regclass);
 
 
@@ -619,6 +671,14 @@ ALTER TABLE ONLY categories
 
 ALTER TABLE ONLY friendly_id_slugs
     ADD CONSTRAINT friendly_id_slugs_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: logs_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY logs
+    ADD CONSTRAINT logs_pkey PRIMARY KEY (id);
 
 
 --
@@ -826,4 +886,10 @@ INSERT INTO schema_migrations (version) VALUES ('20160331201155');
 INSERT INTO schema_migrations (version) VALUES ('20160331202941');
 
 INSERT INTO schema_migrations (version) VALUES ('20160408202109');
+
+INSERT INTO schema_migrations (version) VALUES ('20160412214839');
+
+INSERT INTO schema_migrations (version) VALUES ('20160413062513');
+
+INSERT INTO schema_migrations (version) VALUES ('20160413211138');
 

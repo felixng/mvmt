@@ -41,6 +41,9 @@ GEM
     airbrake (3.2.1)
       builder
       multi_json
+    akami (1.3.1)
+      gyoku (>= 0.4.0)
+      nokogiri
     animate-rails (1.0.9)
       rails
     arel (5.0.1.20140414130214)
@@ -73,6 +76,7 @@ GEM
       json
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -129,6 +133,8 @@ GEM
     guard-rspec (4.3.1)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    gyoku (1.3.1)
+      builder (>= 2.1.2)
     haml (4.0.7)
       tilt
     haml-rails (0.5.3)
@@ -141,6 +147,8 @@ GEM
       rails (>= 3.0.0)
     hike (1.2.3)
     htmlentities (4.3.2)
+    httpi (2.4.1)
+      rack
     i18n (0.7.0)
     jquery-rails (3.1.4)
       railties (>= 3.0, < 5.0)
@@ -153,6 +161,10 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.2)
+    koala (2.3.0)
+      addressable
+      faraday
+      multi_json
     listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -175,6 +187,7 @@ GEM
     newrelic_rpm (3.9.5.251)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
+    nori (2.6.0)
     nprogress-rails (0.1.6.3)
     oauth (0.4.7)
     oauth2 (1.0.0)
@@ -318,6 +331,14 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
+    savon (2.11.1)
+      akami (~> 1.2)
+      builder (>= 2.1.2)
+      gyoku (~> 1.2)
+      httpi (~> 2.3)
+      nokogiri (>= 1.4.0)
+      nori (~> 2.4)
+      wasabi (~> 3.4)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -376,6 +397,11 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.3)
       rack (>= 1.0)
+    wasabi (3.5.0)
+      httpi (~> 2.0)
+      nokogiri (>= 1.4.2)
+    whenever (0.9.4)
+      chronic (>= 0.6.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -406,6 +432,7 @@ DEPENDENCIES
   haml-rails
   headjs-rails
   jquery-rails
+  koala (~> 2.2)
   memcachier
   meta-tags
   minitest
@@ -432,6 +459,7 @@ DEPENDENCIES
   rspec-rails
   rspec-sidekiq
   sass-rails
+  savon (~> 2.0)
   sdoc
   settingslogic
   shoulda-matchers
@@ -448,6 +476,7 @@ DEPENDENCIES
   terminal-notifier-guard
   uglifier
   unicorn
+  whenever
 
 BUNDLED WITH
    1.10.6
