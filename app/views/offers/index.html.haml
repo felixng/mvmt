@@ -2,12 +2,12 @@
 %div.offers
   - @offers.each do |offer|
     %div.bs-callout.bs-callout-info{:style => 'padding: 1em;'}
-      %p
-        = raw displayBrandLogo(offer.brand.first)
       %h2
         %a{:href => offer.link}
           = offer.title.upcase
       %h5= offer.desc
+      %p
+        = raw displayBrandLogo(offer.brand.first)
       %p= 'By ' + offer.brand.first.title.upcase
       %p
         ='Use Code:'
