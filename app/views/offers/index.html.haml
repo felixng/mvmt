@@ -3,7 +3,7 @@
   - @offers.each do |offer|
     %div{:style => 'padding: 1em;'}
       %p
-        = displayBrandLogo(offer.brand.first)
+        = raw displayBrandLogo(offer.brand.first)
       %h2
         %a{:href => offer.link}
           = offer.title.upcase
