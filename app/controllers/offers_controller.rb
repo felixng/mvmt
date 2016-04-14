@@ -1,18 +1,19 @@
 class OffersController < ApplicationController
+  skip_authorization_check
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
 
   def index
     @offers = Offer.all
-    respond_with(@offers)
+    @offers
   end
 
   def show
-    respond_with(@offer)
+    @offer
   end
 
   def new
     @offer = Offer.new
-    respond_with(@offer)
+    @offer
   end
 
   def edit
@@ -21,12 +22,12 @@ class OffersController < ApplicationController
   def create
     @offer = Offer.new(offer_params)
     @offer.save
-    respond_with(@offer)
+    @offer
   end
 
   def update
     @offer.update(offer_params)
-    respond_with(@offer)
+    @offer
   end
 
   def destroy
