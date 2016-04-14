@@ -6,7 +6,7 @@ class PlacesController < ApplicationController
 
   def index
     set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
-    set_meta_tags canonical: 'https://mvmt.io/'
+    set_meta_tags canonical: url_for()
     set_meta()
 
     @places = Place.where(:approved => true).shuffle
