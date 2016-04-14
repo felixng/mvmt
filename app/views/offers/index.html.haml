@@ -1,7 +1,7 @@
 %h1 Discounts
 %div.offers
   - @offers.each do |offer|
-    %div{:style => 'padding: 1em;'}
+    %div.bs-callout.bs-callout-info{:style => 'padding: 1em;'}
       %p
         = raw displayBrandLogo(offer.brand.first)
       %h2
@@ -14,5 +14,3 @@
         %strong
           %a{:href => offer.link}
             = offer.code
-
-= link_to 'New Offer', new_offer_path
