@@ -3,7 +3,7 @@
   - @offers.each do |offer|
     %div.bs-callout.bs-callout-info{:style => 'padding: 1em;'}
       %h2
-        %a{:href => offer.link}
+        %a{:href => offer.link, :target => '_blank'}
           = offer.title.upcase
       %h5= offer.desc
       %p
@@ -12,7 +12,7 @@
       %p
         ='Use Code:'
         %strong
-          %a{:href => offer.link}
+          %a{:href => offer.link, :target => '_blank'}
             = offer.code
       %p
         ='From '
