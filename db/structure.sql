@@ -160,7 +160,8 @@ CREATE TABLE brands (
     logo_file_name character varying(255),
     logo_content_type character varying(255),
     logo_file_size integer,
-    logo_updated_at timestamp without time zone
+    logo_updated_at timestamp without time zone,
+    affiliate_id integer
 );
 
 
@@ -892,4 +893,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160412214839');
 INSERT INTO schema_migrations (version) VALUES ('20160413062513');
 
 INSERT INTO schema_migrations (version) VALUES ('20160413211138');
+
+INSERT INTO schema_migrations (version) VALUES ('20160414185800');
 

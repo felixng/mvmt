@@ -1,6 +1,7 @@
 class Affiliate < ActiveRecord::Base
   has_and_belongs_to_many :category
   belongs_to :ad_type, :dependent => :destroy
+  has_one :brand
 
   before_save :default_values
   def default_values

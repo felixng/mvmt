@@ -2,12 +2,17 @@
 %div{:style => 'width:100%; text-align:center; padding: 1% 15%'}
   - @offers.each do |offer|
     %div{:style => 'padding: 1em;'}
-      %a{:href => offer.link}
-        %h2= offer.title.upcase
+      %p
+        = displayBrandLogo(offer.brand.first)
+      %h2
+        %a{:href => offer.link}
+          = offer.title.upcase
       %h5= offer.desc
+      %p= 'By ' + offer.brand.first.title
       %p
         ='Use Code:'
         %strong
-          = offer.code
+          %a{:href => offer.link}
+            = offer.code
 
 = link_to 'New Offer', new_offer_path

@@ -1,5 +1,6 @@
 class OffersController < ApplicationController
   skip_authorization_check
+  skip_before_action :authenticate_user!
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
 
   def index
