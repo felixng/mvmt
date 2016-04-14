@@ -12,18 +12,25 @@ task get_updates: :environment do
 
 	@graph = Koala::Facebook::API.new('1584641475160139|sL2zudq8pJOR6x_AqFoNa4RuB1k')
 
-  field = "?fields=name,about,contact_address,description"
+  field = "?fields=name,about,contact_address,description,website"
   Place.where.not(:facebook => '').each do |place|
 
     #UPDATE MODEL DATA METHOD HERE!
-    if (place.fetch)# || place.createdDate > lastfetchdate )
+    if (place.fetch)
 			page = @graph.get_object(place.facebook+field)
-
 
       ###only update if empty?
     	place.desc = page['about']  ###if < say, 300 words? Do I want more coz SEO, or less coz pop up?
-			place.save
-			puts page['description']
+      if (page['website'] != '')
+        place.website = page['website']
+      else
+        place.website = 'www.facebook.com/' + page['username']
+      end
+      place.last_fetch = Date.current()
+
+      place.fetch = false
+      place.save
+
     #	image
     #	address
     #	address
