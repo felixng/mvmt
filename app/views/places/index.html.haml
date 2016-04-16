@@ -12,8 +12,7 @@
           "ng-class" => "getCardClass($index)",
           "ng-repeat" => "place in places | filter: categoryComparer(filters) ",
           "on-finish-render" => "ngRepeatFinished",
-          "ng-click" => "ClickThroughUpdate(place.id, place.name);",
-          "ng-animate" => ""}
+          "ng-click" => "ChangeUrl('{{place.name}}','{{place.slug}}'); ClickThroughUpdate(place.id, place.name);"}
       %div.brand
         %img{ :alt => "{{place.name}}", :class => "logo", :height => "100", "ng-src" => "{{place.logo}}", :width => "100"}
       %h3.card-title {{place.name}}

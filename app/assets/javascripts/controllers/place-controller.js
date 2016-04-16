@@ -77,8 +77,9 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             }
                             else {
                                 $body.css('overflow-y', 'hidden');
-                            }
+                            };
 
+                            ChangeUrl('test', 'test.html')
                         });
 
                         var closeOverlay = function () {
@@ -253,6 +254,15 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         console.log(error);
                     });
                 });
+        }
+
+        function ChangeUrl(title, url) {
+            if (typeof (history.pushState) != "undefined") {
+                var obj = { Title: title, Url: url };
+                history.pushState(obj, obj.Title, obj.Url);
+            } else {
+                alert("Browser does not support HTML5.");
+            }
         }
 
 

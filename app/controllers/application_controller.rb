@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+
+
   if ENV['BASIC_AUTH']
     user, pass = ENV['BASIC_AUTH'].split(':')
     http_basic_authenticate_with name: user, password: pass
@@ -11,6 +13,7 @@ class ApplicationController < ActionController::Base
   # Devise, require authenticate by default
   before_filter :authenticate_user!
 
+  before_action :set_root_meta
   # CanCan, check authorization unless authorizing with devise
   check_authorization unless: :skip_check_authorization?
 
@@ -22,7 +25,27 @@ class ApplicationController < ActionController::Base
   include ErrorReportingConcern
   include AuthorizationErrorsConcern
 
+  def set_root_meta
+    set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    set_meta_tags canonical: url_for()
+    set_meta_tags description: 'Discover yourself through movement.'
+    set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
+
+    set_meta_tags og: {
+                      sitename: 'MVMT',
+                      title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
+                      description: 'Discover yourself through movement.',
+                      locale: 'en_GB',
+                      type: 'website',
+                      url: url_for(),
+                      image: root_url + 'mvmt-logo.png'
+                  }
+
+  end
+
   protected
+
+
 
   def skip_check_authorization?
     devise_controller? || is_a?(RailsAdmin::ApplicationController)

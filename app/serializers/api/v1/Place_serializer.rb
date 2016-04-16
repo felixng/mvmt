@@ -10,4 +10,5 @@ class Api::V1::PlaceSerializer < ActiveModel::Serializer
   attributes :instagram
   attributes :twitter
   attributes :category
+  attributes :slug
 end

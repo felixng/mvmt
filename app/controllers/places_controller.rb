@@ -1,13 +1,15 @@
 class PlacesController < ApplicationController
   skip_authorization_check
   skip_before_action :authenticate_user!
+
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
   layout "single", only: [:show]
 
   def index
-    set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
-    set_meta_tags canonical: url_for()
-    set_meta()
+    @title = 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    @canonical = url_for()
+    @image = root_url + 'mvmt-logo.png'
+    set_meta(@title, @canonical, @image)
 
     @places = Place.where(:approved => true).shuffle
     @categories = Category.all
@@ -17,9 +19,10 @@ class PlacesController < ApplicationController
   end
 
   def show
-    set_meta_tags title: @place.name + ' - MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
-    set_meta_tags canonical: url_for()
-    set_meta()
+    @title = @place.name + ' - MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    @canonical = url_for()
+    @image = @place.logo.url
+    set_meta(@title, @canonical, @image)
 
     @place
   end
@@ -56,19 +59,21 @@ class PlacesController < ApplicationController
   end
 
   private
-    def set_meta
+    def set_meta(title, canonical, image)
+      set_meta_tags title: title
+      set_meta_tags canonical: url_for()
 
       set_meta_tags description: 'Discover yourself through movement.'
       set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
 
       set_meta_tags og: {
                         sitename: 'MVMT',
-                        title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
+                        title:    title,
                         description: 'Discover yourself through movement.',
                         locale: 'en_GB',
                         type: 'website',
-                        url: url_for(),
-                        image: root_url + 'mvmt-logo.png'
+                        url: canonical,
+                        image: image
                     }
 
     end
@@ -78,6 +83,6 @@ class PlacesController < ApplicationController
     end
 
     def place_params
-      params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram)
+      params.require(:place).permit(:name, :website, :facebook, :twitter, :instagram, :slug)
     end
 end
