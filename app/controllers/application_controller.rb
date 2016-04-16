@@ -38,9 +38,6 @@ class ApplicationController < ActionController::Base
                       type: 'website',
                       url: url_for(),
                       image: root_url + 'mvmt-logo.png',
-                      fb: {
-                        app_id: ENV['AUTH_FACEBOOK_KEY']
-                      }
                   }
 
   end

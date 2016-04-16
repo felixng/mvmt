@@ -23,6 +23,7 @@ https://github.com/nfelix/mvmt/
     %meta{charset: "utf-8"}
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
     = display_meta_tags
+    %meta{property: 'fb:app_id', content: ENV['AUTH_FACEBOOK_KEY']}
     %link{:rel => :stylesheet, :href => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     /[if lt IE 9]

@@ -75,10 +75,6 @@ class PlacesController < ApplicationController
                         image: image
                     }
 
-      set_meta_tags fb: {
-                        app_id: ENV['AUTH_FACEBOOK_KEY']
-                    }
-
     end
 
     def set_resource
