@@ -37,11 +37,10 @@ class ApplicationController < ActionController::Base
                       locale: 'en_GB',
                       type: 'website',
                       url: url_for(),
-                      image: root_url + 'mvmt-logo.png'
-                  }
-
-    set_meta_tags fb: {
-                      app_id: ENV['AUTH_FACEBOOK_KEY']
+                      image: root_url + 'mvmt-logo.png',
+                      fb: {
+                        app_id: ENV['AUTH_FACEBOOK_KEY']
+                      }
                   }
 
   end
