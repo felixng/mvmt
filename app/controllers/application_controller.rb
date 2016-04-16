@@ -32,13 +32,16 @@ class ApplicationController < ActionController::Base
     set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
 
     set_meta_tags og: {
-                      sitename: 'MVMT',
                       title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
                       description: 'Discover yourself through movement.',
                       locale: 'en_GB',
                       type: 'website',
                       url: url_for(),
                       image: root_url + 'mvmt-logo.png'
+                  }
+
+    set_meta_tags fb: {
+                      app_id: ENV['AUTH_FACEBOOK_KEY']
                   }
 
   end

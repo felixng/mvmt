@@ -19,7 +19,7 @@ class PlacesController < ApplicationController
   end
 
   def show
-    @title = @place.name + ' - MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    @title = @place.name + ' - MVMT - A curated list of studios and schools for people who move.'
     @canonical = url_for()
     @image = @place.logo.url
     set_meta(@title, @canonical, @image)
@@ -67,13 +67,16 @@ class PlacesController < ApplicationController
       set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
 
       set_meta_tags og: {
-                        sitename: 'MVMT',
                         title:    title,
                         description: 'Discover yourself through movement.',
                         locale: 'en_GB',
                         type: 'website',
                         url: canonical,
                         image: image
+                    }
+
+      set_meta_tags fb: {
+                        app_id: ENV['AUTH_FACEBOOK_KEY']
                     }
 
     end
