@@ -73,7 +73,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                             $overlay.off(transEndEventName);
                                             $body.css('overflow-y', 'hidden');
                                         });
-                                    }, 35);
+                                    }, 40);
                                     changeURL($item.context.dataset.url, 'places/' + $item.context.dataset.url);
                                 });
                             }
