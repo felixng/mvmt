@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get '/privacy' => 'pages#privacy', as: 'privacy'
   get '/about' => 'pages#about', as: 'about'
   get '/advertise' => 'pages#advertise', as: 'advertise'
+  get '/contact' => 'pages#contact', as: 'contact'
   # get '/places' => 'products#index', as: 'places'
   # get 'project/new_release' => 'places#modal', :as => :modal
 

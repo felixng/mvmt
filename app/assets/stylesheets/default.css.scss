@@ -40,8 +40,13 @@ body {
 }
 
 a {
-	color: #555;
+	color: #0D9B80;
 	text-decoration: none;
+}
+
+a:hover{
+  color: #1abc9c;
+  text-decoration: none;
 }
 
 .container {
@@ -175,6 +180,14 @@ a {
         padding-bottom: 15px;
         text-align: center;
         font-size: 0px;
+        color: #333;
+        opacity: 0.5;
+      }
+
+      a:hover{
+        background: inherit;
+        color: #333;
+        opacity: 0.7;
       }
 
       a:before{

@@ -1,4 +1,4 @@
-%div.home{"ng-controller"=>"PlacesController as placesController", "ng-init" => "init();"}
+%div.home{"ng-controller"=>"PlacesController as placesController", "ng-init" => "init(); "}
   %h4.title
     A curated list of studios and schools for people who move.
   %nav.category-menu.menu.menu--trinculo
@@ -7,7 +7,7 @@
         %li.menu__item{"ng-init" => "updateFilter('#{cat.name.downcase}');",
                         "ng-class" => "addCurrentClass('#{cat.name.downcase}')"}
           %a.menu__link{"ng-click" => "updateFilter('#{cat.name.downcase}');", "class" => "menu__#{cat.name.downcase}"} #{cat.name}
-  %ul#rb-grid.rb-grid.clearfix
+  %ul#rb-grid.rb-grid.clearfix.ng-cloak
     %li{ :class => "{{place.category[0].name}} ico-{{place.category[0].name | lowercase}} place-card",
           "ng-class" => "getCardClass($index)",
           "ng-repeat" => "place in places | filter: categoryComparer(filters) ",

@@ -34,7 +34,7 @@ https://github.com/nfelix/mvmt/
     = csrf_meta_tags
     = yield :head
     = render 'layouts/airbrake'
-  %body{class: "controller__#{controller_name} action__#{action_name}", "ng-cloak" => true}
+  %body{class: "controller__#{controller_name} action__#{action_name}"}
     = render 'layouts/navigation'
     .container
       .main
