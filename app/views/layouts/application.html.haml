@@ -21,7 +21,12 @@ https://github.com/nfelix/mvmt/
     %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-570384c0cbab44dc", "async" => true}
     :javascript
       var addthis_config = addthis_config||{};
+      var addthis_share = addthis_share||{};
       addthis_config.data_track_clickback = false;
+      default_addthis_share = {
+        title: 'MVMT - A curated list of studios and schools for people who move',
+        url: '#{root_url}'
+      }
     %meta{charset: "utf-8"}/
     %base{:href => "/"}/
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}

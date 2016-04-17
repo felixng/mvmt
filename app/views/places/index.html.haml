@@ -10,6 +10,7 @@
   %ul#rb-grid.rb-grid.clearfix.ng-cloak
     %li{ :class => "{{place.category[0].name}} ico-{{place.category[0].name | lowercase}} place-card",
           'data-url' => "{{place.slug}}",
+          'data-name' => "{{place.name}}",
           "ng-class" => "getCardClass($index)",
           "ng-repeat" => "place in places | filter: categoryComparer(filters) ",
           "on-finish-render" => "ngRepeatFinished",

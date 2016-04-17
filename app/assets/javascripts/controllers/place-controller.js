@@ -6,6 +6,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $rootScope.places = [];
         $rootScope.map = [];
 
+
         getAllStudios();
 
         var Boxgrid = (function () {
@@ -13,6 +14,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                     transEndEventNames = {
                         'WebkitTransition': 'webkitTransitionEnd',
                         'MozTransition': 'transitionend',
+                        'OTransition': 'oTransitionEnd',
                         'OTransition': 'oTransitionEnd',
                         'msTransition': 'MSTransitionEnd',
                         'transition': 'transitionend'
@@ -73,13 +75,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                             $overlay.off(transEndEventName);
                                             $body.css('overflow-y', 'hidden');
                                         });
-                                    }, 40);
-                                    changeURL($item.context.dataset.url, 'places/' + $item.context.dataset.url);
+                                    }, 20);
+                                    changeURL($item.context.dataset.name, 'places/' + $item.context.dataset.url);
                                 });
                             }
                             else {
                                 $body.css('overflow-y', 'hidden');
-                                //changeURL($item.dataset.url, 'places/' + $item.dataset.url);
+                                changeURL($item.context.dataset.name, 'places/' + $item.context.dataset.url);
                             }
 
                         });
@@ -135,14 +137,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         });
 
                     });
-
-                    //$( window ).on( 'debouncedresize', function() {
-                    //	winsize = getWindowSize();
-                    //	// todo : cache the current item
-                    //	if( current !== -1 ) {
-                    //		$items.eq( current ).children( 'div.rb-overlay' ).css( 'clip', 'rect(0px ' + winsize.width + 'px ' + winsize.height + 'px 0px)' );
-                    //	}
-                    //} );
 
                 }
 
@@ -235,15 +229,16 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + encodeURIComponent(name) + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
         }
 
-        //$scope.SetUrl = function(title, url){
-        //    $location.path('places/' + url);
-        //}
-
         function changeURL(title, url){
             if (typeof (history.pushState) != "undefined") {
                 var obj = { Title: title, Url: url };
                 history.pushState(obj, obj.Title, obj.Url);
-            }
+            };
+
+            $window.addthis_share = {
+                url: $window.default_addthis_share.url + url,
+                title: title + ' - ' + $window.default_addthis_share.title
+            };
         }
 
         $scope.ClickThroughUpdate = function(id, name){
