@@ -3,17 +3,18 @@ Bootstrap 3 / Foundation 5 + CoffeeScript + Sass + Devise + everything else you 
 
 = Overview
 
-Rails 4.1 Starter Kit is a starter app with production ready performance, security, and authentication.
+The site was curated and built by Felix Ng[http://www.felix.ng/], a London based Developer who moves. The idea came up when Felix moved to London from Hong Kong and had trouble looking for good places to train in. And also the varies times he travelled to a new city and hoping to find a good studio to train.
 
-This project was extracted from several apps running in production over the past couple of years and upgraded to Rails 4.1.
+Built for *movement loving travellers* or someone who is *new to a city* and looking to continue moving.
 
-Unlike most starter apps that focus on kick starting development, Rails 4.1 Starter Kit is opinionated and production ready.
-It combines the best gems, best practices, and optimized configuration to minimize common mistakes and repetitious
-framework setup.
+Currently only for London but expanding to include more cities and to make submissions open to public are in the plan!
 
-Beyond configuration and tests, the bulk of Rails 4.1 Starter Kit code is the authentication flows.
-The app provides well designed UX flows for social logins (Facebook, Twitter, etc.) as well as connecting additional
-accounts after sign up.
+= To Do
+
+* *Places*: Add places by user who logged in via facebook or twitter
+* *Cities*: Add cities by user
+* *City Subdomain*: Dynamically generate and set up domain for new cities.  (How?)
+
 
 == Status
 
@@ -35,13 +36,6 @@ to start without modifying config files.
 
 Gemfile is configured for OSX development. See comments in Gemfile for Linux.
 
-  git clone https://github.com/starterkits/rails4-starterkit.git
-  cd rails4-starterkit
-  
-  # For Bootstrap 3, stay in master branch
-  # For Foundation 5, check out foundation branch
-  git checkout foundation
-  
   bundle install
 
   # Make sure postgres, memcached and redis are running locally
@@ -52,5 +46,3 @@ Gemfile is configured for OSX development. See comments in Gemfile for Linux.
   
   # Setup the db
   rake db:setup
-
-Modify vars in config/application.yml. Generate new secret tokens or your app will be hackable!
