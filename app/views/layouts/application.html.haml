@@ -19,7 +19,10 @@ https://github.com/nfelix/mvmt/
     %script{:src => "https://www.dwin2.com/pub.268283.min.js", "async" => true}
     /%script{:src => "//load.sumome.com/", "data-sumo-site-id" => "8591f12b0d44f77831df88439e81d6e04019a689b99acf3253daf9736b0f90f2", "async" => true}
     %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-570384c0cbab44dc", "async" => true}
-
+    :javascript
+      var addthis_config = addthis_config||{};
+      addthis_config.data_track_addressbar = false;
+      addthis_config.data_track_clickback = false;
     %meta{charset: "utf-8"}/
     %base{:href => "/"}/
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
