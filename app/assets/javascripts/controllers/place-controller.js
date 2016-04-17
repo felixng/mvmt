@@ -74,12 +74,14 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                             $body.css('overflow-y', 'hidden');
                                         });
                                     }, 35);
-
+                                    changeURL($item.context.dataset.url, 'places/' + $item.context.dataset.url);
                                 });
                             }
                             else {
                                 $body.css('overflow-y', 'hidden');
+                                //changeURL($item.dataset.url, 'places/' + $item.dataset.url);
                             }
+
                         });
 
                         var closeOverlay = function () {
@@ -116,7 +118,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                 $overlay.css('z-index', -1);
                                 $item.data('isExpanded', false);
                             }
-
+                            changeURL('MVMT', '/');
                             return false;
 
                         };
@@ -236,6 +238,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         //$scope.SetUrl = function(title, url){
         //    $location.path('places/' + url);
         //}
+
+        function changeURL(title, url){
+            if (typeof (history.pushState) != "undefined") {
+                var obj = { Title: title, Url: url };
+                history.pushState(obj, obj.Title, obj.Url);
+            }
+        }
 
         $scope.ClickThroughUpdate = function(id, name){
             $rootScope.map[id] = MapUrl(name);
