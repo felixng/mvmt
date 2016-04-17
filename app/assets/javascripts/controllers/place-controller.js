@@ -1,5 +1,5 @@
-app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$http',
-    function ($window, $scope, $rootScope, $sce, $http) {
+app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$http','$location',
+    function ($window, $scope, $rootScope, $sce, $http, $location) {
         var catMenu = this;
         $rootScope.mapUrl = '';
         $rootScope.filters = [];
@@ -78,8 +78,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             else {
                                 $body.css('overflow-y', 'hidden');
                             };
-
-                            ChangeUrl('test', 'test.html')
                         });
 
                         var closeOverlay = function () {
@@ -233,6 +231,10 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + encodeURIComponent(name) + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
         }
 
+        $scope.SetUrl = function(title, url){
+            $location.path('places/' + url);
+        }
+
         $scope.ClickThroughUpdate = function(id, name){
             $rootScope.map[id] = MapUrl(name);
 
@@ -255,16 +257,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                     });
                 });
         }
-
-        function ChangeUrl(title, url) {
-            if (typeof (history.pushState) != "undefined") {
-                var obj = { Title: title, Url: url };
-                history.pushState(obj, obj.Title, obj.Url);
-            } else {
-                alert("Browser does not support HTML5.");
-            }
-        }
-
 
         function resizeFont(ele){
             $(ele).each(function() {

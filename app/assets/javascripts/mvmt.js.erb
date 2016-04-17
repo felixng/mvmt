@@ -6,6 +6,10 @@ $(document).on('ready page:load', function(arguments) {
   angular.bootstrap(document.body, ['mvmt']);
 });
 
+app.config(function($locationProvider) {
+  $locationProvider.html5Mode(true);
+})
+
 app.directive('modal', function () {
     return {
         template: '<div class="bt-overlay">' +
