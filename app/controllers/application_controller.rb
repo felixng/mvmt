@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   # Devise, require authenticate by default
   before_filter :authenticate_user!
 
-  before_action :set_root_meta
+  # before_action :set_root_meta
   # CanCan, check authorization unless authorizing with devise
   check_authorization unless: :skip_check_authorization?
 
@@ -24,23 +24,23 @@ class ApplicationController < ActionController::Base
   include CommonHelper
   include ErrorReportingConcern
   include AuthorizationErrorsConcern
-
-  def set_root_meta
-    set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
-    set_meta_tags canonical: url_for()
-    set_meta_tags description: 'Discover yourself through movement.'
-    set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
-
-    set_meta_tags og: {
-                      title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
-                      description: 'Discover yourself through movement.',
-                      locale: 'en_GB',
-                      type: 'website',
-                      url: url_for(),
-                      image: root_url + 'mvmt-logo.png',
-                  }
-
-  end
+  #
+  # def set_root_meta
+  #   set_meta_tags title: 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+  #   set_meta_tags canonical: url_for()
+  #   set_meta_tags description: 'Discover yourself through movement.'
+  #   set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
+  #
+  #   set_meta_tags og: {
+  #                     title:    'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit',
+  #                     description: 'Discover yourself through movement.',
+  #                     locale: 'en_GB',
+  #                     type: 'website',
+  #                     url: url_for(),
+  #                     image: root_url + 'mvmt-logo.png',
+  #                 }
+  #
+  # end
 
   protected
 

@@ -6,6 +6,8 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $rootScope.places = [];
         $rootScope.map = [];
 
+        getAllStudios();
+
         var Boxgrid = (function () {
                 var $items = $('#rb-grid > li'),
                     transEndEventNames = {
@@ -71,13 +73,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                             $overlay.off(transEndEventName);
                                             $body.css('overflow-y', 'hidden');
                                         });
-                                    }, 25);
+                                    }, 35);
 
                                 });
                             }
                             else {
                                 $body.css('overflow-y', 'hidden');
-                            };
+                            }
                         });
 
                         var closeOverlay = function () {
@@ -231,9 +233,9 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             return $sce.trustAsResourceUrl('https://www.google.com/maps/embed/v1/place?q=' + encodeURIComponent(name) + '&key=AIzaSyA3aZfa51yc-MiMjZyToarr9BqUdx1A-S4&zoom=15');
         }
 
-        $scope.SetUrl = function(title, url){
-            $location.path('places/' + url);
-        }
+        //$scope.SetUrl = function(title, url){
+        //    $location.path('places/' + url);
+        //}
 
         $scope.ClickThroughUpdate = function(id, name){
             $rootScope.map[id] = MapUrl(name);

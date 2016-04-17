@@ -1,9 +1,5 @@
 var app = angular.module('mvmt', ['ngRoute', 'ngAnimate']);
 
-app.config(function($locationProvider) {
-  $locationProvider.html5Mode(true);
-});
-
 // This will cause your app to compile when Turbolinks loads a new page
 // and removes the need for ng-app in the DOM
 $(document).on('ready page:load', function(arguments) {

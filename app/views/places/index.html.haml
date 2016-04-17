@@ -1,4 +1,4 @@
-%div.home{"ng-controller"=>"PlacesController as placesController", "ng-init" => "init(); "}
+%div.home{"ng-controller"=>"PlacesController as placesController"}
   %h4.title
     A curated list of studios and schools for people who move.
   %nav.category-menu.menu.menu--trinculo
@@ -12,7 +12,7 @@
           "ng-class" => "getCardClass($index)",
           "ng-repeat" => "place in places | filter: categoryComparer(filters) ",
           "on-finish-render" => "ngRepeatFinished",
-          "ng-click" => "ClickThroughUpdate(place.id, place.name); SetUrl(place.name,place.slug);"}
+          "ng-click" => "ClickThroughUpdate(place.id, place.name);"}
       %div.brand
         %img{ :alt => "{{place.name}}", :class => "logo", :height => "100", "ng-src" => "{{place.logo}}", :width => "100"}
       %h3.card-title {{place.name}}
