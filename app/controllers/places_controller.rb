@@ -6,7 +6,7 @@ class PlacesController < ApplicationController
   layout "single", only: [:show]
 
   def index
-    @title = 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
+    @title = 'MVMT - A curated list of studios and schools for people who move.'
     @canonical = root_url
     @image = root_url + 'mvmt-logo.png'
     set_meta(@title, @canonical, @image)
