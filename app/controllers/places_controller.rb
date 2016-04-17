@@ -7,7 +7,7 @@ class PlacesController < ApplicationController
 
   def index
     @title = 'MVMT - A curated list of studios and schools for people who move - Movement, Gymnastics, Circus, Parkour, Free Running, Dance, Crossfit'
-    @canonical = url_for()
+    @canonical = root_url
     @image = root_url + 'mvmt-logo.png'
     set_meta(@title, @canonical, @image)
 
@@ -61,7 +61,7 @@ class PlacesController < ApplicationController
   private
     def set_meta(title, canonical, image)
       set_meta_tags title: title
-      set_meta_tags canonical: url_for()
+      set_meta_tags canonical: canonical
 
       set_meta_tags description: 'Discover yourself through movement.'
       set_meta_tags keywords: ['London Movement', 'London Gymnastics', 'London Circus', 'London Parkour', 'London Free Running', 'London Dance', 'London Crossfit']
