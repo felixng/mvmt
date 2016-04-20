@@ -73,6 +73,11 @@
     opacity: 0.5;
 }
 
+.rb-grid a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
 .rb-grid li[class^="ico-"]:before,
 .rb-grid li[class*=" ico-"]:before {
 	font-size: 10em;
@@ -228,6 +233,7 @@ div.basic{
   padding: 20px;
   height:100vh;
   min-height:100vh;
+  overflow: scroll;
 }
 /* Colors */
 

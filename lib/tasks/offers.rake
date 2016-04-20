@@ -12,7 +12,7 @@ task get_offers: :environment do
     hash = row.to_hash
 		last_fetched = Log.where(entity: 'Offers', action: 'Fetch').order(created_at: :desc)
 
-    if (last_fetched.empty? || hash[:date_added].to_datetime >= last_fetched.first.created_at)
+    if (last_fetched.empty? || Offer.where(title: hash[:description]).empty? )
 			if (Brand.where(title: hash[:advertiser]).empty?)
     		Brand.create(title: hash[:advertiser])
     	end

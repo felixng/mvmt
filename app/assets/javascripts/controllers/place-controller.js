@@ -5,6 +5,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $rootScope.filters = [];
         $rootScope.places = [];
         $rootScope.map = [];
+        $rootScope.disqus = [];
 
 
         getAllStudios();
@@ -50,6 +51,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             if ($item.data('isExpanded')) {
                                 return false;
                             }
+
                             $item.data('isExpanded', true);
                             // save current item's index
                             current = $item.index();
@@ -120,7 +122,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                 $overlay.css('z-index', -1);
                                 $item.data('isExpanded', false);
                             }
-                            changeURL('MVMT', '/');
+                            changeURL('MVMT', '');
                             return false;
 
                         };
@@ -184,11 +186,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 return 'rb-span-2';
 
             }
-
-
-            //return {
-            //    'rb-span-2': (index%21%8  == 0)
-            //};
         }
 
         function getAllStudios(){
@@ -241,8 +238,51 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             };
         }
 
-        $scope.ClickThroughUpdate = function(id, name){
-            $rootScope.map[id] = MapUrl(name);
+        $scope.popUp = function(id, name, category, slug){
+            ClickThroughUpdate(id, name, category);
+            setDisqus(id, name, $window.addthis_share.url + 'places/' + slug);
+        }
+
+        function clearDisqusThreads(){
+            angular.forEach($rootScope.places, function(value, key) {
+                $rootScope.disqus[key] = '';
+            });
+        }
+
+        function setDisqus(id, name, url){
+            clearDisqusThreads();
+            $rootScope.disqus[id] = 'disqus_thread';
+            $window.disqus_config = function () {
+                this.page.url = url;
+                this.page.identifier = name; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            console.log(url);
+            console.log(name);
+            var disqus_shortname = 'mvmtapp'; // Replace this value with *your* username.
+
+            // ajax request to load the disqus javascript
+            $.ajax({
+                type: "GET",
+                url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                dataType: "script",
+                cache: true
+            });
+            // hide the button once comments load
+
+            //$window.DISQUS.reset({
+            //    reload: true,
+            //    config: function () {
+            //        this.page.identifier = newIdentifier;
+            //        this.page.url = newUrl;
+            //        this.page.title = newTitle;
+            //        this.language = newLanguage;
+            //    }
+            //});
+        }
+
+        function ClickThroughUpdate(id, name, category){
+            $rootScope.map[id] = MapUrl(name + ' ' + category);
 
             $http.get( "/api/v1/places/" + id)
                 .then(function(response){
