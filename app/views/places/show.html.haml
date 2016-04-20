@@ -15,6 +15,24 @@
         - if @place.instagram?
           %a.fa.fa-instagram{:href => "http://www.instagram.com/" + @place.instagram}
       %p.overlay-desc=@place.desc
+      #disqus_thread
+      :javascript
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//mvmtapp.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      %noscript
+        Please enable JavaScript to view the
+        %a{:href => "https://disqus.com/?ref_noscript", :rel => "nofollow"} comments powered by Disqus.
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
     %div.map
@@ -23,21 +41,3 @@
               :allowfullscreen => true}
     %div.sponsor
       %span #{raw getRandomVerticalAffiliate()}
-#disqus_thread
-:javascript
-  /**
-  * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-  */
-
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-
-  s.src = '//mvmtapp.disqus.com/embed.js';
-
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-%noscript
-  Please enable JavaScript to view the
-  %a{:href => "https://disqus.com/?ref_noscript", :rel => "nofollow"} comments powered by Disqus.
