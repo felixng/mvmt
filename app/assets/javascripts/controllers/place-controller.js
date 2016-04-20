@@ -122,7 +122,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                                 $overlay.css('z-index', -1);
                                 $item.data('isExpanded', false);
                             }
-                            changeURL('MVMT', '');
+                            changeURL('MVMT', '/');
                             return false;
 
                         };
@@ -240,7 +240,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
         $scope.popUp = function(id, name, category, slug){
             ClickThroughUpdate(id, name, category);
-            setDisqus(id, name, $window.addthis_share.url + 'places/' + slug);
+            setDisqus(id, name, $location.host() + '/places/' + slug);
         }
 
         function clearDisqusThreads(){
@@ -268,7 +268,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 dataType: "script",
                 cache: true
             });
-            // hide the button once comments load
 
             //$window.DISQUS.reset({
             //    reload: true,
