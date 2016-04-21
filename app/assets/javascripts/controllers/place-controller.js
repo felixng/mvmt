@@ -245,6 +245,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
         function clearDisqusThreads(){
             angular.forEach($rootScope.places, function(value, key) {
+                console.log(key)
                 $rootScope.disqus[key] = '';
             });
         }

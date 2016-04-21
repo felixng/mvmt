@@ -9,8 +9,8 @@
         %a{:href => "{{place.website}}", "ng-show" => "place.website", :target => '_blank'} {{place.website}}
       %div.overlay-details
         %a.fa.fa-facebook{:href => "http://www.facebook.com/{{place.facebook}}", "ng-show" => "place.facebook", :target => '_blank'}
-        %a.fa.fa-twitter{:href => "http://www.facebook.com/{{place.twitter}}", "ng-show" => "place.twitter", :target => '_blank'}
-        %a.fa.fa-instagram{:href => "http://www.facebook.com/{{place.instagram}}", "ng-show" => "place.instagram", :target => '_blank'}
+        %a.fa.fa-twitter{:href => "http://www.twitter.com/{{place.twitter}}", "ng-show" => "place.twitter", :target => '_blank'}
+        %a.fa.fa-instagram{:href => "http://www.instagram.com/{{place.instagram}}", "ng-show" => "place.instagram", :target => '_blank'}
       %p.overlay-desc {{place.desc}}
       %div#disqus{'ng-attr-id' => '{{disqus[place.id]}}'}
     %div.sponsor

@@ -20,8 +20,8 @@
       %h3.card-title {{place.name}}
       %span.rb-code {{place.postcode}}
       %a.fa.fa-facebook{:href => "http://www.facebook.com/{{place.facebook}}", "ng-show" => "place.facebook", :target => '_blank'}
-      %a.fa.fa-twitter{:href => "http://www.facebook.com/{{place.twitter}}", "ng-show" => "place.twitter", :target => '_blank'}
-      %a.fa.fa-instagram{:href => "http://www.facebook.com/{{place.instagram}}", "ng-show" => "place.instagram", :target => '_blank'}
+      %a.fa.fa-twitter{:href => "http://www.twitter.com/{{place.twitter}}", "ng-show" => "place.twitter", :target => '_blank'}
+      %a.fa.fa-instagram{:href => "http://www.instagram.com/{{place.instagram}}", "ng-show" => "place.instagram", :target => '_blank'}
       -#= render partial: 'places/overlay', locals: { resource: resource }
       = render partial: 'places/overlay'
 -#- content_for :on_ready do
