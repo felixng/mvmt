@@ -235,6 +235,10 @@ div.basic{
   min-height:100vh;
   overflow: scroll;
 }
+
+div.basic::-webkit-scrollbar {
+  width: 0 !important
+}
 /* Colors */
 
 /* Grid */
