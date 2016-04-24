@@ -266,7 +266,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 type: "GET",
                 url: "http://" + disqus_shortname + ".disqus.com/embed.js",
                 dataType: "script",
-                cache: true
+                cache: true,
+                success: function(data) {
+                    console.log('success');
+                },
+                error: function(xhr, status, err) {
+                    console.log('error');
+                }
             });
             // hide the button once comments load
 
