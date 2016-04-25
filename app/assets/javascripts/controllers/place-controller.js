@@ -120,6 +120,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             $item.data('isExpanded', false);
                         }
                         changeURL('MVMT', '');
+                        console.log('closed');
                         return false;
 
                     };
@@ -227,6 +228,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             if (typeof (history.pushState) != "undefined") {
                 var obj = { Title: title, Url: url };
                 history.pushState(obj, obj.Title, obj.Url);
+                console.log('pushed: ' + obj.Url);
             };
 
             $window.addthis_share = {
