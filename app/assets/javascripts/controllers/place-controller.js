@@ -119,8 +119,7 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                             $overlay.css('z-index', -1);
                             $item.data('isExpanded', false);
                         }
-                        changeURL('MVMT', '');
-                        console.log('closed');
+
                         return false;
 
                     };
@@ -129,11 +128,13 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         // ESCAPE key pressed
                         if (e.keyCode == 27 && $item.data('isExpanded')) {
                             closeOverlay();
+                            changeURL('MVMT', '');
                         }
                     });
 
                     $close.on('click', function () {
                         closeOverlay();
+                        changeURL('MVMT', '');
                     });
 
                 });
@@ -228,8 +229,8 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
             if (typeof (history.pushState) != "undefined") {
                 var obj = { Title: title, Url: url };
                 history.pushState(obj, obj.Title, obj.Url, document.location.href);
-                console.log('pushed: ' + obj.Url);
-                console.log(history);
+                //console.log('pushed: ' + obj.Url);
+                //console.log(history);
             };
 
             $window.addthis_share = {
@@ -257,8 +258,8 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 this.page.identifier = name; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
 
-            console.log(url);
-            console.log(name);
+            //console.log(url);
+            //console.log(name);
             var disqus_shortname = 'mvmtapp'; // Replace this value with *your* username.
 
             // ajax request to load the disqus javascript
