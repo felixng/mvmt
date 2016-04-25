@@ -7,9 +7,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         $rootScope.map = [];
         $rootScope.disqus = [];
 
-
-        getAllStudios();
-
         var Boxgrid = (function () {
             var $items = $('#rb-grid > li'),
                 transEndEventNames = {
