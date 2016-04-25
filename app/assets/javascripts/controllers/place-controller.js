@@ -128,14 +128,6 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
                     };
 
-                    //$(document).keydown(function (e) {
-                    //    // ESCAPE key pressed
-                    //    if (e.keyCode == 27 && $item.data('isExpanded')) {
-                    //        changeURL('MVMT', '');
-                    //        closeOverlay();
-                    //    }
-                    //});
-                    //
                     $(document).on('keydown',function(evt) {
                         if (evt.keyCode == 27 && $item.data('isExpanded')) {
                             changeURL('MVMT', '/');
@@ -280,10 +272,10 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                 dataType: "script",
                 cache: true,
                 success: function(data) {
-                    console.log('success');
+                    //console.log('success');
                 },
                 error: function(xhr, status, err) {
-                    console.log('error');
+                    console.log(err);
                 }
             });
             // hide the button once comments load
