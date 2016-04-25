@@ -227,8 +227,9 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
         function changeURL(title, url){
             if (typeof (history.pushState) != "undefined") {
                 var obj = { Title: title, Url: url };
-                history.pushState(obj, obj.Title, obj.Url);
+                history.pushState(obj, obj.Title, obj.Url, document.location.href);
                 console.log('pushed: ' + obj.Url);
+                console.log(history);
             };
 
             $window.addthis_share = {
