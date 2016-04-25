@@ -1,11 +1,15 @@
 app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$http','$location',
     function ($window, $scope, $rootScope, $sce, $http, $location) {
+        $rootScope.places = [];
+
         var catMenu = this;
         $rootScope.mapUrl = '';
         $rootScope.filters = [];
-        $rootScope.places = [];
+
         $rootScope.map = [];
         $rootScope.disqus = [];
+
+
 
         var Boxgrid = (function () {
             var $items = $('#rb-grid > li'),
@@ -44,8 +48,8 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
                         $close = $item.find('span.rb-close'),
                         $overlay = $item.children('div.rb-overlay');
 
-                    $item.on('click', function () {
-                        if ($item.data('isExpanded')) {
+                    $item.on('click', function (e) {
+                        if ($item.data('isExpanded') && e.target !== $item) {
                             return false;
                         }
 
@@ -124,11 +128,18 @@ app.controller('PlacesController',['$window', '$scope', '$rootScope', '$sce', '$
 
                     };
 
-                    $(document).keydown(function (e) {
-                        // ESCAPE key pressed
-                        if (e.keyCode == 27 && $item.data('isExpanded')) {
+                    //$(document).keydown(function (e) {
+                    //    // ESCAPE key pressed
+                    //    if (e.keyCode == 27 && $item.data('isExpanded')) {
+                    //        changeURL('MVMT', '');
+                    //        closeOverlay();
+                    //    }
+                    //});
+                    //
+                    $(document).on('keydown',function(evt) {
+                        if (evt.keyCode == 27 && $item.data('isExpanded')) {
+                            changeURL('MVMT', '/');
                             closeOverlay();
-                            changeURL('MVMT', '');
                         }
                     });
 
