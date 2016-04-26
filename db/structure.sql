@@ -387,7 +387,8 @@ CREATE TABLE places (
     "fetch" boolean,
     clickthrough integer DEFAULT 0,
     slug character varying(255),
-    last_fetch date
+    last_fetch date,
+    email character varying(255)
 );
 
 
@@ -895,4 +896,6 @@ INSERT INTO schema_migrations (version) VALUES ('20160413062513');
 INSERT INTO schema_migrations (version) VALUES ('20160413211138');
 
 INSERT INTO schema_migrations (version) VALUES ('20160414185800');
+
+INSERT INTO schema_migrations (version) VALUES ('20160426130724');
 
