@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '~> 2.3.3'
 
 gem 'rails', '~> 4.1.6'
 
@@ -83,7 +83,7 @@ gem 'omniauth-twitter'
 
 # Admin
 gem 'rails_admin'
-gem 'rails_admin_flatly_theme', github: 'nfelix/rails_admin_flatly_theme'
+gem 'rails_admin_flatly_theme', github: 'felixng/rails_admin_flatly_theme'
 
 # Workers
 gem 'sidekiq'
@@ -139,7 +139,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'ffaker'
-  gem 'capybara-webkit'
   # gem 'poltergeist'           # alternative to capybara-webkit
   # gem 'capybara-firebug'
   # gem 'launchy'               # save_and_open_page support for rspec
